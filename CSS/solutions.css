@@ -1,0 +1,731 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  height: 100%;
+  width: 100%;
+  color: wheat;
+  padding: 10px 30px;
+}
+
+nav .navWrapper {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  font-weight: 500;
+}
+
+nav .navWrapper .navLogo {
+  height: 80px;
+  width: 250px;
+}
+
+nav .navWrapper .navLogo img {
+  height: 100%;
+  width: 100%;
+}
+
+nav .navWrapper .navLinks {
+  margin-top: 15px;
+}
+
+nav .navWrapper .navLinks ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+nav .navWrapper .navLinks li {
+  margin-right: 20px;
+}
+
+nav .navWrapper .navLinks li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav .navWrapper .navLinks li a:hover {
+  border-bottom: 2px solid blue;
+}
+
+nav .navWrapper .navUser {
+  height: 100px;
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .navWrapper .navUser .userImage {
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+}
+
+nav .navWrapper .navUser .userImage img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+nav .navWrapper .navUser .userName {
+  width: 150px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+nav .navWrapper .navUser .userCart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 40px;
+  width: 40px;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.header {
+  height: 30vh;
+  background: blue;
+}
+
+.header .aboutBanner {
+  height: 70%;
+  background: #020024;
+  background: -webkit-gradient(linear, left top, right top, from(#7f63ff), color-stop(41%, #1414ad), to(#1f1a80));
+  background: linear-gradient(90deg, #7f63ff 0%, #1414ad 41%, #1f1a80 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#7f63ff",GradientType=1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.header .breadCrumbs {
+  height: 30%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 2px 15px 42px -26px #2c15d9;
+  box-shadow: 2px 15px 42px -26px #2c15d9;
+  color: #2c15d9;
+  font-size: 1.3rem;
+}
+
+.header .breadCrumbs .rightArrow {
+  margin: 3px 10px 0 10px;
+}
+
+.main {
+  height: 100%;
+}
+
+.main .mainContainer {
+  padding: 8% 8%;
+}
+
+.main .mainContainer .mainHeading {
+  text-align: center;
+}
+
+.main .mainContainer .mainContent {
+  padding-top: 80px;
+}
+
+.main .mainContainer .mainContent .lftCont {
+  height: 350px;
+}
+
+.main .mainContainer .mainContent .lftCont img {
+  height: 100%;
+}
+
+.main .mainContainer .mainContent .rytCont p {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 35px;
+}
+
+.features {
+  height: 100%;
+}
+
+.features .featuresContainer {
+  padding: 2% 8%;
+}
+
+.features .featuresContainer .featureHeading {
+  text-align: center;
+}
+
+.features .featuresContainer .featureContent {
+  padding: 4% 4%;
+}
+
+.features .featuresContainer .featureContent .cardMain {
+  min-height: 250px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.features .featuresContainer .featureContent .cardMain .cardImage {
+  font-size: 3rem;
+}
+
+.features .featuresContainer .featureContent .cardMain h4 {
+  padding: 3% 0;
+  font-size: 1.8rem;
+}
+
+.features .featuresContainer .featureContent .cardMain p {
+  padding: 5px 30px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.offerBanner {
+  min-height: 20vh;
+  background: -webkit-gradient(linear, left top, right top, from(#3919c7), color-stop(41%, #1414ad), to(#1f1a80));
+  background: linear-gradient(90deg, #3919c7 0%, #1414ad 41%, #1f1a80 100%);
+}
+
+.offerBanner .offBanContainer {
+  text-align: center;
+  padding: 3% 0;
+  color: white;
+  font-weight: 500;
+}
+
+.offerBanner .offBanContainer span {
+  font-size: 2.9rem;
+}
+
+.whyChooseUs {
+  height: 100%;
+}
+
+.whyChooseUs .chseUsContainer {
+  padding: 8% 5%;
+}
+
+.whyChooseUs .chseUsContainer .chseUsHeading {
+  text-align: center;
+}
+
+.whyChooseUs .chseUsContainer .chseUsContent {
+  padding: 6% 3%;
+}
+
+.whyChooseUs .chseUsContainer .chseUsContent .carousel-inner {
+  padding: 1% 3%;
+}
+
+.whyChooseUs .chseUsContainer .chseUsContent .carousel-inner .carousel-item {
+  padding: 0 10%;
+}
+
+.whyChooseUs .chseUsContainer .chseUsContent .carousel-inner .carousel-item .cardMain {
+  position: relative;
+  padding: 3%;
+  min-height: 300px;
+  width: 250px;
+  text-align: center;
+  -webkit-box-shadow: 20px 20px 45px -34px #545454;
+  box-shadow: 6px 6px 47px -40px #545454;
+  border-radius: 10px;
+}
+
+.whyChooseUs .chseUsContainer .chseUsContent .carousel-inner .carousel-item .cardMain .cardImage {
+  height: 120px;
+  margin: 3% 0;
+}
+
+.whyChooseUs .chseUsContainer .chseUsContent .carousel-inner .carousel-item .cardMain .cardImage img {
+  height: 100%;
+}
+
+.whyChooseUs .chseUsContainer .chseUsContent .carousel-inner .carousel-item .cardMain h4 {
+  padding: 6% 0 5% 0;
+  font-size: 1.4rem;
+}
+
+.whyChooseUs .chseUsContainer .chseUsContent .carousel-inner .carousel-item .cardMain p {
+  padding: 0 6%;
+  font-size: 0.9rem;
+}
+
+.whyChooseUs .chseUsContainer .chseUsContent .carousel-inner .carousel-item .cardMain .cardImage::after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 39px;
+  background-color: #1414ad;
+  top: 12%;
+  left: -5%;
+}
+
+.whyChooseUs .chseUsContainer .chseUsContent a {
+  text-decoration: none;
+}
+
+.whyChooseUs .chseUsContainer .chseUsContent a .carousel-control-icon {
+  height: 36px;
+  width: 36px;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  -webkit-box-shadow: 0px 1px 16px -3px rgba(50, 50, 50, 0.83);
+  box-shadow: 0px 1px 16px -7px rgba(50, 50, 50, 0.83);
+}
+
+.whyChooseUs .chseUsContainer .chseUsContent a .carousel-control-icon :hover {
+  color: #5c5c5c;
+}
+
+.whyChooseUs .chseUsContainer .chseUsContent .chooseTD {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.whyChooseUs .chseUsContainer .chseUsContent .chooseTD .Lnumber {
+  position: relative;
+  height: 45px;
+  width: 45px;
+  background: -webkit-gradient(linear, left top, right top, from(#4f33ca), color-stop(41%, #2f2fb3), to(#3630a1));
+  background: linear-gradient(90deg, #4f33ca 0%, #2f2fb3 41%, #3630a1 100%);
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: 0px 1px 16px -3px rgba(50, 50, 50, 0.83);
+  box-shadow: 0px 1px 16px -7px rgba(50, 50, 50, 0.83);
+}
+
+.whyChooseUs .chseUsContainer .chseUsContent .chooseTD .Lnumber .tickCircle {
+  position: absolute;
+  color: #3ada3a;
+  top: 70%;
+  left: 78%;
+}
+
+.whyChooseUs .chseUsContainer .chseUsContent .chooseTD .RTitDes {
+  padding-left: 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.whyChooseUs .chseUsContainer .chseUsContent .chooseTD .RTitDes span {
+  color: #888888;
+}
+
+.whyChooseUs .chseUsContainer .chseUsContent .btnContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.whyChooseUs .chseUsContainer .chseUsContent .btnContent button {
+  height: 50px;
+  width: 200px;
+  background: -webkit-gradient(linear, left top, right top, from(#4f33ca), color-stop(41%, #2f2fb3), to(#3630a1));
+  background: linear-gradient(90deg, #4f33ca 0%, #2f2fb3 41%, #3630a1 100%);
+  border: none;
+  border-radius: 2px;
+  margin-left: 20px;
+  color: white;
+  font-weight: 500;
+}
+
+.custFeddback {
+  height: 100%;
+}
+
+.custFeddback .custFeedContainer {
+  padding: 1% 0;
+}
+
+.custFeddback .custFeedContainer .custFeedHeading {
+  text-align: center;
+}
+
+.custFeddback .custFeedContainer .custFeedContent {
+  padding: 5% 5%;
+}
+
+.custFeddback .custFeedContainer .custFeedContent .carousel-inner {
+  padding: 1% 3%;
+}
+
+.custFeddback .custFeedContainer .custFeedContent .carousel-inner .carousel-item {
+  padding: 0 10%;
+}
+
+.custFeddback .custFeedContainer .custFeedContent .carousel-inner .carousel-item .cardMain {
+  position: relative;
+  padding: 3%;
+  min-height: 290px;
+  width: 430px;
+  text-align: center;
+  -webkit-box-shadow: 20px 20px 45px -34px #545454;
+  box-shadow: 6px 6px 47px -40px #545454;
+  border-radius: 10px;
+  border: 1px solid #f8f8f8;
+}
+
+.custFeddback .custFeedContainer .custFeedContent .carousel-inner .carousel-item .cardMain .cardImage {
+  height: 50px;
+  border-radius: 50%;
+}
+
+.custFeddback .custFeedContainer .custFeedContent .carousel-inner .carousel-item .cardMain .cardImage img {
+  height: 100%;
+}
+
+.custFeddback .custFeedContainer .custFeedContent .carousel-inner .carousel-item .cardMain h4 {
+  padding: 6% 0 0 0;
+  font-size: 1rem;
+}
+
+.custFeddback .custFeedContainer .custFeedContent .carousel-inner .carousel-item .cardMain h6 {
+  font-size: 0.7rem;
+  color: #797979;
+}
+
+.custFeddback .custFeedContainer .custFeedContent .carousel-inner .carousel-item .cardMain p {
+  padding: 10% 6% 4% 6%;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: #6d6d6d;
+}
+
+.custFeddback .custFeedContainer .custFeedContent a {
+  text-decoration: none;
+}
+
+.custFeddback .custFeedContainer .custFeedContent a .carousel-control-icon {
+  height: 36px;
+  width: 36px;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  -webkit-box-shadow: 0px 1px 16px -3px rgba(50, 50, 50, 0.83);
+  box-shadow: 0px 1px 16px -7px rgba(50, 50, 50, 0.83);
+}
+
+.custFeddback .custFeedContainer .custFeedContent a .carousel-control-icon :hover {
+  color: #5c5c5c;
+}
+
+.newsLetter {
+  min-height: 20vh;
+  padding: 3% 5%;
+  background: url(../ASSETS/Images/18307.jpg);
+  background-size: contain;
+}
+
+.newsLetter .newsLetterContent {
+  margin: 0 auto;
+  padding: 30px 50px 20px 50px;
+  background: rgba(255, 255, 255, 0.863);
+  height: 40%;
+  width: 70%;
+}
+
+.newsLetter .newsLetterContent h3 {
+  font-weight: 800;
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.newsLetter .newsLetterContent p {
+  font-size: 0.7rem;
+  width: 70%;
+  color: #505050;
+  font-weight: 500;
+}
+
+.newsLetter .newsLetterContent .newLetBox {
+  -webkit-box-shadow: 0px 1px 9px 1px rgba(224, 224, 224, 0.75);
+  box-shadow: 0px 1px 9px 1px rgba(240, 240, 240, 0.75);
+  padding: 15px 5px 0 10px;
+  border: none;
+}
+
+.newsLetter .newsLetterContent .mailBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #e6e6e6;
+  width: auto;
+  height: 50px;
+}
+
+.newsLetter .newsLetterContent .mailBtn input {
+  border: none;
+  height: 100%;
+  font-size: 0.7rem;
+  color: #3a3a3a;
+  outline: none;
+  width: 100%;
+}
+
+.newsLetter .newsLetterContent .mailBtn input:focus {
+  border: none;
+}
+
+.newsLetter .newsLetterContent .mailBtn button {
+  height: 75%;
+  width: 90px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  border-radius: 2px;
+  border: none;
+  color: white;
+  background: -webkit-gradient(linear, left top, right top, from(#1b13a7), color-stop(41%, #2c2ca3), to(#2c129e));
+  background: linear-gradient(90deg, #1b13a7 0%, #2c2ca3 41%, #2c129e 100%);
+}
+
+.footer {
+  height: 100%;
+  padding: 2%;
+  background: #f8f8f8;
+}
+
+.footer .footerContent {
+  padding-left: 3%;
+}
+
+.footer .footerContent .footerPara {
+  padding-top: 2%;
+  font-weight: 500;
+  width: 85%;
+}
+
+.footer .footerContent .middleFooter {
+  margin-top: 50px;
+}
+
+.footer .footerContent .middleFooter .footerConHeading {
+  font-size: 1.3rem;
+}
+
+.footer .footerContent .middleFooter .footerConHeading h5 {
+  position: relative;
+  font-weight: 700;
+}
+
+.footer .footerContent .middleFooter .footerConHeading h5::before {
+  position: absolute;
+  content: "";
+  margin: 5px 0;
+  height: 6px;
+  width: 18%;
+  background: #090979;
+  top: 100%;
+  left: 0;
+}
+
+.footer .footerContent .middleFooter ul {
+  list-style: none;
+  padding-top: 20px;
+  font-size: 1rem;
+  color: #252525;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.footer .footerContent .middleFooter .contactdetails {
+  width: 80%;
+}
+
+.footer .footerContent .middleFooter .contactdetails .footerConHeading {
+  padding-bottom: 10px;
+}
+
+.footer .footerContent .middleFooter .contactdetails .footerConHeading h4 {
+  position: relative;
+  font-weight: 700;
+}
+
+.footer .footerContent .middleFooter .contactdetails .footerConHeading h4::after {
+  position: absolute;
+  margin: 5px 0;
+  content: "";
+  height: 6px;
+  width: 10%;
+  background: #090979;
+  top: 100%;
+  left: 0;
+}
+
+.footer .footerContent .middleFooter .contactdetails .footDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer .footerContent .middleFooter .contactdetails .footDetails .lftDetail {
+  width: 100%;
+}
+
+.footer .footerContent .middleFooter .contactdetails .footDetails .rytDetail {
+  margin-left: 5%;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer .footerContent .footerConHeading {
+  font-size: 1rem;
+}
+
+.footer .footerContent .rytFooter {
+  margin-top: 50px;
+}
+
+.footer .footerContent .rytFooter .footerConHeading2 h4 {
+  position: relative;
+  color: #2f2fd1;
+  font-weight: 700;
+}
+
+.footer .footerContent .rytFooter .footerConHeading2 h4::after {
+  position: absolute;
+  margin: 5px 0;
+  content: "";
+  height: 6px;
+  width: 18%;
+  background: #6e6ef8;
+  top: 100%;
+  left: 0;
+}
+
+.footer .footerContent .rytFooter .footerSocial {
+  padding-top: 25px;
+}
+
+.footer .footerContent .rytFooter .footerSocial img {
+  height: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=solutions.css.map */

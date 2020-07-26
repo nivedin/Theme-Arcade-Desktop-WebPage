@@ -1,14 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: poppins, sans-serif;
 }
 
 html,
 body {
-  font-family: "Roboto", sans-serif;
   background: white;
 }
 
@@ -53,7 +53,6 @@ header nav .navContainer .logo {
   height: 50px;
   width: 50px;
   width: 20%;
-  background: blue;
 }
 
 header nav .navContainer .logo img {
@@ -88,8 +87,8 @@ header nav .navContainer .menuItems li a {
   position: relative;
   text-decoration: none;
   color: black;
-  font-size: 1.1rem;
-  font-weight: 500;
+  font-size: 1.2rem;
+  font-weight: 600;
   z-index: 1;
 }
 
@@ -147,12 +146,12 @@ header nav .navContainer .logSigButtons .signUp {
 }
 
 .main {
-  min-height: 80vh;
+  min-height: 100%;
   background: white;
 }
 
 .main .mainContainer {
-  padding: 2% 5%;
+  padding: 2%;
 }
 
 .main .mainContainer .mainHeading {
@@ -161,10 +160,11 @@ header nav .navContainer .logSigButtons .signUp {
 
 .main .mainContainer .mainHeading h1 {
   font-weight: 400;
+  font-size: 2.6rem;
 }
 
 .main .mainContainer .mainContent {
-  padding-top: 50px;
+  padding: 2% 2% 2% 5%;
 }
 
 .main .mainContainer .mainContent .lftPara {
@@ -192,13 +192,25 @@ header nav .navContainer .logSigButtons .signUp {
   font-weight: 600;
 }
 
+.main .mainContainer .mainContent .rytImage .rytImageContainer {
+  height: 100%;
+  width: 100%;
+}
+
+.main .mainContainer .mainContent .rytImage .rytImageContainer img {
+  height: 100%;
+  width: 100%;
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+}
+
 .aboutUs {
   min-height: 90vh;
   background: white;
 }
 
 .aboutUs .aboutUsContainer {
-  padding: 2% 5%;
+  padding: 2% 5% 2% 5%;
 }
 
 .aboutUs .aboutUsContainer .abtHeading {
@@ -207,6 +219,8 @@ header nav .navContainer .logSigButtons .signUp {
 
 .aboutUs .aboutUsContainer .abtHeading h1 {
   font-weight: 400;
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
 }
 
 .aboutUs .aboutUsContainer .abtContent {
@@ -216,7 +230,7 @@ header nav .navContainer .logSigButtons .signUp {
 }
 
 .aboutUs .aboutUsContainer .abtContent .lftPara {
-  padding: 25px 0;
+  padding: 95px 0 0 0;
 }
 
 .aboutUs .aboutUsContainer .abtContent .lftPara p {
@@ -290,13 +304,26 @@ header nav .navContainer .logSigButtons .signUp {
   }
 }
 
+.aboutUs .aboutUsContainer .abtContent .rytImage .rytImageContainer {
+  height: 400px;
+  width: 400px;
+}
+
+.aboutUs .aboutUsContainer .abtContent .rytImage .rytImageContainer img {
+  -webkit-transform: translateY(-42px);
+          transform: translateY(-42px);
+  height: 150%;
+  width: 150%;
+}
+
 .aboutUs .aboutUsContainer .skewedBg {
   z-index: -1;
   overflow: hidden;
   position: absolute;
   top: 45px;
   right: -67px;
-  background: #1414a5;
+  background: -webkit-gradient(linear, left top, right top, from(#363280), color-stop(#5b54d7), to(#6c67d4));
+  background: linear-gradient(to right, #363280, #5b54d7, #6c67d4);
   height: 90vh;
   width: 100vw;
   -webkit-transform: skew(0deg, 10deg);
@@ -330,11 +357,27 @@ header nav .navContainer .logSigButtons .signUp {
 }
 
 .pdtSol .pdtSolContainer .pdtContent {
-  padding: 5% 6%;
+  padding: 5% 6% 0 6%;
 }
 
 .pdtSol .pdtSolContainer .pdtContent .item {
   padding-bottom: 100px;
+}
+
+.pdtSol .pdtSolContainer .pdtContent .item .lfRtimgContainer {
+  height: 300px;
+  width: 300px;
+}
+
+.pdtSol .pdtSolContainer .pdtContent .item .lfRtimgContainer img {
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+  height: 130%;
+  width: 130%;
+}
+
+.pdtSol .pdtSolContainer .pdtContent .item1 {
+  position: relative;
 }
 
 .pdtSol .pdtSolContainer .pdtContent .item1 button {
@@ -342,10 +385,22 @@ header nav .navContainer .logSigButtons .signUp {
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background: #1414a5;
+  background: #0b5e94;
   border: none;
   color: white;
   font-size: 1.3rem;
+}
+
+.pdtSol .pdtSolContainer .pdtContent .item1 .lineArrow {
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  left: 20%;
+}
+
+.pdtSol .pdtSolContainer .pdtContent .item1 .lineArrow img {
+  height: 155%;
+  width: 155%;
 }
 
 .pdtSol .pdtSolContainer .pdtContent .item2 button {
@@ -353,10 +408,26 @@ header nav .navContainer .logSigButtons .signUp {
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background: #3fcc2d;
+  background: #49be55;
   border: none;
   color: white;
   font-size: 1.3rem;
+}
+
+.pdtSol .pdtSolContainer .pdtContent .item2 .lineArrow {
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  left: 25%;
+}
+
+.pdtSol .pdtSolContainer .pdtContent .item2 .lineArrow img {
+  height: 155%;
+  width: 155%;
+}
+
+.pdtSol .pdtSolContainer .pdtContent .item3 {
+  margin-top: 20px;
 }
 
 .pdtSol .pdtSolContainer .pdtContent .item3 button {
@@ -364,7 +435,7 @@ header nav .navContainer .logSigButtons .signUp {
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background: #e40788;
+  background: #e0157d;
   border: none;
   color: white;
   font-size: 1.3rem;
@@ -389,13 +460,31 @@ header nav .navContainer .logSigButtons .signUp {
 }
 
 .facilities {
-  min-height: 100vh;
+  min-height: 100%;
   background: white;
+  overflow-x: hidden;
+}
+
+.facilities .bgDeveloperImage {
+  position: relative;
+  height: 120vh;
+  width: 120vw;
+  right: 10%;
+  overflow-x: hidden;
+}
+
+.facilities .bgDeveloperImage img {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .facilities .facilitiesContainer {
-  padding: 2% 5%;
-  position: relative;
+  padding: 2% 0 2% 5%;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 25%;
 }
 
 .facilities .facilitiesContainer .facilitiesHeading {
@@ -404,37 +493,55 @@ header nav .navContainer .logSigButtons .signUp {
 
 .facilities .facilitiesContainer .facilitiesHeading h1 {
   font-weight: 400;
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
 }
 
 .facilities .facilitiesContainer .facilitiesContent {
   padding-top: 50px;
 }
 
-.facilities .facilitiesContainer .facilitiesContent .skewBg {
-  overflow: hidden;
-  position: absolute;
-  top: 285px;
-  right: 2px;
-  background: #1414a5;
-  height: 80vh;
-  width: 100vw;
-  -webkit-transform: skew(0deg, -5deg);
-          transform: skew(0deg, -5deg);
-  border: none;
-}
-
 .facilities .facilitiesContainer .facilitiesContent .rytCont {
-  padding: 230px 50px 0 50px;
+  padding: 130px 0 0 90px;
+  -webkit-transform: translate(10px, 20px);
+          transform: translate(10px, 20px);
+  width: 100%;
 }
 
 .facilities .facilitiesContainer .facilitiesContent .rytCont ul {
   list-style: none;
+  width: 105%;
 }
 
 .facilities .facilitiesContainer .facilitiesContent .rytCont ul li {
   color: white;
-  font-size: 0.9rem;
+  font-size: 1rem;
   padding: 10px 0;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.facilities .facilitiesContainer .facilitiesContent .rytCont ul li .listCircle {
+  margin-right: 15px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: white;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .facilities .facilitiesContainer .facilitiesContent .rytCont .btnCont {
@@ -449,13 +556,13 @@ header nav .navContainer .logSigButtons .signUp {
 }
 
 .facilities .facilitiesContainer .facilitiesContent .rytCont .btnCont .apiRef button {
-  height: 50px;
-  width: 130px;
+  height: 70px;
+  width: 170px;
   border-radius: 10px;
   border: none;
   background: #5252df;
   color: white;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   -webkit-box-shadow: 0px 12px 70px -24px black;
   box-shadow: 0px 12px 70px -24px black;
 }
@@ -464,8 +571,9 @@ header nav .navContainer .logSigButtons .signUp {
   position: absolute;
   left: 75%;
   top: 75%;
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
+  font-size: 1.2rem;
   border-radius: 50%;
   background: white;
   display: -webkit-box;
@@ -487,13 +595,13 @@ header nav .navContainer .logSigButtons .signUp {
 }
 
 .facilities .facilitiesContainer .facilitiesContent .rytCont .btnCont .docu button {
-  height: 50px;
-  width: 130px;
+  height: 70px;
+  width: 170px;
   border-radius: 10px;
   border: none;
   background: #5252df;
   color: white;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   -webkit-box-shadow: 0px 12px 70px -24px black;
   box-shadow: 0px 12px 70px -24px black;
 }
@@ -502,8 +610,9 @@ header nav .navContainer .logSigButtons .signUp {
   position: absolute;
   left: 75%;
   top: 75%;
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
+  font-size: 1.2rem;
   border-radius: 50%;
   background: white;
   display: -webkit-box;
@@ -523,11 +632,10 @@ header nav .navContainer .logSigButtons .signUp {
   position: relative;
   z-index: 2;
   min-height: 80vh;
-  background: white;
 }
 
 .topChoices .topChoiceContainer {
-  padding: 3% 5%;
+  padding: 3% 0%;
 }
 
 .topChoices .topChoiceContainer .topChoiceHeading {
@@ -539,7 +647,8 @@ header nav .navContainer .logSigButtons .signUp {
 }
 
 .topChoices .topChoiceContainer .topChoiceContent {
-  padding: 2% 5%;
+  padding: 2% 0%;
+  background: url("../ASSETS/HomePage Illustrations/HomePage_Customer_Numbers_BG.svg");
 }
 
 .topChoices .topChoiceContainer .topChoiceContent .contentCards {
@@ -565,17 +674,24 @@ header nav .navContainer .logSigButtons .signUp {
 }
 
 .topChoices .topChoiceContainer .topChoiceContent .contentCards .card img {
-  height: 5%;
+  position: absolute;
+  height: 35%;
+  top: -15%;
+  left: 0;
 }
 
-.topChoices .topChoiceContainer .topChoiceContent .contentCards .card .card-title {
-  font-size: 2.9rem;
+.topChoices .topChoiceContainer .topChoiceContent .contentCards .card .card-body {
+  padding-top: 50px;
 }
 
-.topChoices .topChoiceContainer .topChoiceContent .contentCards .card .card-text {
-  font: 0.6rem;
-  font-weight: 500;
-  color: #6e6e6e;
+.topChoices .topChoiceContainer .topChoiceContent .contentCards .card .card-body .card-title {
+  font-size: 3.3rem;
+}
+
+.topChoices .topChoiceContainer .topChoiceContent .contentCards .card .card-body .card-text {
+  font: 0.7rem;
+  font-weight: 600;
+  color: #1f1f1f;
 }
 
 .topChoices .topChoiceContainer .topChoiceContent .contentCards .card::after {
@@ -652,6 +768,11 @@ header nav .navContainer .logSigButtons .signUp {
   padding: 1% 0;
 }
 
+.testimonals .tstContainer .halfRecBg {
+  position: absolute;
+  height: 50vh;
+}
+
 .testimonals .tstContainer .tstHeading {
   text-align: center;
 }
@@ -662,7 +783,11 @@ header nav .navContainer .logSigButtons .signUp {
 
 .testimonals .tstContainer .tstContent {
   padding: 4% 5%;
-  background: blue;
+  background: url("../ASSETS/HomePage Illustrations/HomePage_Customer_Numbers_BG.svg");
+}
+
+.testimonals .tstContainer .tstContent .lftCont {
+  padding: 5% 0 0 0;
 }
 
 .testimonals .tstContainer .tstContent .lftCont .carousel-inner {
@@ -679,27 +804,89 @@ header nav .navContainer .logSigButtons .signUp {
 
 .testimonals .tstContainer .tstContent .lftCont .carousel-inner .card {
   text-align: center;
+  position: relative;
 }
 
 .testimonals .tstContainer .tstContent .lftCont .carousel-inner .card .card-img-top {
   margin: 10px auto;
+  font-size: 1.5rem;
+  color: #5851cf;
 }
 
-.testimonals .tstContainer .tstContent .lftCont .pagination a {
+.testimonals .tstContainer .tstContent .lftCont .carousel-inner .card .card-title {
+  font-size: 1.5rem;
+}
+
+.testimonals .tstContainer .tstContent .lftCont .carousel-inner .card .card-text {
+  font-weight: 500;
+  font-size: 1.05rem;
+}
+
+.testimonals .tstContainer .tstContent .lftCont .carousel-inner .card .authName {
+  font-size: 0.85rem;
+  padding: 10px 0 0 0;
+  font-weight: 500;
+  margin: 0;
+}
+
+.testimonals .tstContainer .tstContent .lftCont .carousel-inner .card .text-muted {
+  margin: 0;
+  padding: 0;
+  font-size: 0.7rem;
+}
+
+.testimonals .tstContainer .tstContent .lftCont .carousel-inner .card .star {
+  color: yellow;
+}
+
+.testimonals .tstContainer .tstContent .lftCont .carousel-inner .card::after {
+  content: "";
+  position: absolute;
+  width: 45px;
+  top: 20%;
+  right: -6%;
+  height: 8px;
+  background: #5851cf;
+}
+
+.testimonals .tstContainer .tstContent .lftCont .carousel-control-icon {
   color: black;
+  font-size: 2rem;
+}
+
+.testimonals .tstContainer .tstContent .rytCont .rytImageContainer {
+  height: 100%;
+  width: 100%;
+}
+
+.testimonals .tstContainer .tstContent .rytCont .rytImageContainer img {
+  height: 100%;
+  width: 100%;
 }
 
 .mailLetter {
-  min-height: 50vh;
+  min-height: 100%;
   background: #ffffff;
 }
 
 .mailLetter .mailLetContainer {
-  padding: 5% 0;
+  padding: 5% 0 0 0;
 }
 
 .mailLetter .mailLetContainer .mailLetContent {
   padding: 3% 5%;
+}
+
+.mailLetter .mailLetContainer .mailLetContent .lftCont .lftImageContainer {
+  height: 250px;
+  width: 250px;
+}
+
+.mailLetter .mailLetContainer .mailLetContent .lftCont .lftImageContainer img {
+  height: 200%;
+  width: 200%;
+  -webkit-transform: translate(20px, -150px);
+          transform: translate(20px, -150px);
 }
 
 .mailLetter .mailLetContainer .mailLetContent .rytCont p {
@@ -735,8 +922,17 @@ header nav .navContainer .logSigButtons .signUp {
 
 .footer {
   height: 100%;
-  padding: 2%;
-  background: snow;
+  padding: 2% 2% 2% 4%;
+  background: #fbfcff;
+}
+
+.footer .footerContent .footerLogo {
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.footer .footerContent .footerLogo img {
+  height: 100%;
 }
 
 .footer .footerContent .footerPara {
@@ -762,7 +958,7 @@ header nav .navContainer .logSigButtons .signUp {
   content: "";
   margin: 5px 0;
   height: 6px;
-  width: 30%;
+  width: 18%;
   background: #090979;
   top: 100%;
   left: 0;
@@ -795,7 +991,7 @@ header nav .navContainer .logSigButtons .signUp {
   margin: 5px 0;
   content: "";
   height: 6px;
-  width: 10%;
+  width: 8%;
   background: #090979;
   top: 100%;
   left: 0;
@@ -846,7 +1042,7 @@ header nav .navContainer .logSigButtons .signUp {
   margin: 5px 0;
   content: "";
   height: 6px;
-  width: 30%;
+  width: 18%;
   background: #6e6ef8;
   top: 100%;
   left: 0;

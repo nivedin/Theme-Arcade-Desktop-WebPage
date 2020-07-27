@@ -1,14 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: poppins, sans-serif;
+  scroll-behavior: smooth;
 }
 
 nav {
@@ -25,14 +26,14 @@ nav .navWrapper {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: black;
   font-weight: 500;
 }
@@ -57,11 +58,11 @@ nav .navWrapper .navLinks ul {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   list-style: none;
   font-size: 1.2rem;
 }
@@ -86,8 +87,8 @@ nav .navWrapper .navUser {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 nav .navWrapper .navUser .userImage {
@@ -105,15 +106,15 @@ nav .navWrapper .navUser .userImage img {
 nav .navWrapper .navUser .userName {
   width: 150px;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 5px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   border: 2px solid black;
   border-radius: 20px;
   margin-right: 10px;
@@ -124,11 +125,11 @@ nav .navWrapper .navUser .userCart {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   height: 40px;
   width: 40px;
   border: 2px solid black;
@@ -143,18 +144,25 @@ nav .navWrapper .navUser .userCart {
 .header .aboutBanner {
   height: 70%;
   background: #020024;
-  background: -webkit-gradient(linear, left top, right top, from(#7f63ff), color-stop(41%, #1414ad), to(#1f1a80));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#7f63ff),
+    color-stop(41%, #1414ad),
+    to(#1f1a80)
+  );
   background: linear-gradient(90deg, #7f63ff 0%, #1414ad 41%, #1f1a80 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#7f63ff",GradientType=1);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: white;
   font-size: 2.4rem;
   font-weight: 500;
@@ -167,11 +175,11 @@ nav .navWrapper .navUser .userCart {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-shadow: 2px 15px 42px -26px #2c15d9;
   box-shadow: 2px 15px 42px -26px #2c15d9;
   color: #2c15d9;
@@ -289,31 +297,72 @@ nav .navWrapper .navUser .userCart {
   border-radius: 10px;
 }
 
-.main .mainContainer .highContainer .themeResources .thmResCards .cardMain .imageSide {
+.main
+  .mainContainer
+  .highContainer
+  .themeResources
+  .thmResCards
+  .cardMain
+  .imageSide {
   height: 50px;
   margin-top: 40px;
 }
 
-.main .mainContainer .highContainer .themeResources .thmResCards .cardMain .imageSide img {
+.main
+  .mainContainer
+  .highContainer
+  .themeResources
+  .thmResCards
+  .cardMain
+  .imageSide
+  img {
   height: 100%;
 }
 
-.main .mainContainer .highContainer .themeResources .thmResCards .cardMain .bodySide {
+.main
+  .mainContainer
+  .highContainer
+  .themeResources
+  .thmResCards
+  .cardMain
+  .bodySide {
   text-align: left;
   padding: 3% 0;
 }
 
-.main .mainContainer .highContainer .themeResources .thmResCards .cardMain .bodySide h6 {
+.main
+  .mainContainer
+  .highContainer
+  .themeResources
+  .thmResCards
+  .cardMain
+  .bodySide
+  h6 {
   font-weight: 700;
   font-size: 1.2rem;
 }
 
-.main .mainContainer .highContainer .themeResources .thmResCards .cardMain .bodySide .text {
+.main
+  .mainContainer
+  .highContainer
+  .themeResources
+  .thmResCards
+  .cardMain
+  .bodySide
+  .text {
   font-size: 0.9rem;
   font-weight: 500;
 }
 
-.main .mainContainer .highContainer .themeResources .thmResCards .cardMain .bodySide .small a {
+.main
+  .mainContainer
+  .highContainer
+  .themeResources
+  .thmResCards
+  .cardMain
+  .bodySide
+  .small
+  a {
   font-size: 0.8rem;
   text-decoration: none;
 }
@@ -323,26 +372,59 @@ nav .navWrapper .navUser .userCart {
   height: 150px;
 }
 
-.main .mainContainer .highContainer .themeResources .thmResCards .card .card-body {
+.main
+  .mainContainer
+  .highContainer
+  .themeResources
+  .thmResCards
+  .card
+  .card-body {
   padding: 2px 5px !important;
   text-align: left;
   margin-left: 80px;
 }
 
-.main .mainContainer .highContainer .themeResources .thmResCards .card .card-body .card-title {
+.main
+  .mainContainer
+  .highContainer
+  .themeResources
+  .thmResCards
+  .card
+  .card-body
+  .card-title {
   margin-bottom: 5px;
 }
 
-.main .mainContainer .highContainer .themeResources .thmResCards .card .card-body .card-text {
+.main
+  .mainContainer
+  .highContainer
+  .themeResources
+  .thmResCards
+  .card
+  .card-body
+  .card-text {
   margin-bottom: 5px;
 }
 
-.main .mainContainer .highContainer .themeResources .thmResCards .card .cardImage {
+.main
+  .mainContainer
+  .highContainer
+  .themeResources
+  .thmResCards
+  .card
+  .cardImage {
   height: 60px;
   max-width: 60px;
 }
 
-.main .mainContainer .highContainer .themeResources .thmResCards .card .cardImage img {
+.main
+  .mainContainer
+  .highContainer
+  .themeResources
+  .thmResCards
+  .card
+  .cardImage
+  img {
   height: 100%;
   width: 100%;
 }
@@ -409,7 +491,12 @@ nav .navWrapper .navUser .userCart {
   font-weight: 700;
 }
 
-.footer .footerContent .middleFooter .contactdetails .footerConHeading h4::after {
+.footer
+  .footerContent
+  .middleFooter
+  .contactdetails
+  .footerConHeading
+  h4::after {
   position: absolute;
   margin: 5px 0;
   content: "";
@@ -426,8 +513,8 @@ nav .navWrapper .navUser .userCart {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 .footer .footerContent .middleFooter .contactdetails .footDetails .lftDetail {
@@ -442,8 +529,8 @@ nav .navWrapper .navUser .userCart {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .footer .footerContent .footerConHeading {

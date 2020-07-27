@@ -1,14 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: poppins, sans-serif;
+  scroll-behavior: smooth;
 }
 
 nav {
@@ -25,14 +26,14 @@ nav .navWrapper {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: black;
   font-weight: 500;
 }
@@ -57,11 +58,11 @@ nav .navWrapper .navLinks ul {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   list-style: none;
   font-size: 1.2rem;
 }
@@ -86,8 +87,8 @@ nav .navWrapper .navUser {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 nav .navWrapper .navUser .userImage {
@@ -105,15 +106,15 @@ nav .navWrapper .navUser .userImage img {
 nav .navWrapper .navUser .userName {
   width: 150px;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 5px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   border: 2px solid black;
   border-radius: 20px;
   margin-right: 10px;
@@ -124,11 +125,11 @@ nav .navWrapper .navUser .userCart {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   height: 40px;
   width: 40px;
   border: 2px solid black;
@@ -143,18 +144,25 @@ nav .navWrapper .navUser .userCart {
 .header .aboutBanner {
   height: 70%;
   background: #020024;
-  background: -webkit-gradient(linear, left top, right top, from(#7f63ff), color-stop(41%, #1414ad), to(#1f1a80));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#7f63ff),
+    color-stop(41%, #1414ad),
+    to(#1f1a80)
+  );
   background: linear-gradient(90deg, #7f63ff 0%, #1414ad 41%, #1f1a80 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#7f63ff",GradientType=1);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: white;
   font-size: 2.4rem;
   font-weight: 500;
@@ -167,11 +175,11 @@ nav .navWrapper .navUser .userCart {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-shadow: 2px 15px 42px -26px #2c15d9;
   box-shadow: 2px 15px 42px -26px #2c15d9;
   color: #2c15d9;
@@ -203,18 +211,29 @@ nav .navWrapper .navUser .userCart {
   padding: 0 8%;
 }
 
-.main .mainContainer .carouselItem .swiper-container .swiper-wrapper .swiper-slide {
+.main
+  .mainContainer
+  .carouselItem
+  .swiper-container
+  .swiper-wrapper
+  .swiper-slide {
   height: 300px;
   max-width: 310px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.main .mainContainer .carouselItem .swiper-container .swiper-wrapper .swiper-slide .cardMain {
+.main
+  .mainContainer
+  .carouselItem
+  .swiper-container
+  .swiper-wrapper
+  .swiper-slide
+  .cardMain {
   height: 250px;
   width: 250px;
   -webkit-box-shadow: 0px 2px 22px -7px rgba(92, 92, 92, 0.75);
@@ -222,48 +241,101 @@ nav .navWrapper .navUser .userCart {
   border-radius: 15px;
 }
 
-.main .mainContainer .carouselItem .swiper-container .swiper-wrapper .swiper-slide .cardMain .cardImg {
+.main
+  .mainContainer
+  .carouselItem
+  .swiper-container
+  .swiper-wrapper
+  .swiper-slide
+  .cardMain
+  .cardImg {
   height: 165px;
   width: 250px;
   border-radius: 15px;
 }
 
-.main .mainContainer .carouselItem .swiper-container .swiper-wrapper .swiper-slide .cardMain .cardImg img {
+.main
+  .mainContainer
+  .carouselItem
+  .swiper-container
+  .swiper-wrapper
+  .swiper-slide
+  .cardMain
+  .cardImg
+  img {
   height: 100%;
   width: 100%;
   border-radius: 15px;
 }
 
-.main .mainContainer .carouselItem .swiper-container .swiper-wrapper .swiper-slide .cardMain .cardBody {
+.main
+  .mainContainer
+  .carouselItem
+  .swiper-container
+  .swiper-wrapper
+  .swiper-slide
+  .cardMain
+  .cardBody {
   text-align: center;
   padding-top: 5px;
 }
 
-.main .mainContainer .carouselItem .swiper-container .swiper-wrapper .swiper-slide .cardMain .cardBody p {
+.main
+  .mainContainer
+  .carouselItem
+  .swiper-container
+  .swiper-wrapper
+  .swiper-slide
+  .cardMain
+  .cardBody
+  p {
   margin: 0;
   font-size: 0.85rem;
   font-weight: 700;
   color: black;
 }
 
-.main .mainContainer .carouselItem .swiper-container .swiper-wrapper .swiper-slide .cardMain .cardBody .subPara {
+.main
+  .mainContainer
+  .carouselItem
+  .swiper-container
+  .swiper-wrapper
+  .swiper-slide
+  .cardMain
+  .cardBody
+  .subPara {
   font-weight: 400;
 }
 
-.main .mainContainer .carouselItem .swiper-container .swiper-wrapper .swiper-slide .cardMain .cardFooter {
+.main
+  .mainContainer
+  .carouselItem
+  .swiper-container
+  .swiper-wrapper
+  .swiper-slide
+  .cardMain
+  .cardFooter {
   padding: 12px 10px 10px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.main .mainContainer .carouselItem .swiper-container .swiper-wrapper .swiper-slide .cardMain .cardFooter .travelBanner {
+.main
+  .mainContainer
+  .carouselItem
+  .swiper-container
+  .swiper-wrapper
+  .swiper-slide
+  .cardMain
+  .cardFooter
+  .travelBanner {
   height: 20px;
   width: 40px;
   background: #48bb58;
@@ -273,14 +345,22 @@ nav .navWrapper .navUser .userCart {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.main .mainContainer .carouselItem .swiper-container .swiper-wrapper .swiper-slide .cardMain .cardFooter .dateTime {
+.main
+  .mainContainer
+  .carouselItem
+  .swiper-container
+  .swiper-wrapper
+  .swiper-slide
+  .cardMain
+  .cardFooter
+  .dateTime {
   font-size: 0.7rem;
 }
 
@@ -323,22 +403,41 @@ nav .navWrapper .navUser .userCart {
   font-weight: 700;
 }
 
-.blogItemSearch .blogItemContainer .lftCards .mainCard .cardBody .cardHead .authName {
+.blogItemSearch
+  .blogItemContainer
+  .lftCards
+  .mainCard
+  .cardBody
+  .cardHead
+  .authName {
   font-size: 0.86rem;
   font-weight: 400;
 }
 
-.blogItemSearch .blogItemContainer .lftCards .mainCard .cardBody .cardHead .headButTime {
+.blogItemSearch
+  .blogItemContainer
+  .lftCards
+  .mainCard
+  .cardBody
+  .cardHead
+  .headButTime {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 10px 0;
 }
 
-.blogItemSearch .blogItemContainer .lftCards .mainCard .cardBody .cardHead .headButTime .greenBg {
+.blogItemSearch
+  .blogItemContainer
+  .lftCards
+  .mainCard
+  .cardBody
+  .cardHead
+  .headButTime
+  .greenBg {
   height: 20px;
   width: 40px;
   background: #48bb58;
@@ -348,14 +447,21 @@ nav .navWrapper .navUser .userCart {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.blogItemSearch .blogItemContainer .lftCards .mainCard .cardBody .cardHead .headButTime .dateTime {
+.blogItemSearch
+  .blogItemContainer
+  .lftCards
+  .mainCard
+  .cardBody
+  .cardHead
+  .headButTime
+  .dateTime {
   margin-left: 30px;
   font-size: 0.7rem;
 }
@@ -365,7 +471,13 @@ nav .navWrapper .navUser .userCart {
   font-weight: 600;
 }
 
-.blogItemSearch .blogItemContainer .lftCards .mainCard .cardBody .bodyPara .readMore {
+.blogItemSearch
+  .blogItemContainer
+  .lftCards
+  .mainCard
+  .cardBody
+  .bodyPara
+  .readMore {
   background: #244784;
   outline: none;
   border: none;
@@ -378,7 +490,13 @@ nav .navWrapper .navUser .userCart {
 
 .blogItemSearch .blogItemContainer .lftCards .loadMore {
   margin: 5% 0 0 50%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#3a6abd), to(#244784));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#3a6abd),
+    to(#244784)
+  );
   background: linear-gradient(to bottom, #3a6abd, #244784);
   outline: none;
   border: none;
@@ -429,7 +547,13 @@ nav .navWrapper .navUser .userCart {
   outline: 0;
   border: none;
   color: white;
-  background: -webkit-gradient(linear, left top, right top, from(#284d92), to(#26529e));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#284d92),
+    to(#26529e)
+  );
   background: linear-gradient(to right, #284d92, #26529e);
 }
 
@@ -462,11 +586,11 @@ nav .navWrapper .navUser .userCart {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 1.4rem;
   color: #824c0c;
   font-weight: 600;
@@ -520,11 +644,11 @@ nav .navWrapper .navUser .userCart {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   border: 1px solid #e6e6e6;
   width: auto;
   height: 50px;
@@ -551,7 +675,14 @@ nav .navWrapper .navUser .userCart {
   border-radius: 2px;
   border: none;
   color: white;
-  background: -webkit-gradient(linear, left top, right top, from(#1b13a7), color-stop(41%, #2c2ca3), to(#2c129e));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#1b13a7),
+    color-stop(41%, #2c2ca3),
+    to(#2c129e)
+  );
   background: linear-gradient(90deg, #1b13a7 0%, #2c2ca3 41%, #2c129e 100%);
 }
 
@@ -617,7 +748,12 @@ nav .navWrapper .navUser .userCart {
   font-weight: 700;
 }
 
-.footer .footerContent .middleFooter .contactdetails .footerConHeading h4::after {
+.footer
+  .footerContent
+  .middleFooter
+  .contactdetails
+  .footerConHeading
+  h4::after {
   position: absolute;
   margin: 5px 0;
   content: "";
@@ -634,8 +770,8 @@ nav .navWrapper .navUser .userCart {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 .footer .footerContent .middleFooter .contactdetails .footDetails .lftDetail {
@@ -650,8 +786,8 @@ nav .navWrapper .navUser .userCart {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .footer .footerContent .footerConHeading {

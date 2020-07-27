@@ -1,14 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: poppins, sans-serif;
+  scroll-behavior: smooth;
 }
 
 nav {
@@ -25,14 +26,14 @@ nav .navWrapper {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: black;
   font-weight: 500;
 }
@@ -57,11 +58,11 @@ nav .navWrapper .navLinks ul {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   list-style: none;
   font-size: 1.2rem;
 }
@@ -86,8 +87,8 @@ nav .navWrapper .navUser {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 nav .navWrapper .navUser .userImage {
@@ -105,15 +106,15 @@ nav .navWrapper .navUser .userImage img {
 nav .navWrapper .navUser .userName {
   width: 150px;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 5px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   border: 2px solid black;
   border-radius: 20px;
   margin-right: 10px;
@@ -124,11 +125,11 @@ nav .navWrapper .navUser .userCart {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   height: 40px;
   width: 40px;
   border: 2px solid black;
@@ -143,18 +144,25 @@ nav .navWrapper .navUser .userCart {
 .header .aboutBanner {
   height: 70%;
   background: #020024;
-  background: -webkit-gradient(linear, left top, right top, from(#7f63ff), color-stop(41%, #1414ad), to(#1f1a80));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#7f63ff),
+    color-stop(41%, #1414ad),
+    to(#1f1a80)
+  );
   background: linear-gradient(90deg, #7f63ff 0%, #1414ad 41%, #1f1a80 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#7f63ff",GradientType=1);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: white;
   font-size: 2.4rem;
   font-weight: 500;
@@ -167,11 +175,11 @@ nav .navWrapper .navUser .userCart {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-shadow: 2px 15px 42px -26px #2c15d9;
   box-shadow: 2px 15px 42px -26px #2c15d9;
   color: #2c15d9;
@@ -251,7 +259,14 @@ nav .navWrapper .navUser .userCart {
 
 .offerBanner {
   min-height: 20vh;
-  background: -webkit-gradient(linear, left top, right top, from(#3919c7), color-stop(41%, #1414ad), to(#1f1a80));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#3919c7),
+    color-stop(41%, #1414ad),
+    to(#1f1a80)
+  );
   background: linear-gradient(90deg, #3919c7 0%, #1414ad 41%, #1f1a80 100%);
 }
 
@@ -290,7 +305,12 @@ nav .navWrapper .navUser .userCart {
   padding: 0 10%;
 }
 
-.whyChooseUs .chseUsContainer .chseUsContent .carousel-inner .carousel-item .cardMain {
+.whyChooseUs
+  .chseUsContainer
+  .chseUsContent
+  .carousel-inner
+  .carousel-item
+  .cardMain {
   position: relative;
   padding: 3%;
   min-height: 300px;
@@ -301,26 +321,57 @@ nav .navWrapper .navUser .userCart {
   border-radius: 10px;
 }
 
-.whyChooseUs .chseUsContainer .chseUsContent .carousel-inner .carousel-item .cardMain .cardImage {
+.whyChooseUs
+  .chseUsContainer
+  .chseUsContent
+  .carousel-inner
+  .carousel-item
+  .cardMain
+  .cardImage {
   height: 120px;
   margin: 3% 0;
 }
 
-.whyChooseUs .chseUsContainer .chseUsContent .carousel-inner .carousel-item .cardMain .cardImage img {
+.whyChooseUs
+  .chseUsContainer
+  .chseUsContent
+  .carousel-inner
+  .carousel-item
+  .cardMain
+  .cardImage
+  img {
   height: 100%;
 }
 
-.whyChooseUs .chseUsContainer .chseUsContent .carousel-inner .carousel-item .cardMain h4 {
+.whyChooseUs
+  .chseUsContainer
+  .chseUsContent
+  .carousel-inner
+  .carousel-item
+  .cardMain
+  h4 {
   padding: 6% 0 5% 0;
   font-size: 1.4rem;
 }
 
-.whyChooseUs .chseUsContainer .chseUsContent .carousel-inner .carousel-item .cardMain p {
+.whyChooseUs
+  .chseUsContainer
+  .chseUsContent
+  .carousel-inner
+  .carousel-item
+  .cardMain
+  p {
   padding: 0 6%;
   font-size: 0.9rem;
 }
 
-.whyChooseUs .chseUsContainer .chseUsContent .carousel-inner .carousel-item .cardMain .cardImage::after {
+.whyChooseUs
+  .chseUsContainer
+  .chseUsContent
+  .carousel-inner
+  .carousel-item
+  .cardMain
+  .cardImage::after {
   content: "";
   position: absolute;
   height: 5px;
@@ -343,11 +394,11 @@ nav .navWrapper .navUser .userCart {
   display: flex;
   text-decoration: none;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   border-radius: 50%;
   font-size: 1.2rem;
   -webkit-box-shadow: 0px 1px 16px -3px rgba(50, 50, 50, 0.83);
@@ -369,18 +420,25 @@ nav .navWrapper .navUser .userCart {
   position: relative;
   height: 45px;
   width: 45px;
-  background: -webkit-gradient(linear, left top, right top, from(#4f33ca), color-stop(41%, #2f2fb3), to(#3630a1));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#4f33ca),
+    color-stop(41%, #2f2fb3),
+    to(#3630a1)
+  );
   background: linear-gradient(90deg, #4f33ca 0%, #2f2fb3 41%, #3630a1 100%);
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: white;
   font-weight: 500;
   border: none;
@@ -411,17 +469,24 @@ nav .navWrapper .navUser .userCart {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .whyChooseUs .chseUsContainer .chseUsContent .btnContent button {
   height: 50px;
   width: 200px;
-  background: -webkit-gradient(linear, left top, right top, from(#4f33ca), color-stop(41%, #2f2fb3), to(#3630a1));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#4f33ca),
+    color-stop(41%, #2f2fb3),
+    to(#3630a1)
+  );
   background: linear-gradient(90deg, #4f33ca 0%, #2f2fb3 41%, #3630a1 100%);
   border: none;
   border-radius: 2px;
@@ -450,11 +515,20 @@ nav .navWrapper .navUser .userCart {
   padding: 1% 3%;
 }
 
-.custFeddback .custFeedContainer .custFeedContent .carousel-inner .carousel-item {
+.custFeddback
+  .custFeedContainer
+  .custFeedContent
+  .carousel-inner
+  .carousel-item {
   padding: 0 10%;
 }
 
-.custFeddback .custFeedContainer .custFeedContent .carousel-inner .carousel-item .cardMain {
+.custFeddback
+  .custFeedContainer
+  .custFeedContent
+  .carousel-inner
+  .carousel-item
+  .cardMain {
   position: relative;
   padding: 3%;
   min-height: 290px;
@@ -466,26 +540,57 @@ nav .navWrapper .navUser .userCart {
   border: 1px solid #f8f8f8;
 }
 
-.custFeddback .custFeedContainer .custFeedContent .carousel-inner .carousel-item .cardMain .cardImage {
+.custFeddback
+  .custFeedContainer
+  .custFeedContent
+  .carousel-inner
+  .carousel-item
+  .cardMain
+  .cardImage {
   height: 50px;
   border-radius: 50%;
 }
 
-.custFeddback .custFeedContainer .custFeedContent .carousel-inner .carousel-item .cardMain .cardImage img {
+.custFeddback
+  .custFeedContainer
+  .custFeedContent
+  .carousel-inner
+  .carousel-item
+  .cardMain
+  .cardImage
+  img {
   height: 100%;
 }
 
-.custFeddback .custFeedContainer .custFeedContent .carousel-inner .carousel-item .cardMain h4 {
+.custFeddback
+  .custFeedContainer
+  .custFeedContent
+  .carousel-inner
+  .carousel-item
+  .cardMain
+  h4 {
   padding: 6% 0 0 0;
   font-size: 1rem;
 }
 
-.custFeddback .custFeedContainer .custFeedContent .carousel-inner .carousel-item .cardMain h6 {
+.custFeddback
+  .custFeedContainer
+  .custFeedContent
+  .carousel-inner
+  .carousel-item
+  .cardMain
+  h6 {
   font-size: 0.7rem;
   color: #797979;
 }
 
-.custFeddback .custFeedContainer .custFeedContent .carousel-inner .carousel-item .cardMain p {
+.custFeddback
+  .custFeedContainer
+  .custFeedContent
+  .carousel-inner
+  .carousel-item
+  .cardMain
+  p {
   padding: 10% 6% 4% 6%;
   font-size: 0.78rem;
   font-weight: 500;
@@ -505,18 +610,23 @@ nav .navWrapper .navUser .userCart {
   display: flex;
   text-decoration: none;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   border-radius: 50%;
   font-size: 1.2rem;
   -webkit-box-shadow: 0px 1px 16px -3px rgba(50, 50, 50, 0.83);
   box-shadow: 0px 1px 16px -7px rgba(50, 50, 50, 0.83);
 }
 
-.custFeddback .custFeedContainer .custFeedContent a .carousel-control-icon :hover {
+.custFeddback
+  .custFeedContainer
+  .custFeedContent
+  a
+  .carousel-control-icon
+  :hover {
   color: #5c5c5c;
 }
 
@@ -560,11 +670,11 @@ nav .navWrapper .navUser .userCart {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   border: 1px solid #e6e6e6;
   width: auto;
   height: 50px;
@@ -591,7 +701,14 @@ nav .navWrapper .navUser .userCart {
   border-radius: 2px;
   border: none;
   color: white;
-  background: -webkit-gradient(linear, left top, right top, from(#1b13a7), color-stop(41%, #2c2ca3), to(#2c129e));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#1b13a7),
+    color-stop(41%, #2c2ca3),
+    to(#2c129e)
+  );
   background: linear-gradient(90deg, #1b13a7 0%, #2c2ca3 41%, #2c129e 100%);
 }
 
@@ -657,7 +774,12 @@ nav .navWrapper .navUser .userCart {
   font-weight: 700;
 }
 
-.footer .footerContent .middleFooter .contactdetails .footerConHeading h4::after {
+.footer
+  .footerContent
+  .middleFooter
+  .contactdetails
+  .footerConHeading
+  h4::after {
   position: absolute;
   margin: 5px 0;
   content: "";
@@ -674,8 +796,8 @@ nav .navWrapper .navUser .userCart {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 .footer .footerContent .middleFooter .contactdetails .footDetails .lftDetail {
@@ -690,8 +812,8 @@ nav .navWrapper .navUser .userCart {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .footer .footerContent .footerConHeading {

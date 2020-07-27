@@ -1,15 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html,
 body {
-  font-family: poppins, sans-serif;
-  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
 }
 
 nav {
@@ -26,14 +25,14 @@ nav .navWrapper {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: black;
   font-weight: 500;
 }
@@ -58,11 +57,11 @@ nav .navWrapper .navLinks ul {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   list-style: none;
   font-size: 1.2rem;
 }
@@ -88,8 +87,8 @@ nav .navWrapper .navUser {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 nav .navWrapper .navUser .userImage {
@@ -107,15 +106,15 @@ nav .navWrapper .navUser .userImage img {
 nav .navWrapper .navUser .userName {
   width: 150px;
   -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 5px;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: 2px solid black;
   border-radius: 20px;
   margin-right: 10px;
@@ -126,11 +125,11 @@ nav .navWrapper .navUser .userCart {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 40px;
   width: 40px;
   border: 2px solid black;
@@ -145,25 +144,18 @@ nav .navWrapper .navUser .userCart {
 .header .aboutBanner {
   height: 70%;
   background: #020024;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#567cc0),
-    color-stop(41%, #3d609e),
-    to(#224178)
-  );
+  background: -webkit-gradient(linear, left top, right top, from(#567cc0), color-stop(41%, #3d609e), to(#224178));
   background: linear-gradient(90deg, #567cc0 0%, #3d609e 41%, #224178 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#7f63ff",GradientType=1);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: white;
   font-size: 2.4rem;
   font-weight: 500;
@@ -177,11 +169,11 @@ nav .navWrapper .navUser .userCart {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   box-shadow: 1px 9px 20px 0px #5341db;
   -webkit-box-shadow: 1px 0px 29px 0px #5341db;
   -moz-box-shadow: 1px 20px 20px 0px #5341db;
@@ -222,7 +214,7 @@ nav .navWrapper .navUser .userCart {
 
 .main .mainContent .sideBar ul li:hover {
   -webkit-transform: scale(1.1) translateX(20px);
-  transform: scale(1.1) translateX(20px);
+          transform: scale(1.1) translateX(20px);
 }
 
 .main .mainContent .sideBar ul .ico1 {
@@ -287,100 +279,44 @@ nav .navWrapper .navUser .userCart {
   box-shadow: 0px -1px 10px -1px rgba(148, 148, 148, 0.75);
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .lftDetails
-  .persDetails
-  .yrPDetailsHeadin {
+.main .mainContent .mainRyt .mainRytContent .lftDetails .persDetails .yrPDetailsHeadin {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .lftDetails
-  .persDetails
-  .yrPDetailsHeadin
-  h5 {
+.main .mainContent .mainRyt .mainRytContent .lftDetails .persDetails .yrPDetailsHeadin h5 {
   font-weight: 600;
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .lftDetails
-  .persDetails
-  .yrPDetailsHeadin
-  p {
+.main .mainContent .mainRyt .mainRytContent .lftDetails .persDetails .yrPDetailsHeadin p {
   font-size: 0.75rem;
   font-weight: 600;
   color: #757575;
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .lftDetails
-  .persDetails
-  .yrPDetailsHeadin
-  p
-  .editIcon {
+.main .mainContent .mainRyt .mainRytContent .lftDetails .persDetails .yrPDetailsHeadin p .editIcon {
   font-size: 1.1rem;
   color: black;
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .lftDetails
-  .persDetails
-  .formContent {
+.main .mainContent .mainRyt .mainRytContent .lftDetails .persDetails .formContent {
   padding-top: 20px;
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .lftDetails
-  .persDetails
-  .formContent
-  label {
+.main .mainContent .mainRyt .mainRytContent .lftDetails .persDetails .formContent label {
   font-size: 0.9rem;
   font-weight: 600;
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .lftDetails
-  .persDetails
-  .formContent
-  label
-  span {
+.main .mainContent .mainRyt .mainRytContent .lftDetails .persDetails .formContent label span {
   color: red;
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .lftDetails
-  .persDetails
-  .formContent
-  input {
+.main .mainContent .mainRyt .mainRytContent .lftDetails .persDetails .formContent input {
   font-size: 0.9rem;
   outline: 2px solid black;
   -moz-outline-radius: 5px;
@@ -391,21 +327,14 @@ nav .navWrapper .navUser .userCart {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .lftDetails
-  .persDetails
-  .butn
-  button {
+.main .mainContent .mainRyt .mainRytContent .lftDetails .persDetails .butn button {
   border: none;
   height: 30px;
   width: 50px;
@@ -424,100 +353,44 @@ nav .navWrapper .navUser .userCart {
   box-shadow: 0px -1px 10px -1px rgba(255, 255, 255, 0.75);
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .lftDetails
-  .bilDetails
-  .yrPDetailsHeadin {
+.main .mainContent .mainRyt .mainRytContent .lftDetails .bilDetails .yrPDetailsHeadin {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .lftDetails
-  .bilDetails
-  .yrPDetailsHeadin
-  h5 {
+.main .mainContent .mainRyt .mainRytContent .lftDetails .bilDetails .yrPDetailsHeadin h5 {
   font-weight: 600;
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .lftDetails
-  .bilDetails
-  .yrPDetailsHeadin
-  p {
+.main .mainContent .mainRyt .mainRytContent .lftDetails .bilDetails .yrPDetailsHeadin p {
   font-size: 0.75rem;
   font-weight: 600;
   color: #757575;
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .lftDetails
-  .bilDetails
-  .yrPDetailsHeadin
-  p
-  .editIcon {
+.main .mainContent .mainRyt .mainRytContent .lftDetails .bilDetails .yrPDetailsHeadin p .editIcon {
   font-size: 1.1rem;
   color: black;
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .lftDetails
-  .bilDetails
-  .formContent {
+.main .mainContent .mainRyt .mainRytContent .lftDetails .bilDetails .formContent {
   padding-top: 20px;
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .lftDetails
-  .bilDetails
-  .formContent
-  label {
+.main .mainContent .mainRyt .mainRytContent .lftDetails .bilDetails .formContent label {
   font-size: 0.9rem;
   font-weight: 600;
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .lftDetails
-  .bilDetails
-  .formContent
-  label
-  span {
+.main .mainContent .mainRyt .mainRytContent .lftDetails .bilDetails .formContent label span {
   color: red;
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .lftDetails
-  .bilDetails
-  .formContent
-  input {
+.main .mainContent .mainRyt .mainRytContent .lftDetails .bilDetails .formContent input {
   font-size: 0.9rem;
   outline: 2px solid black;
   -moz-outline-radius: 5px;
@@ -528,21 +401,14 @@ nav .navWrapper .navUser .userCart {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .lftDetails
-  .bilDetails
-  .butn
-  button {
+.main .mainContent .mainRyt .mainRytContent .lftDetails .bilDetails .butn button {
   border: none;
   height: 30px;
   width: 50px;
@@ -583,26 +449,11 @@ nav .navWrapper .navUser .userCart {
   min-height: 90px;
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .rytNoti
-  .notiContent
-  .cont1
-  .lftCont {
+.main .mainContent .mainRyt .mainRytContent .rytNoti .notiContent .cont1 .lftCont {
   position: relative;
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .rytNoti
-  .notiContent
-  .cont1
-  .lftCont
-  .ico::after {
+.main .mainContent .mainRyt .mainRytContent .rytNoti .notiContent .cont1 .lftCont .ico::after {
   content: "";
   position: absolute;
   border-left: 1.8px dotted;
@@ -611,15 +462,7 @@ nav .navWrapper .navUser .userCart {
   height: 70px;
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .rytNoti
-  .notiContent
-  .cont1
-  .lftCont
-  .ico1 {
+.main .mainContent .mainRyt .mainRytContent .rytNoti .notiContent .cont1 .lftCont .ico1 {
   position: relative;
   height: 38px;
   width: 38px;
@@ -630,23 +473,15 @@ nav .navWrapper .navUser .userCart {
   display: flex;
   font-size: 1.2rem;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #2dce98;
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .rytNoti
-  .notiContent
-  .cont1
-  .lftCont
-  .ico2 {
+.main .mainContent .mainRyt .mainRytContent .rytNoti .notiContent .cont1 .lftCont .ico2 {
   position: relative;
   height: 38px;
   width: 38px;
@@ -657,23 +492,15 @@ nav .navWrapper .navUser .userCart {
   display: flex;
   font-size: 1.2rem;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #f5405a;
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .rytNoti
-  .notiContent
-  .cont1
-  .lftCont
-  .ico3 {
+.main .mainContent .mainRyt .mainRytContent .rytNoti .notiContent .cont1 .lftCont .ico3 {
   position: relative;
   height: 38px;
   width: 38px;
@@ -684,54 +511,31 @@ nav .navWrapper .navUser .userCart {
   display: flex;
   font-size: 1.2rem;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #feb969;
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .rytNoti
-  .notiContent
-  .cont1
-  .rytCont {
+.main .mainContent .mainRyt .mainRytContent .rytNoti .notiContent .cont1 .rytCont {
   padding-right: 5px;
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .rytNoti
-  .notiContent
-  .cont1
-  .rytCont
-  .subHead {
+.main .mainContent .mainRyt .mainRytContent .rytNoti .notiContent .cont1 .rytCont .subHead {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-size: 0.7rem;
   font-weight: 600;
   color: #929292;
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .rytNoti
-  .notiContent
-  .cont1
-  .rytCont
-  p {
+.main .mainContent .mainRyt .mainRytContent .rytNoti .notiContent .cont1 .rytCont p {
   font-size: 0.8rem;
   font-weight: 600;
 }
@@ -743,8 +547,8 @@ nav .navWrapper .navUser .userCart {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
 .footer {
@@ -809,12 +613,7 @@ nav .navWrapper .navUser .userCart {
   font-weight: 700;
 }
 
-.footer
-  .footerContent
-  .middleFooter
-  .contactdetails
-  .footerConHeading
-  h4::after {
+.footer .footerContent .middleFooter .contactdetails .footerConHeading h4::after {
   position: absolute;
   margin: 5px 0;
   content: "";
@@ -831,8 +630,8 @@ nav .navWrapper .navUser .userCart {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .footer .footerContent .middleFooter .contactdetails .footDetails .lftDetail {
@@ -847,8 +646,8 @@ nav .navWrapper .navUser .userCart {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .footer .footerContent .footerConHeading {

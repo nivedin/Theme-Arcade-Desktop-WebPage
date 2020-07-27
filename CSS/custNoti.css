@@ -1,15 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html,
 body {
-  font-family: poppins, sans-serif;
-  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
 }
 
 nav {
@@ -26,14 +25,14 @@ nav .navWrapper {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: black;
   font-weight: 500;
 }
@@ -58,11 +57,11 @@ nav .navWrapper .navLinks ul {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   list-style: none;
   font-size: 1.2rem;
 }
@@ -88,8 +87,8 @@ nav .navWrapper .navUser {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 nav .navWrapper .navUser .userImage {
@@ -107,15 +106,15 @@ nav .navWrapper .navUser .userImage img {
 nav .navWrapper .navUser .userName {
   width: 150px;
   -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 5px;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: 2px solid black;
   border-radius: 20px;
   margin-right: 10px;
@@ -126,11 +125,11 @@ nav .navWrapper .navUser .userCart {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 40px;
   width: 40px;
   border: 2px solid black;
@@ -145,25 +144,18 @@ nav .navWrapper .navUser .userCart {
 .header .aboutBanner {
   height: 70%;
   background: #020024;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#567cc0),
-    color-stop(41%, #3d609e),
-    to(#224178)
-  );
+  background: -webkit-gradient(linear, left top, right top, from(#567cc0), color-stop(41%, #3d609e), to(#224178));
   background: linear-gradient(90deg, #567cc0 0%, #3d609e 41%, #224178 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#7f63ff",GradientType=1);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: white;
   font-size: 2.4rem;
   font-weight: 500;
@@ -177,11 +169,11 @@ nav .navWrapper .navUser .userCart {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   box-shadow: 1px 9px 20px 0px #5341db;
   -webkit-box-shadow: 1px 0px 29px 0px #5341db;
   -moz-box-shadow: 1px 20px 20px 0px #5341db;
@@ -222,7 +214,7 @@ nav .navWrapper .navUser .userCart {
 
 .main .mainContent .sideBar ul li:hover {
   -webkit-transform: scale(1.1) translateX(20px);
-  transform: scale(1.1) translateX(20px);
+          transform: scale(1.1) translateX(20px);
 }
 
 .main .mainContent .sideBar ul .ico1 {
@@ -287,46 +279,25 @@ nav .navWrapper .navUser .userCart {
   box-shadow: 0px -1px 10px -1px rgba(148, 148, 148, 0.75);
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .lftDetails
-  .persDetails
-  .yrPDetailsHeading {
+.main .mainContent .mainRyt .mainRytContent .lftDetails .persDetails .yrPDetailsHeading {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .lftDetails
-  .persDetails
-  .yrPDetailsHeading
-  .bIcoName {
+.main .mainContent .mainRyt .mainRytContent .lftDetails .persDetails .yrPDetailsHeading .bIcoName {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .lftDetails
-  .persDetails
-  .yrPDetailsHeading
-  .bIcoName
-  .ico1 {
+.main .mainContent .mainRyt .mainRytContent .lftDetails .persDetails .yrPDetailsHeading .bIcoName .ico1 {
   position: relative;
   height: 38px;
   width: 38px;
@@ -337,36 +308,19 @@ nav .navWrapper .navUser .userCart {
   display: flex;
   font-size: 1.2rem;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #2dce98;
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .lftDetails
-  .persDetails
-  .yrPDetailsHeading
-  .bIcoName
-  .thmName {
+.main .mainContent .mainRyt .mainRytContent .lftDetails .persDetails .yrPDetailsHeading .bIcoName .thmName {
   margin-left: 10px;
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .lftDetails
-  .persDetails
-  .yrPDetailsHeading
-  .bIcoName
-  .thmName
-  p {
+.main .mainContent .mainRyt .mainRytContent .lftDetails .persDetails .yrPDetailsHeading .bIcoName .thmName p {
   padding: 0;
   margin: 0;
   font-size: 0.8rem;
@@ -374,63 +328,27 @@ nav .navWrapper .navUser .userCart {
   color: #333333;
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .lftDetails
-  .persDetails
-  .yrPDetailsHeading
-  .bIcoName
-  .thmName
-  .byTheme {
+.main .mainContent .mainRyt .mainRytContent .lftDetails .persDetails .yrPDetailsHeading .bIcoName .thmName .byTheme {
   color: #a0a0a0;
   font-size: 0.7rem;
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .lftDetails
-  .persDetails
-  .yrPDetailsHeading
-  .dateTime {
+.main .mainContent .mainRyt .mainRytContent .lftDetails .persDetails .yrPDetailsHeading .dateTime {
   margin-top: 20px;
   font-size: 0.75rem;
   color: #888888;
   font-weight: 600;
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .lftDetails
-  .persDetails
-  .rytAbtContent {
+.main .mainContent .mainRyt .mainRytContent .lftDetails .persDetails .rytAbtContent {
   padding: 5% 0 3% 7.5%;
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .lftDetails
-  .persDetails
-  .rytAbtContent
-  p {
+.main .mainContent .mainRyt .mainRytContent .lftDetails .persDetails .rytAbtContent p {
   font-size: 0.95rem;
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .lftDetails
-  .persDetails
-  .rytAbtContent
-  .abtImageCard {
+.main .mainContent .mainRyt .mainRytContent .lftDetails .persDetails .rytAbtContent .abtImageCard {
   height: 150px;
   -webkit-box-shadow: 0px -1px 10px -1px rgba(219, 219, 219, 0.75);
   box-shadow: 0px -1px 10px -1px rgba(175, 175, 175, 0.75);
@@ -440,106 +358,41 @@ nav .navWrapper .navUser .userCart {
   transition: 0.3s all ease;
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .lftDetails
-  .persDetails
-  .rytAbtContent
-  .abtImageCard
-  .abtImage {
+.main .mainContent .mainRyt .mainRytContent .lftDetails .persDetails .rytAbtContent .abtImageCard .abtImage {
   height: 115px;
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .lftDetails
-  .persDetails
-  .rytAbtContent
-  .abtImageCard
-  .abtImage
-  img {
+.main .mainContent .mainRyt .mainRytContent .lftDetails .persDetails .rytAbtContent .abtImageCard .abtImage img {
   height: 100%;
   width: 100%;
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .lftDetails
-  .persDetails
-  .rytAbtContent
-  .abtImageCard
-  .cardFooter {
+.main .mainContent .mainRyt .mainRytContent .lftDetails .persDetails .rytAbtContent .abtImageCard .cardFooter {
   padding: 1px 3px 5px 8px;
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .lftDetails
-  .persDetails
-  .rytAbtContent
-  .abtImageCard
-  .cardFooter
-  p {
+.main .mainContent .mainRyt .mainRytContent .lftDetails .persDetails .rytAbtContent .abtImageCard .cardFooter p {
   font-size: 0.7rem;
   margin: 0;
   font-weight: 700;
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .lftDetails
-  .persDetails
-  .rytAbtContent
-  .abtImageCard
-  .cardFooter
-  .byThm {
+.main .mainContent .mainRyt .mainRytContent .lftDetails .persDetails .rytAbtContent .abtImageCard .cardFooter .byThm {
   margin: 0;
   font-size: 0.65rem;
   color: #6d6d6d;
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .lftDetails
-  .persDetails
-  .rytAbtContent
-  .abtImageCard:hover {
+.main .mainContent .mainRyt .mainRytContent .lftDetails .persDetails .rytAbtContent .abtImageCard:hover {
   -webkit-transform: scale(1.05);
-  transform: scale(1.05);
+          transform: scale(1.05);
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .lftDetails
-  .persDetails
-  .rytAbtContent
-  .ConfimthankYou {
+.main .mainContent .mainRyt .mainRytContent .lftDetails .persDetails .rytAbtContent .ConfimthankYou {
   margin-top: 14px;
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .lftDetails
-  .persDetails
-  .rytAbtContent
-  .ConfimthankYou
-  p {
+.main .mainContent .mainRyt .mainRytContent .lftDetails .persDetails .rytAbtContent .ConfimthankYou p {
   font-size: 0.8rem;
   font-weight: 600;
   color: #6b6b6b;
@@ -576,26 +429,11 @@ nav .navWrapper .navUser .userCart {
   min-height: 90px;
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .rytNoti
-  .notiContent
-  .cont1
-  .lftCont {
+.main .mainContent .mainRyt .mainRytContent .rytNoti .notiContent .cont1 .lftCont {
   position: relative;
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .rytNoti
-  .notiContent
-  .cont1
-  .lftCont
-  .ico::after {
+.main .mainContent .mainRyt .mainRytContent .rytNoti .notiContent .cont1 .lftCont .ico::after {
   content: "";
   position: absolute;
   border-left: 1.8px dotted;
@@ -604,15 +442,7 @@ nav .navWrapper .navUser .userCart {
   height: 70px;
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .rytNoti
-  .notiContent
-  .cont1
-  .lftCont
-  .ico1 {
+.main .mainContent .mainRyt .mainRytContent .rytNoti .notiContent .cont1 .lftCont .ico1 {
   position: relative;
   height: 38px;
   width: 38px;
@@ -623,23 +453,15 @@ nav .navWrapper .navUser .userCart {
   display: flex;
   font-size: 1.2rem;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #2dce98;
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .rytNoti
-  .notiContent
-  .cont1
-  .lftCont
-  .ico2 {
+.main .mainContent .mainRyt .mainRytContent .rytNoti .notiContent .cont1 .lftCont .ico2 {
   position: relative;
   height: 38px;
   width: 38px;
@@ -650,23 +472,15 @@ nav .navWrapper .navUser .userCart {
   display: flex;
   font-size: 1.2rem;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #f5405a;
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .rytNoti
-  .notiContent
-  .cont1
-  .lftCont
-  .ico3 {
+.main .mainContent .mainRyt .mainRytContent .rytNoti .notiContent .cont1 .lftCont .ico3 {
   position: relative;
   height: 38px;
   width: 38px;
@@ -677,55 +491,32 @@ nav .navWrapper .navUser .userCart {
   display: flex;
   font-size: 1.2rem;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #feb969;
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .rytNoti
-  .notiContent
-  .cont1
-  .rytCont {
+.main .mainContent .mainRyt .mainRytContent .rytNoti .notiContent .cont1 .rytCont {
   padding: 0 5px;
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .rytNoti
-  .notiContent
-  .cont1
-  .rytCont
-  .subHead {
+.main .mainContent .mainRyt .mainRytContent .rytNoti .notiContent .cont1 .rytCont .subHead {
   padding: 0 20px 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-size: 0.7rem;
   font-weight: 600;
   color: #929292;
 }
 
-.main
-  .mainContent
-  .mainRyt
-  .mainRytContent
-  .rytNoti
-  .notiContent
-  .cont1
-  .rytCont
-  p {
+.main .mainContent .mainRyt .mainRytContent .rytNoti .notiContent .cont1 .rytCont p {
   font-size: 0.8rem;
   font-weight: 600;
 }
@@ -737,8 +528,8 @@ nav .navWrapper .navUser .userCart {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
 .footer {
@@ -803,12 +594,7 @@ nav .navWrapper .navUser .userCart {
   font-weight: 700;
 }
 
-.footer
-  .footerContent
-  .middleFooter
-  .contactdetails
-  .footerConHeading
-  h4::after {
+.footer .footerContent .middleFooter .contactdetails .footerConHeading h4::after {
   position: absolute;
   margin: 5px 0;
   content: "";
@@ -825,8 +611,8 @@ nav .navWrapper .navUser .userCart {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .footer .footerContent .middleFooter .contactdetails .footDetails .lftDetail {
@@ -841,8 +627,8 @@ nav .navWrapper .navUser .userCart {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .footer .footerContent .footerConHeading {

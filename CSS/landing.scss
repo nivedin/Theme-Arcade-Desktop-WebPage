@@ -1,14 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: poppins, sans-serif;
+  scroll-behavior: smooth;
 }
 
 html,
 body {
-  font-family: "Roboto", sans-serif;
   background: white;
 }
 
@@ -26,7 +26,7 @@ header {
     align-items: center;
     -webkit-box-shadow: 0px 35px 67px -57px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 35px 67px -57px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 35px 67px -57px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 35px 67px -57px rgba(187, 187, 187, 0.75);
 
     .navContainer {
       height: 100%;
@@ -39,7 +39,6 @@ header {
         height: 50px;
         width: 50px;
         width: 20%;
-        background: blue;
 
         img {
           height: 100%;
@@ -63,8 +62,8 @@ header {
             position: relative;
             text-decoration: none;
             color: black;
-            font-size: 1.1rem;
-            font-weight: 500;
+            font-size: 1.2rem;
+            font-weight: 600;
             z-index: 1;
           }
           a::after {
@@ -125,22 +124,23 @@ header {
 }
 
 .main {
-  min-height: 80vh;
+  min-height: 100%;
   background: white;
 
   .mainContainer {
-    padding: 2% 5%;
+    padding: 2%;
 
     .mainHeading {
       text-align: center;
 
       h1 {
         font-weight: 400;
+        font-size: 2.6rem;
       }
     }
 
     .mainContent {
-      padding-top: 50px;
+      padding: 2% 2% 2% 5%;
 
       .lftPara {
         padding: 25px 0;
@@ -168,6 +168,17 @@ header {
           font-weight: 600;
         }
       }
+      .rytImage {
+        .rytImageContainer {
+          height: 100%;
+          width: 100%;
+          img {
+            height: 100%;
+            width: 100%;
+            transform: translateY(-100px);
+          }
+        }
+      }
     }
   }
 }
@@ -177,13 +188,14 @@ header {
   background: white;
 
   .aboutUsContainer {
-    padding: 2% 5%;
+    padding: 2% 5% 2% 5%;
 
     .abtHeading {
       text-align: center;
 
       h1 {
         font-weight: 400;
+        transform: translateY(-50px);
       }
     }
 
@@ -193,7 +205,7 @@ header {
       z-index: 0;
 
       .lftPara {
-        padding: 25px 0;
+        padding: 95px 0 0 0;
 
         p {
           font-size: 1.3rem;
@@ -207,7 +219,7 @@ header {
             cursor: pointer;
             position: absolute;
             top: 0;
-            left: 50%;
+            left: 52%;
             height: 35px;
             width: 35px;
             border-radius: 50%;
@@ -241,6 +253,17 @@ header {
           }
         }
       }
+      .rytImage {
+        .rytImageContainer {
+          height: 400px;
+          width: 400px;
+          img {
+            transform: translateY(-42px);
+            height: 150%;
+            width: 150%;
+          }
+        }
+      }
     }
     .skewedBg {
       z-index: -1;
@@ -248,7 +271,7 @@ header {
       position: absolute;
       top: 45px;
       right: -67px;
-      background: rgb(20, 20, 165);
+      background: linear-gradient(to right, #363280, #5b54d7, #6c67d4);
       height: 90vh;
       width: 100vw;
       transform: skew(0deg, 10deg);
@@ -289,21 +312,48 @@ header {
     }
 
     .pdtContent {
-      padding: 5% 6%;
+      padding: 5% 6% 0 6%;
 
       .item {
         padding-bottom: 100px;
+        .pdtBtn {
+          .pdtIco {
+            margin-top: 6.5px;
+            margin-left: 2px;
+          }
+        }
+        .lfRtimgContainer {
+          height: 300px;
+          width: 300px;
+          img {
+            transform: translateY(-100px);
+            height: 130%;
+            width: 130%;
+          }
+        }
       }
       .item1 {
+        position: relative;
         button {
           margin-top: 30px;
           height: 40px;
           width: 40px;
           border-radius: 50%;
-          background: rgb(20, 20, 165);
+          background: #0b5e94;
           border: none;
           color: white;
           font-size: 1.3rem;
+        }
+
+        .lineArrow {
+          position: absolute;
+          height: 400px;
+          width: 400px;
+          left: 20%;
+          img {
+            height: 155%;
+            width: 155%;
+          }
         }
       }
       .item2 {
@@ -312,19 +362,30 @@ header {
           height: 40px;
           width: 40px;
           border-radius: 50%;
-          background: rgb(63, 204, 45);
+          background: #49be55;
           border: none;
           color: white;
           font-size: 1.3rem;
         }
+        .lineArrow {
+          position: absolute;
+          height: 400px;
+          width: 400px;
+          left: 25%;
+          img {
+            height: 155%;
+            width: 155%;
+          }
+        }
       }
       .item3 {
+        margin-top: 20px;
         button {
           margin-top: 30px;
           height: 40px;
           width: 40px;
           border-radius: 50%;
-          background: rgb(228, 7, 136);
+          background: #e0157d;
           border: none;
           color: white;
           font-size: 1.3rem;
@@ -350,44 +411,78 @@ header {
 }
 
 .facilities {
-  min-height: 100vh;
+  min-height: 100%;
   background: white;
+  overflow-x: hidden;
+
+  .bgDeveloperImage {
+    position: relative;
+    height: 120vh;
+    width: 120vw;
+    right: 10%;
+    overflow-x: hidden;
+    img {
+      height: 100%;
+      width: 100%;
+      overflow-x: hidden;
+    }
+  }
 
   .facilitiesContainer {
-    padding: 2% 5%;
-    position: relative;
+    padding: 2% 0 2% 5%;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 25%;
 
     .facilitiesHeading {
       text-align: center;
 
       h1 {
         font-weight: 400;
+        transform: translateY(-40px);
       }
     }
     .facilitiesContent {
       padding-top: 50px;
 
-      .skewBg {
-        overflow: hidden;
-        position: absolute;
-        top: 285px;
-        right: 2px;
-        background: rgb(20, 20, 165);
-        height: 80vh;
-        width: 100vw;
-        transform: skew(0deg, -5deg);
-        border: none;
-      }
+      // .lftCont {
+      //   .lftImageContainer {
+      //     height: 100%;
+      //     width: 100%;
+      //     img {
+      //       height: 100%;
+      //       width: 100%;
+      //     }
+      //   }
+      // }
       .rytCont {
-        padding: 230px 50px 0 50px;
+        padding: 130px 0 0 90px;
+        transform: translate(10px, 20px);
+        width: 100%;
 
         ul {
           list-style: none;
+          width: 105%;
 
           li {
             color: white;
-            font-size: 0.9rem;
+            font-size: 1rem;
             padding: 10px 0;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            .listCircle {
+              margin-right: 15px;
+              height: 40px;
+              width: 40px;
+              border-radius: 50%;
+              background: white;
+              color: black;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
           }
         }
         .btnCont {
@@ -398,13 +493,13 @@ header {
             position: relative;
 
             button {
-              height: 50px;
-              width: 130px;
+              height: 70px;
+              width: 170px;
               border-radius: 10px;
               border: none;
               background: rgb(82, 82, 223);
               color: white;
-              font-size: 0.9rem;
+              font-size: 1.1rem;
               -webkit-box-shadow: 0px 12px 70px -24px rgb(0, 0, 0);
               -moz-box-shadow: 0px 12px 70px -24px rgb(0, 0, 0);
               box-shadow: 0px 12px 70px -24px rgb(0, 0, 0);
@@ -413,8 +508,9 @@ header {
               position: absolute;
               left: 75%;
               top: 75%;
-              height: 30px;
-              width: 30px;
+              height: 40px;
+              width: 40px;
+              font-size: 1.2rem;
               border-radius: 50%;
               background: white;
               display: flex;
@@ -430,13 +526,13 @@ header {
             position: relative;
 
             button {
-              height: 50px;
-              width: 130px;
+              height: 70px;
+              width: 170px;
               border-radius: 10px;
               border: none;
               background: rgb(82, 82, 223);
               color: white;
-              font-size: 0.9rem;
+              font-size: 1.1rem;
               -webkit-box-shadow: 0px 12px 70px -24px rgb(0, 0, 0);
               -moz-box-shadow: 0px 12px 70px -24px rgb(0, 0, 0);
               box-shadow: 0px 12px 70px -24px rgb(0, 0, 0);
@@ -445,8 +541,9 @@ header {
               position: absolute;
               left: 75%;
               top: 75%;
-              height: 30px;
-              width: 30px;
+              height: 40px;
+              width: 40px;
+              font-size: 1.2rem;
               border-radius: 50%;
               background: white;
               display: flex;
@@ -467,10 +564,9 @@ header {
   position: relative;
   z-index: 2;
   min-height: 80vh;
-  background: white;
 
   .topChoiceContainer {
-    padding: 3% 5%;
+    padding: 3% 0%;
 
     .topChoiceHeading {
       text-align: center;
@@ -480,7 +576,8 @@ header {
       }
     }
     .topChoiceContent {
-      padding: 2% 5%;
+      padding: 2% 0%;
+      background: url("../ASSETS/HomePage Illustrations/HomePage_Customer_Numbers_BG.svg");
 
       .contentCards {
         margin: 50px 10px;
@@ -500,15 +597,22 @@ header {
           border: 1px solid rgb(255, 255, 255);
 
           img {
-            height: 5%;
+            position: absolute;
+            height: 35%;
+            top: -15%;
+            left: 0;
           }
-          .card-title {
-            font-size: 2.9rem;
-          }
-          .card-text {
-            font: 0.6rem;
-            font-weight: 500;
-            color: rgb(110, 110, 110);
+          .card-body {
+            padding-top: 50px;
+
+            .card-title {
+              font-size: 3.3rem;
+            }
+            .card-text {
+              font: 0.7rem;
+              font-weight: 600;
+              color: rgb(31, 31, 31);
+            }
           }
         }
         .card::after {
@@ -586,19 +690,28 @@ header {
 
   .tstContainer {
     padding: 1% 0;
+    .halfRecBg {
+      position: absolute;
+      height: 50vh;
+      top: 34px;
+    }
 
     .tstHeading {
       text-align: center;
 
       h1 {
         font-weight: 400;
+        transform: translateY(-30px);
       }
     }
     .tstContent {
-      padding: 4% 5%;
-      background: blue;
+      padding: 4% 5% 0 5%;
+      height: 100%;
+      background: url("../ASSETS/HomePage Illustrations/HomePage_Customer_Numbers_BG.svg");
+      background-size: contain;
 
       .lftCont {
+        padding: 5% 0 0 0;
         .carousel-inner {
           height: 100%;
 
@@ -609,16 +722,58 @@ header {
           }
           .card {
             text-align: center;
+            position: relative;
 
             .card-img-top {
               margin: 10px auto;
+              font-size: 1.5rem;
+              color: #5851cf;
             }
+            .card-title {
+              font-size: 1.5rem;
+            }
+            .card-text {
+              font-weight: 500;
+              font-size: 1.05rem;
+            }
+            .authName {
+              font-size: 0.85rem;
+              padding: 10px 0 0 0;
+              font-weight: 500;
+              margin: 0;
+            }
+            .text-muted {
+              margin: 0;
+              padding: 0;
+              font-size: 0.7rem;
+            }
+            .star {
+              color: yellow;
+            }
+          }
+          .card::after {
+            content: "";
+            position: absolute;
+            width: 45px;
+            top: 20%;
+            right: -6%;
+            height: 8px;
+            background: #5851cf;
           }
         }
 
-        .pagination {
-          a {
-            color: black;
+        .carousel-control-icon {
+          color: rgb(0, 0, 0);
+          font-size: 2rem;
+        }
+      }
+      .rytCont {
+        .rytImageContainer {
+          height: 100%;
+          width: 100%;
+          img {
+            height: 100%;
+            width: 100%;
           }
         }
       }
@@ -627,15 +782,27 @@ header {
 }
 
 .mailLetter {
-  min-height: 50vh;
+  min-height: 100%;
   background: #ffffff;
 
   .mailLetContainer {
-    padding: 5% 0;
+    padding: 5% 0 0 0;
 
     .mailLetContent {
       padding: 3% 5%;
+      .lftCont {
+        .lftImageContainer {
+          height: 250px;
+          width: 250px;
+          img {
+            height: 160%;
+            width: 160%;
+            transform: translate(100px, -110px);
+          }
+        }
+      }
       .rytCont {
+        padding-top: 40px;
         p {
           color: rgb(71, 71, 158);
           font-weight: 500;
@@ -673,10 +840,35 @@ header {
 //////////////////
 .footer {
   height: 100%;
-  padding: 2%;
-  background: rgb(255, 250, 250);
+  padding: 4% 2% 2% 4%;
+  background: url("../ASSETS/HomePage Illustrations/Background.svg");
+  background-size: contain;
 
   .footerContent {
+    position: relative;
+
+    .halfRecBg {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      z-index: 0;
+      bottom: -10%;
+      right: -2%;
+      position: absolute;
+      img {
+        overflow-x: hidden;
+        overflow-y: visible;
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .footerLogo {
+      height: 50px;
+      margin-bottom: 20px;
+      img {
+        height: 100%;
+      }
+    }
     .footerPara {
       font-weight: 500;
       width: 80%;
@@ -696,7 +888,7 @@ header {
           content: "";
           margin: 5px 0;
           height: 6px;
-          width: 30%;
+          width: 18%;
           background: rgba(9, 9, 121, 1);
           top: 100%;
           left: 0;
@@ -724,7 +916,7 @@ header {
             margin: 5px 0;
             content: "";
             height: 6px;
-            width: 10%;
+            width: 8%;
             background: rgba(9, 9, 121, 1);
             top: 100%;
             left: 0;
@@ -761,15 +953,15 @@ header {
       .footerConHeading2 {
         h4 {
           position: relative;
-          color: rgb(47, 47, 209);
-          font-weight: 700;
+          color: rgb(255, 255, 255);
+          font-weight: 600;
         }
         h4::after {
           position: absolute;
           margin: 5px 0;
           content: "";
           height: 6px;
-          width: 30%;
+          width: 18%;
           background: rgb(110, 110, 248);
           top: 100%;
           left: 0;

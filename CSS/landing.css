@@ -5,6 +5,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: poppins, sans-serif;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -362,6 +363,11 @@ header nav .navContainer .logSigButtons .signUp {
 
 .pdtSol .pdtSolContainer .pdtContent .item {
   padding-bottom: 100px;
+}
+
+.pdtSol .pdtSolContainer .pdtContent .item .pdtBtn .pdtIco {
+  margin-top: 6.5px;
+  margin-left: 2px;
 }
 
 .pdtSol .pdtSolContainer .pdtContent .item .lfRtimgContainer {
@@ -771,6 +777,7 @@ header nav .navContainer .logSigButtons .signUp {
 .testimonals .tstContainer .halfRecBg {
   position: absolute;
   height: 50vh;
+  top: 34px;
 }
 
 .testimonals .tstContainer .tstHeading {
@@ -779,11 +786,15 @@ header nav .navContainer .logSigButtons .signUp {
 
 .testimonals .tstContainer .tstHeading h1 {
   font-weight: 400;
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
 }
 
 .testimonals .tstContainer .tstContent {
-  padding: 4% 5%;
+  padding: 4% 5% 0 5%;
+  height: 100%;
   background: url("../ASSETS/HomePage Illustrations/HomePage_Customer_Numbers_BG.svg");
+  background-size: contain;
 }
 
 .testimonals .tstContainer .tstContent .lftCont {
@@ -883,10 +894,14 @@ header nav .navContainer .logSigButtons .signUp {
 }
 
 .mailLetter .mailLetContainer .mailLetContent .lftCont .lftImageContainer img {
-  height: 200%;
-  width: 200%;
-  -webkit-transform: translate(20px, -150px);
-          transform: translate(20px, -150px);
+  height: 160%;
+  width: 160%;
+  -webkit-transform: translate(100px, -110px);
+          transform: translate(100px, -110px);
+}
+
+.mailLetter .mailLetContainer .mailLetContent .rytCont {
+  padding-top: 40px;
 }
 
 .mailLetter .mailLetContainer .mailLetContent .rytCont p {
@@ -922,8 +937,36 @@ header nav .navContainer .logSigButtons .signUp {
 
 .footer {
   height: 100%;
-  padding: 2% 2% 2% 4%;
-  background: #fbfcff;
+  padding: 4% 2% 2% 4%;
+  background: url("../ASSETS/HomePage Illustrations/Background.svg");
+  background-size: contain;
+}
+
+.footer .footerContent {
+  position: relative;
+}
+
+.footer .footerContent .halfRecBg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  z-index: 0;
+  bottom: -10%;
+  right: -2%;
+  position: absolute;
+}
+
+.footer .footerContent .halfRecBg img {
+  overflow-x: hidden;
+  overflow-y: visible;
+  height: 100%;
+  width: 100%;
 }
 
 .footer .footerContent .footerLogo {
@@ -1033,8 +1076,8 @@ header nav .navContainer .logSigButtons .signUp {
 
 .footer .footerContent .rytFooter .footerConHeading2 h4 {
   position: relative;
-  color: #2f2fd1;
-  font-weight: 700;
+  color: white;
+  font-weight: 600;
 }
 
 .footer .footerContent .rytFooter .footerConHeading2 h4::after {

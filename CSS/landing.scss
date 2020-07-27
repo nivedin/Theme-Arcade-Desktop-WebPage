@@ -79,7 +79,7 @@ header {
             height: 0;
             z-index: -1;
             background: rgba(0, 0, 255, 0.514);
-            transition: all 0.5s;
+            transition: all 0.5s linear;
           }
           a:hover::after {
             height: 33px;
@@ -803,6 +803,8 @@ header {
       }
       .rytCont {
         padding-top: 40px;
+        position: relative;
+        z-index: 1;
         p {
           color: rgb(71, 71, 158);
           font-weight: 500;
@@ -826,9 +828,9 @@ header {
             border: none;
             border-radius: 50%;
             background: white;
-            -webkit-box-shadow: 0px 12px 86px 11px rgba(27, 197, 219, 1);
-            -moz-box-shadow: 0px 12px 86px 11px rgba(27, 197, 219, 1);
-            box-shadow: 0px 12px 86px 11px rgba(27, 197, 219, 1);
+            -webkit-box-shadow: 0px 12px 76px 1px rgba(27, 197, 219, 1);
+            -moz-box-shadow: 0px 12px 76px 1px rgba(27, 197, 219, 1);
+            box-shadow: 0px 12px 76px 1px rgba(27, 197, 219, 1);
             outline: none;
           }
         }
@@ -851,7 +853,7 @@ header {
       display: flex;
       justify-content: flex-end;
       align-items: flex-end;
-      z-index: 0;
+
       bottom: -10%;
       right: -2%;
       position: absolute;
@@ -871,7 +873,8 @@ header {
     }
     .footerPara {
       font-weight: 500;
-      width: 80%;
+      width: 95%;
+      font-size: 0.95rem;
     }
 
     .middleFooter {
@@ -898,10 +901,18 @@ header {
       ul {
         list-style: none;
         padding-top: 20px;
-        font-size: 1rem;
+        font-size: 0.9rem;
         color: rgb(37, 37, 37);
         font-weight: 500;
         cursor: pointer;
+
+        li {
+          transition: all 0.5s ease;
+        }
+        li:hover {
+          color: blue;
+          transform: scale(1.05);
+        }
       }
 
       .contactdetails {
@@ -927,6 +938,7 @@ header {
         .footDetails {
           display: flex;
           flex-direction: row;
+          font-size: 0.9rem;
 
           .lftDetail {
             width: 100%;

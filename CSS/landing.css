@@ -946,7 +946,7 @@ header nav .navContainer .logSigButtons .signUp {
 
 .footer {
   height: 100%;
-  padding: 4% 2% 2% 4%;
+  padding: 4% 2% 2% 3%;
   background: url("../ASSETS/HomePage Illustrations/Background.svg");
   background-size: contain;
 }
@@ -988,7 +988,7 @@ header nav .navContainer .logSigButtons .signUp {
 
 .footer .footerContent .footerPara {
   font-weight: 500;
-  width: 95%;
+  width: 100%;
   font-size: 0.95rem;
 }
 
@@ -1093,12 +1093,19 @@ header nav .navContainer .logSigButtons .signUp {
 
 .footer .footerContent .rytFooter {
   margin-top: 50px;
+  margin-left: 0;
+}
+
+.footer .footerContent .rytFooter .footerConHeading2 {
+  width: 50%;
 }
 
 .footer .footerContent .rytFooter .footerConHeading2 h4 {
   position: relative;
   color: white;
   font-weight: 600;
+  -webkit-transform: translateX(40px);
+          transform: translateX(40px);
 }
 
 .footer .footerContent .rytFooter .footerConHeading2 h4::after {
@@ -1106,19 +1113,43 @@ header nav .navContainer .logSigButtons .signUp {
   margin: 5px 0;
   content: "";
   height: 6px;
-  width: 18%;
+  width: 25%;
   background: #6e6ef8;
   top: 100%;
   left: 0;
 }
 
 .footer .footerContent .rytFooter .footerSocial {
-  padding-top: 25px;
+  padding: 25px 0 0 35px;
+  font-size: 2rem;
 }
 
-.footer .footerContent .rytFooter .footerSocial img {
-  height: 30px;
+.footer .footerContent .rytFooter .footerSocial a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer .footerContent .rytFooter .footerSocial .footerIcons {
   margin-right: 10px;
-  cursor: pointer;
+}
+
+.footer .footerContent .rytFooter .footerSocial a:nth-child(1):hover {
+  color: #489ceb;
+}
+
+.footer .footerContent .rytFooter .footerSocial a:nth-child(2):hover {
+  color: #2543ec;
+}
+
+.footer .footerContent .rytFooter .footerSocial a:nth-child(3):hover {
+  color: #f1249c;
+}
+
+.footer .footerContent .rytFooter .footerSocial a:nth-child(4):hover {
+  color: #ee6035;
+}
+
+.footer .footerContent .rytFooter .footerSocial a:nth-child(5):hover {
+  color: black;
 }
 /*# sourceMappingURL=landing.css.map */

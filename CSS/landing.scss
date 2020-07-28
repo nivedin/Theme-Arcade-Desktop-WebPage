@@ -848,7 +848,7 @@ header {
 //////////////////
 .footer {
   height: 100%;
-  padding: 4% 2% 2% 4%;
+  padding: 4% 2% 2% 3%;
   background: url("../ASSETS/HomePage Illustrations/Background.svg");
   background-size: contain;
 
@@ -879,7 +879,7 @@ header {
     }
     .footerPara {
       font-weight: 500;
-      width: 95%;
+      width: 100%;
       font-size: 0.95rem;
     }
 
@@ -967,30 +967,52 @@ header {
 
     .rytFooter {
       margin-top: 50px;
+      margin-left: 0;
 
       .footerConHeading2 {
+        width: 50%;
         h4 {
           position: relative;
           color: rgb(255, 255, 255);
           font-weight: 600;
+          transform: translateX(40px);
         }
         h4::after {
           position: absolute;
           margin: 5px 0;
           content: "";
           height: 6px;
-          width: 18%;
+          width: 25%;
           background: rgb(110, 110, 248);
           top: 100%;
           left: 0;
         }
       }
       .footerSocial {
-        padding-top: 25px;
-        img {
-          height: 30px;
+        padding: 25px 0 0 35px;
+        font-size: 2rem;
+
+        a {
+          text-decoration: none;
+          color: white;
+        }
+        .footerIcons {
           margin-right: 10px;
-          cursor: pointer;
+        }
+        a:nth-child(1):hover {
+          color: rgb(72, 156, 235);
+        }
+        a:nth-child(2):hover {
+          color: rgb(37, 67, 236);
+        }
+        a:nth-child(3):hover {
+          color: rgb(241, 36, 156);
+        }
+        a:nth-child(4):hover {
+          color: rgb(238, 96, 53);
+        }
+        a:nth-child(5):hover {
+          color: rgb(0, 0, 0);
         }
       }
     }

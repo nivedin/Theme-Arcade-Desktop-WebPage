@@ -143,9 +143,10 @@ header {
       padding: 2% 2% 2% 5%;
 
       .lftPara {
-        padding: 25px 0;
+        padding: 55px 0 0 0;
 
         p {
+          padding-top: 50px;
           font-size: 1.5rem;
         }
 
@@ -380,6 +381,7 @@ header {
       }
       .item3 {
         margin-top: 20px;
+        padding-bottom: 0;
         button {
           margin-top: 30px;
           height: 40px;
@@ -414,6 +416,14 @@ header {
   min-height: 100%;
   background: white;
   overflow-x: hidden;
+  .facilitiesHeading {
+    text-align: center;
+
+    h1 {
+      font-weight: 400;
+      transform: translateY(-10px);
+    }
+  }
 
   .bgDeveloperImage {
     position: relative;
@@ -432,19 +442,13 @@ header {
     padding: 2% 0 2% 5%;
     position: absolute;
     z-index: 2;
-    top: 0;
-    left: 25%;
+    top: 10%;
+    left: 0;
+    width: 100%;
 
-    .facilitiesHeading {
-      text-align: center;
-
-      h1 {
-        font-weight: 400;
-        transform: translateY(-40px);
-      }
-    }
     .facilitiesContent {
       padding-top: 50px;
+      width: 100%;
 
       // .lftCont {
       //   .lftImageContainer {
@@ -566,10 +570,11 @@ header {
   min-height: 80vh;
 
   .topChoiceContainer {
-    padding: 3% 0%;
+    padding: 0 0% 3% 0%;
 
     .topChoiceHeading {
       text-align: center;
+      transform: translateY(-45px);
 
       h1 {
         font-weight: 400;

@@ -169,10 +169,11 @@ header nav .navContainer .logSigButtons .signUp {
 }
 
 .main .mainContainer .mainContent .lftPara {
-  padding: 25px 0;
+  padding: 55px 0 0 0;
 }
 
 .main .mainContainer .mainContent .lftPara p {
+  padding-top: 50px;
   font-size: 1.5rem;
 }
 
@@ -434,6 +435,7 @@ header nav .navContainer .logSigButtons .signUp {
 
 .pdtSol .pdtSolContainer .pdtContent .item3 {
   margin-top: 20px;
+  padding-bottom: 0;
 }
 
 .pdtSol .pdtSolContainer .pdtContent .item3 button {
@@ -471,6 +473,16 @@ header nav .navContainer .logSigButtons .signUp {
   overflow-x: hidden;
 }
 
+.facilities .facilitiesHeading {
+  text-align: center;
+}
+
+.facilities .facilitiesHeading h1 {
+  font-weight: 400;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
 .facilities .bgDeveloperImage {
   position: relative;
   height: 120vh;
@@ -489,22 +501,14 @@ header nav .navContainer .logSigButtons .signUp {
   padding: 2% 0 2% 5%;
   position: absolute;
   z-index: 2;
-  top: 0;
-  left: 25%;
-}
-
-.facilities .facilitiesContainer .facilitiesHeading {
-  text-align: center;
-}
-
-.facilities .facilitiesContainer .facilitiesHeading h1 {
-  font-weight: 400;
-  -webkit-transform: translateY(-40px);
-          transform: translateY(-40px);
+  top: 10%;
+  left: 0;
+  width: 100%;
 }
 
 .facilities .facilitiesContainer .facilitiesContent {
   padding-top: 50px;
+  width: 100%;
 }
 
 .facilities .facilitiesContainer .facilitiesContent .rytCont {
@@ -641,11 +645,13 @@ header nav .navContainer .logSigButtons .signUp {
 }
 
 .topChoices .topChoiceContainer {
-  padding: 3% 0%;
+  padding: 0 0% 3% 0%;
 }
 
 .topChoices .topChoiceContainer .topChoiceHeading {
   text-align: center;
+  -webkit-transform: translateY(-45px);
+          transform: translateY(-45px);
 }
 
 .topChoices .topChoiceContainer .topChoiceHeading h1 {

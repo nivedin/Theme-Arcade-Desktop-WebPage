@@ -782,8 +782,9 @@ header nav .navContainer .logSigButtons .signUp {
 
 .testimonals .tstContainer .halfRecBg {
   position: absolute;
-  height: 50vh;
-  top: 34px;
+  height: 40vh;
+  top: 40px;
+  left: -50px;
 }
 
 .testimonals .tstContainer .tstHeading {

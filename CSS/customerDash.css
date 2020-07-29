@@ -1,0 +1,1130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: poppins, sans-serif;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  background: white;
+}
+
+nav {
+  height: 100%;
+  width: 100%;
+  color: wheat;
+  padding: 10px 30px;
+}
+
+nav .navWrapper {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  font-weight: 500;
+}
+
+nav .navWrapper .navLogo {
+  height: 80px;
+  width: 250px;
+}
+
+nav .navWrapper .navLogo img {
+  height: 100%;
+  width: 100%;
+}
+
+nav .navWrapper .navLinks {
+  margin-top: 15px;
+}
+
+nav .navWrapper .navLinks ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+nav .navWrapper .navLinks li {
+  margin-right: 20px;
+}
+
+nav .navWrapper .navLinks li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+nav .navWrapper .navLinks li a:hover {
+  border-bottom: 2px solid blue;
+}
+
+nav .navWrapper .navUser {
+  height: 100px;
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .navWrapper .navUser .userImage {
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+}
+
+nav .navWrapper .navUser .userImage img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+nav .navWrapper .navUser .userName {
+  width: 150px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+nav .navWrapper .navUser .userCart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 40px;
+  width: 40px;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.header {
+  margin-bottom: 25px;
+  height: 35vh;
+}
+
+.header .aboutBanner {
+  height: 70%;
+  background: #020024;
+  background: -webkit-gradient(linear, left top, right top, from(#567cc0), color-stop(41%, #3d609e), to(#224178));
+  background: linear-gradient(90deg, #567cc0 0%, #3d609e 41%, #224178 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#7f63ff",GradientType=1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.header .breadCrumbs {
+  margin-bottom: 20px;
+  height: 30%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  box-shadow: 1px 9px 20px 0px #5341db;
+  -webkit-box-shadow: 1px 0px 29px 0px #5341db;
+  -moz-box-shadow: 1px 20px 20px 0px #5341db;
+  color: #0c6096;
+  font-size: 1.3rem;
+}
+
+.header .breadCrumbs .rightArrow {
+  margin: 3px 10px 0 10px;
+}
+
+.main {
+  min-height: 100%;
+  padding: 3% 3%;
+  font-family: "Oswald", sans-serif;
+  background-color: #ffffff;
+}
+
+.main .mainContent {
+  min-height: 100%;
+}
+
+.main .mainContent .sideBar ul {
+  list-style: none;
+}
+
+.main .mainContent .sideBar ul li {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.829);
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  cursor: pointer;
+}
+
+.main .mainContent .sideBar ul li .icoN {
+  font-size: 1.2rem;
+  margin-right: 6px;
+}
+
+.main .mainContent .sideBar ul li p {
+  margin: 0 0 0 8px;
+}
+
+.main .mainContent .sideBar ul li:hover {
+  -webkit-transform: scale(1.1) translateX(20px);
+          transform: scale(1.1) translateX(20px);
+}
+
+.main .mainContent .sideBar ul .ico1 {
+  color: #9080e9;
+}
+
+.main .mainContent .sideBar ul .ico2 {
+  color: #f8798a;
+}
+
+.main .mainContent .sideBar ul .ico3 {
+  color: #81e5f7;
+}
+
+.main .mainContent .sideBar ul .ico4 {
+  color: #49be55;
+  margin-right: 3px !important;
+}
+
+.main .mainContent .sideBar ul .ico5 {
+  color: #fd9982;
+  margin-right: 10px !important;
+  margin-left: 5px;
+}
+
+.main .mainContent .sideBar ul .ico6 {
+  color: #eeb64a;
+  margin-right: 8px !important;
+  margin-left: 5px;
+}
+
+.main .mainContent .mainRyt {
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+
+.main .mainContent .mainRyt .mainRytBg {
+  position: absolute;
+  z-index: 0;
+  min-height: 30vh;
+  width: 100%;
+  background: #295094;
+  top: 0;
+}
+
+.main .mainContent .mainRyt .mainRytContent {
+  border-radius: 15px;
+  margin-top: 2%;
+  position: relative;
+  z-index: 2;
+  min-height: 100%;
+  width: 100%;
+  padding: 0 0 4% 4%;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails {
+  padding: 0 15px 0 0;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .persDetails .yrPDetailsHeadin {
+  padding-bottom: 5px;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .persDetails .yrPDetailsHeadin h5 {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: white;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .persDetails .yrPDetailsHeadin p {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #757575;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .persDetails .yrPDetailsHeadin p .editIcon {
+  font-size: 1.1rem;
+  color: black;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .persDetails .persDetailMain {
+  padding: 2% 8% 6% 8%;
+  position: relative;
+  background: white;
+  border: 1px solid #f1f1f1;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px -1px 10px -1px rgba(138, 138, 138, 0.75);
+  box-shadow: 0px -1px 10px -1px rgba(148, 148, 148, 0.75);
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .persDetails .persDetailMain .editBtn {
+  position: absolute;
+  top: -14px;
+  right: 20px;
+  height: 28px;
+  width: 50px;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  background: #5295f8;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .persDetails .persDetailMain .formContent {
+  padding-top: 20px;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .persDetails .persDetailMain .formContent label {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .persDetails .persDetailMain .formContent label span {
+  color: red;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .persDetails .persDetailMain .formContent input {
+  font-size: 0.9rem;
+  outline: 2px solid black;
+  -moz-outline-radius: 5px;
+  -moz-outline-radius: 5px;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .bilDetails {
+  min-height: 230px;
+  padding: 4% 3% 4% 6%;
+  position: relative;
+  margin-top: 50px;
+  background: white;
+  border: 1px solid #f1f1f1;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px -1px 10px -1px rgba(255, 255, 255, 0.75);
+  box-shadow: 0px -1px 10px -1px rgba(185, 185, 185, 0.75);
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .bilDetails h6 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .bilDetails .editBtn {
+  position: absolute;
+  top: -14px;
+  right: 20px;
+  height: 28px;
+  width: 50px;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  background: #2d61ad;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .bilDetails .lftCard {
+  padding: 8% 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .bilDetails .lftCard .lftCardMain {
+  width: 100%;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .bilDetails .lftCard .savedCardHead {
+  font-size: 0.94rem;
+  font-weight: 600;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .bilDetails .lftCard .savedCard {
+  padding: 3% 8% 3% 5%;
+  width: 235px;
+  background: #7764e4;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .bilDetails .lftCard .savedCard .cardBg .msterImg {
+  margin-bottom: 10px;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .bilDetails .lftCard .savedCard .cardBg p {
+  margin: 0;
+  font-size: 0.7rem;
+  color: white;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .bilDetails .lftCard .savedCard .cardBg p .paraBold {
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .bilDetails .lftCard .savedCard .cardBg .nameExp {
+  padding: 20px 0 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .bilDetails .lftCard .buttonsAdd {
+  margin: 40px 0 0 100px;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .bilDetails .lftCard .buttonsAdd button {
+  width: 100px;
+  height: 25px;
+  border-radius: 2px;
+  font-size: 0.6rem;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .bilDetails .lftCard .buttonsAdd .xtraCard {
+  background: #0c6096;
+  margin-bottom: 10px;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .bilDetails .lftCard .buttonsAdd .gftCard {
+  background: #eaa219;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .bilDetails .rytCard {
+  padding-top: 30px;
+  position: relative;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .bilDetails .rytCard .cardBalance {
+  min-height: 100px;
+  max-height: 120px;
+  width: 230px;
+  padding: 6%;
+  -webkit-box-shadow: 0px -1px 10px -1px rgba(138, 138, 138, 0.75);
+  box-shadow: 0px -1px 10px -1px rgba(206, 206, 206, 0.75);
+  border-radius: 10px;
+  position: relative;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .bilDetails .rytCard .cardBalance .moneyCircle {
+  height: 38px;
+  width: 38px;
+  top: -15px;
+  right: 6px;
+  border-radius: 50%;
+  position: absolute;
+  background: #b4fdbb;
+  color: #49be55;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .bilDetails .rytCard .cardBalance p {
+  margin: 0;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .bilDetails .rytCard .cardBalance .money {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .bilDetails .rytCard .cardBalance .balance {
+  padding-top: 10px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .bilDetails .rytCard .cardBalance .payBack {
+  margin-top: 10px;
+  font-size: 0.75rem;
+  color: #7ad3b8;
+  font-weight: 500;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .bilDetails .rytCard .downRightArrow {
+  cursor: pointer;
+  position: absolute;
+  color: black;
+  top: 105%;
+  right: 0;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .bilDetails .rytCard .downRightArrow:hover {
+  color: steelblue;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .messageFeedback {
+  position: relative;
+  margin-top: 100px;
+  padding: 3% 4% 3% 7%;
+  min-height: 230px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px -1px 10px -1px rgba(255, 255, 255, 0.75);
+  box-shadow: 0px -1px 10px -1px rgba(185, 185, 185, 0.75);
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .messageFeedback h6 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .messageFeedback .editBtn {
+  position: absolute;
+  top: -14px;
+  right: 20px;
+  height: 28px;
+  width: 50px;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  background: #2d61ad;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .messageFeedback .feedbackMain {
+  margin-top: 5px;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .messageFeedback .feedbackMain .usrImage {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .messageFeedback .feedbackMain .usrImage img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .messageFeedback .feedbackMain .rytFeedback {
+  padding: 3% 2% 3% 5%;
+  background: #f6f9fc;
+  border-radius: 10px;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .messageFeedback .feedbackMain .rytFeedback .usrName {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .messageFeedback .feedbackMain .rytFeedback .feedbackPara {
+  margin: 0;
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .messageFeedback .feedbackMain .rytFeedback .rytFeedFooter {
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .messageFeedback .feedbackMain .rytFeedback .rytFeedFooter .likeIco {
+  margin-right: 30px;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .messageFeedback .feedbackMain .rytFeedback .rytFeedFooter .likeIco .footIcon1 {
+  cursor: pointer;
+  color: #11cdef;
+  -webkit-transition: 0.3s all linear;
+  transition: 0.3s all linear;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .messageFeedback .feedbackMain .rytFeedback .rytFeedFooter .likeIco .footIcon1:hover {
+  color: #1299b1;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .messageFeedback .feedbackMain .rytFeedback .rytFeedFooter .likeIco .footIcon2 {
+  cursor: pointer;
+  color: #806fe6;
+  -webkit-transition: 0.3s all linear;
+  transition: 0.3s all linear;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .messageFeedback .feedbackMain .rytFeedback .rytFeedFooter .likeIco .footIcon2:hover {
+  color: #5b4bb1;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .messageFeedback .feedbackMain .rytFeedback .rytFeedFooter .likeIco .actionNum {
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .messageFeedback .downRightArrow {
+  cursor: pointer;
+  position: absolute;
+  color: black;
+  top: 88%;
+  right: 18px;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .messageFeedback .downRightArrow:hover {
+  color: steelblue;
+}
+
+.main .mainContent .mainRyt .mainRytContent .rytNoti {
+  width: 100%;
+  padding: 0.2% 2% 0 2%;
+  margin-top: 38px;
+  min-height: 480px;
+}
+
+.main .mainContent .mainRyt .mainRytContent .rytNoti .accountStatus {
+  background: white;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px -1px 10px -1px rgba(120, 100, 231, 0.75);
+  box-shadow: 0px -1px 10px -1px rgba(120, 100, 231, 0.75);
+  padding: 5%;
+}
+
+.main .mainContent .mainRyt .mainRytContent .rytNoti .accountStatus .accHeading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.main .mainContent .mainRyt .mainRytContent .rytNoti .accountStatus .accBody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #2dce98;
+  font-weight: 600;
+}
+
+.main .mainContent .mainRyt .mainRytContent .rytNoti .accountStatus .accBody .lftAcco {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .mainContent .mainRyt .mainRytContent .rytNoti .accountStatus .accBody .lftAcco p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+  padding: 0;
+  -webkit-transform: translate(10px, -5px);
+          transform: translate(10px, -5px);
+  font-size: 1.2rem;
+}
+
+.main .mainContent .mainRyt .mainRytContent .rytNoti .accountStatus .accBody .lftAcco span {
+  margin: 0;
+  padding: 0;
+  font-size: 0.7rem;
+}
+
+.main .mainContent .mainRyt .mainRytContent .rytNoti .accountStatus .accoFooter {
+  margin-top: 5px;
+}
+
+.main .mainContent .mainRyt .mainRytContent .rytNoti .accountStatus .accoFooter .deltAcco {
+  cursor: pointer;
+  padding: 1% 0 1% 2%;
+  height: 20px;
+  width: 110px;
+  border-radius: 10px;
+  font-size: 0.65rem;
+  font-weight: 500;
+  background: #ff5a5e;
+}
+
+.main .mainContent .mainRyt .mainRytContent .rytNoti .recentOrder {
+  position: relative;
+  margin-top: 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px -1px 10px -1px rgba(170, 170, 170, 0.75);
+  box-shadow: 0px -1px 10px -1px rgba(170, 170, 170, 0.75);
+  padding: 5% 6%;
+}
+
+.main .mainContent .mainRyt .mainRytContent .rytNoti .recentOrder h6 {
+  font-weight: 600;
+}
+
+.main .mainContent .mainRyt .mainRytContent .rytNoti .recentOrder .recentBody {
+  padding-top: 10px;
+}
+
+.main .mainContent .mainRyt .mainRytContent .rytNoti .recentOrder .recentBody .recBdySubHead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.main .mainContent .mainRyt .mainRytContent .rytNoti .recentOrder .recentBody .theme1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+
+.main .mainContent .mainRyt .mainRytContent .rytNoti .recentOrder .recentBody .theme1 p {
+  margin: 0;
+}
+
+.main .mainContent .mainRyt .mainRytContent .rytNoti .recentOrder .recentBody .theme1 .head1 {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.main .mainContent .mainRyt .mainRytContent .rytNoti .recentOrder .recentBody .theme1 .small {
+  margin-top: 5px;
+  font-size: 0.7rem;
+  color: #4e4e4e;
+}
+
+.main .mainContent .mainRyt .mainRytContent .rytNoti .recentOrder .addBenifits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .mainContent .mainRyt .mainRytContent .rytNoti .recentOrder .addBenifits h6 {
+  font-size: 0.9rem;
+}
+
+.main .mainContent .mainRyt .mainRytContent .rytNoti .recentOrder .addBenifits span {
+  position: relative;
+  font-size: 0.6rem;
+  font-weight: 600;
+}
+
+.main .mainContent .mainRyt .mainRytContent .rytNoti .recentOrder .addBenifits span::after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 5px;
+  background: #25a725;
+  border-radius: 50%;
+  top: 30%;
+  left: -10px;
+}
+
+.main .mainContent .mainRyt .mainRytContent .rytNoti .recentOrder .rcntOrderFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.8rem;
+}
+
+.main .mainContent .mainRyt .mainRytContent .rytNoti .recentOrder .rcntOrderFooter p {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.main .mainContent .mainRyt .mainRytContent .rytNoti .recentOrder .rcntOrderFooter .offerBtn {
+  height: 25px;
+  border-radius: 10px;
+  width: 80px;
+  font-size: 0.65rem;
+  border: none;
+  outline: none;
+  background: -webkit-gradient(linear, left top, right top, from(#1f3e76), to(#2a5196));
+  background: linear-gradient(to right, #1f3e76, #2a5196);
+  color: white;
+}
+
+.main .mainContent .mainRyt .mainRytContent .rytNoti .recentOrder .rcntOrderFooter .offerBtn .closeIco {
+  color: #47c0ff;
+}
+
+.main .mainContent .mainRyt .mainRytContent .rytNoti .recentOrder::after {
+  content: "";
+  height: 6px;
+  width: 35px;
+  background: #6c63ff;
+  position: absolute;
+  top: 6%;
+  right: -20px;
+}
+
+.main .mainContent .mainRyt .mainRytContent .rytNoti .invoiceMain {
+  margin-top: 30px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px -1px 10px -1px rgba(170, 170, 170, 0.75);
+  box-shadow: 0px -1px 10px -1px rgba(170, 170, 170, 0.75);
+  position: relative;
+  padding: 5% 5% 5% 6%;
+}
+
+.main .mainContent .mainRyt .mainRytContent .rytNoti .invoiceMain h6 {
+  font-weight: 600;
+}
+
+.main .mainContent .mainRyt .mainRytContent .rytNoti .invoiceMain .editBtn {
+  position: absolute;
+  top: -14px;
+  right: 20px;
+  height: 28px;
+  width: 50px;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  background: #2d61ad;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.main .mainContent .mainRyt .mainRytContent .rytNoti .invoiceMain .invoiceCont {
+  padding-top: 2%;
+}
+
+.main .mainContent .mainRyt .mainRytContent .rytNoti .invoiceMain .invoiceCont .invoiceCard {
+  border-radius: 5px;
+  position: relative;
+  -webkit-box-shadow: 0px -1px 10px -1px rgba(170, 170, 170, 0.75);
+  box-shadow: 0px -1px 10px -1px rgba(209, 209, 209, 0.75);
+  padding: 4% 4% 0 4%;
+  margin-bottom: 20px;
+}
+
+.main .mainContent .mainRyt .mainRytContent .rytNoti .invoiceMain .invoiceCont .invoiceCard .smallHead {
+  font-size: 0.75rem;
+  color: gray;
+}
+
+.main .mainContent .mainRyt .mainRytContent .rytNoti .invoiceMain .invoiceCont .invoiceCard .invoiceHeadIco {
+  padding-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .mainContent .mainRyt .mainRytContent .rytNoti .invoiceMain .invoiceCont .invoiceCard .invoiceHeadIco p {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.main .mainContent .mainRyt .mainRytContent .rytNoti .invoiceMain .invoiceCont .invoiceCard .invoiceHeadIco .dollarCicle {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  position: absolute;
+  right: 16px;
+  top: 18%;
+  background: #0c6096;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.main .mainContent .mainRyt .mainRytContent .rytNoti .invoiceMain .invoiceCont .invoiceCard .invoiceFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .mainContent .mainRyt .mainRytContent .rytNoti .invoiceMain .invoiceCont .invoiceCard .invoiceFooter p {
+  font-size: 0.54rem;
+  font-weight: 500;
+}
+
+.main .mainContent .mainRyt .mainRytContent .rytNoti .invoiceMain .invoiceCont .invoiceCard .invoiceFooter .greenPara {
+  color: #7ad3be;
+  font-size: 0.65rem;
+  font-weight: 600;
+}
+
+.main .mainContent .mainRyt .mainRytContent .rytNoti .invoiceMain .downRightArrow {
+  position: absolute;
+  right: 15px;
+  top: 94%;
+  cursor: pointer;
+  color: black;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.main .mainContent .mainRyt .mainRytContent .rytNoti .invoiceMain .downRightArrow:hover {
+  color: steelblue;
+}
+
+.footer {
+  height: 100%;
+  padding: 4% 2% 2% 2%;
+  background: url("../ASSETS/IMAGES/Background.svg");
+  background-size: cover;
+}
+
+.footer .footerContent {
+  padding-left: 3%;
+}
+
+.footer .footerContent .footerLogo {
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.footer .footerContent .footerLogo img {
+  height: 100%;
+}
+
+.footer .footerContent .footerPara {
+  padding-top: 2%;
+  font-weight: 500;
+  width: 85%;
+}
+
+.footer .footerContent .middleFooter {
+  margin-top: 50px;
+}
+
+.footer .footerContent .middleFooter .footerConHeading {
+  font-size: 1.3rem;
+}
+
+.footer .footerContent .middleFooter .footerConHeading h5 {
+  position: relative;
+  font-weight: 700;
+}
+
+.footer .footerContent .middleFooter .footerConHeading h5::before {
+  position: absolute;
+  content: "";
+  margin: 5px 0;
+  height: 6px;
+  width: 18%;
+  background: #090979;
+  top: 100%;
+  left: 0;
+}
+
+.footer .footerContent .middleFooter ul {
+  list-style: none;
+  padding-top: 20px;
+  font-size: 1rem;
+  color: #252525;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.footer .footerContent .middleFooter .contactdetails {
+  width: 80%;
+}
+
+.footer .footerContent .middleFooter .contactdetails .footerConHeading {
+  padding-bottom: 10px;
+}
+
+.footer .footerContent .middleFooter .contactdetails .footerConHeading h4 {
+  position: relative;
+  font-weight: 700;
+}
+
+.footer .footerContent .middleFooter .contactdetails .footerConHeading h4::after {
+  position: absolute;
+  margin: 5px 0;
+  content: "";
+  height: 6px;
+  width: 10%;
+  background: #090979;
+  top: 100%;
+  left: 0;
+}
+
+.footer .footerContent .middleFooter .contactdetails .footDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer .footerContent .middleFooter .contactdetails .footDetails .lftDetail {
+  width: 100%;
+}
+
+.footer .footerContent .middleFooter .contactdetails .footDetails .rytDetail {
+  margin-left: 5%;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer .footerContent .footerConHeading {
+  font-size: 1rem;
+}
+
+.footer .footerContent .rytFooter {
+  margin-top: 50px;
+}
+
+.footer .footerContent .rytFooter .footerConHeading2 h4 {
+  position: relative;
+  color: #2f2fd1;
+  font-weight: 700;
+}
+
+.footer .footerContent .rytFooter .footerConHeading2 h4::after {
+  position: absolute;
+  margin: 5px 0;
+  content: "";
+  height: 6px;
+  width: 18%;
+  background: #6e6ef8;
+  top: 100%;
+  left: 0;
+}
+
+.footer .footerContent .rytFooter .footerSocial {
+  padding-top: 25px;
+}
+
+.footer .footerContent .rytFooter .footerSocial img {
+  height: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=customerDash.css.map */

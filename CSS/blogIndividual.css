@@ -308,25 +308,15 @@ nav .navWrapper .navUser .userCart {
 }
 
 .main .blogContent .dotHead:nth-child(1) {
-  position: absolute;
-  top: 43%;
-  left: 12.4%;
-  height: 5px;
-  width: 5px;
-  border-radius: 50%;
-  background: #888888;
-  content: "";
+  font-size: 3rem;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 
 .main .blogContent .dotHead:nth-child(2) {
-  position: absolute;
-  top: 43%;
-  left: 22.5%;
-  height: 5px;
-  width: 5px;
-  border-radius: 50%;
-  background: #888888;
-  content: "";
+  font-size: 3rem;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 
 .main .blogContent .blogPara {
@@ -363,174 +353,37 @@ nav .navWrapper .navUser .userCart {
 }
 
 .main .blogContent .blogPara .infoCards .knowUsCards {
-  margin: 50px 0 20px 0;
+  margin: 0 0 20px 0;
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
 }
 
-.main .blogContent .blogPara .infoCards .knowUsCards .card {
-  border: 1px solid white;
-  border-radius: 20px;
-  -webkit-box-shadow: 2px 13px 55px -38px #7871ac;
-  box-shadow: 2px 13px 55px -38px #7871ac;
-  font-weight: 500;
+.main .blogContent .blogPara .infoCards .knowUsCards .cardImg {
+  height: 250px;
+  width: 300px;
 }
 
-.main .blogContent .blogPara .infoCards .knowUsCards .card .card-body {
+.main .blogContent .blogPara .infoCards .knowUsCards .cardImg img {
+  height: 130%;
+  width: 130%;
   position: relative;
-  z-index: 2;
 }
 
-.main .blogContent .blogPara .infoCards .knowUsCards .card .card-body .card-title {
+.main .blogContent .blogPara .infoCards .knowUsCards .cardImg .cardBody {
+  position: absolute;
+  top: 36%;
+  left: 32%;
+}
+
+.main .blogContent .blogPara .infoCards .knowUsCards .cardImg .cardBody .card-title {
   font-weight: 600;
 }
 
-.main .blogContent .blogPara .infoCards .knowUsCards .card .card-body .card-text {
+.main .blogContent .blogPara .infoCards .knowUsCards .cardImg .cardBody .card-text {
   margin: 0;
   font-size: 1rem !important;
   line-height: normal !important;
-}
-
-.main .blogContent .blogPara .infoCards .knowUsCards .card .cardNumber1 {
-  margin: auto;
-  background: #ffab8d;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 1.2rem;
-  -webkit-text-stroke-color: #e0490d;
-  -webkit-text-stroke-width: 2px;
-  height: 50px;
-  max-width: 50px;
-  border-radius: 50%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.main .blogContent .blogPara .infoCards .knowUsCards .card .cardNumber2 {
-  margin: auto;
-  background: #7376ff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 1.2rem;
-  -webkit-text-stroke-color: #1b0de0;
-  -webkit-text-stroke-width: 2px;
-  height: 50px;
-  max-width: 50px;
-  border-radius: 50%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.main .blogContent .blogPara .infoCards .knowUsCards .card .cardNumber3 {
-  margin: auto;
-  background: #ff8de3;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 1.2rem;
-  -webkit-text-stroke-color: #e00dab;
-  -webkit-text-stroke-width: 2px;
-  height: 50px;
-  max-width: 50px;
-  border-radius: 50%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.main .blogContent .blogPara .infoCards .knowUsCards .card .rightCardShape1 {
-  position: absolute;
-  height: 25%;
-  width: 20%;
-  background: rgba(255, 171, 141, 0.664);
-  top: 5%;
-  left: 76%;
-  z-index: 1;
-  border-radius: 100px 70px 107px 500px;
-  -moz-border-radius: 100px 70px 100px 500px;
-  -webkit-border-radius: 100px 70px 100px 500px;
-  border: 0px solid #000000;
-}
-
-.main .blogContent .blogPara .infoCards .knowUsCards .card .rightCardShape11 {
-  position: absolute;
-  height: 15%;
-  width: 15%;
-  background: rgba(255, 171, 141, 0.61);
-  top: 19%;
-  left: 74%;
-  z-index: 0;
-  border-radius: 50px 70px 100px 500px;
-  -moz-border-radius: 50px 70px 100px 500px;
-  -webkit-border-radius: 50px 100px 100px 500px;
-  border: 0px solid #000000;
-}
-
-.main .blogContent .blogPara .infoCards .knowUsCards .card .rightCardShape2 {
-  position: absolute;
-  height: 25%;
-  width: 20%;
-  background: rgba(115, 117, 255, 0.63);
-  top: 5%;
-  left: 76%;
-  z-index: 1;
-  border-radius: 100px 70px 107px 500px;
-  -moz-border-radius: 100px 70px 100px 500px;
-  -webkit-border-radius: 100px 70px 100px 500px;
-  border: 0px solid #000000;
-}
-
-.main .blogContent .blogPara .infoCards .knowUsCards .card .rightCardShape22 {
-  position: absolute;
-  height: 15%;
-  width: 15%;
-  background: rgba(115, 117, 255, 0.822);
-  top: 19%;
-  left: 74%;
-  z-index: 0;
-  border-radius: 50px 70px 100px 500px;
-  -moz-border-radius: 50px 70px 100px 500px;
-  -webkit-border-radius: 50px 100px 100px 500px;
-  border: 0px solid #000000;
-}
-
-.main .blogContent .blogPara .infoCards .knowUsCards .card .rightCardShape3 {
-  position: absolute;
-  height: 25%;
-  width: 20%;
-  background: rgba(255, 141, 227, 0.671);
-  top: 5%;
-  left: 76%;
-  z-index: 1;
-  border-radius: 100px 70px 107px 500px;
-  -moz-border-radius: 100px 70px 100px 500px;
-  -webkit-border-radius: 100px 70px 100px 500px;
-  border: 0px solid #000000;
-}
-
-.main .blogContent .blogPara .infoCards .knowUsCards .card .rightCardShape33 {
-  position: absolute;
-  height: 15%;
-  width: 15%;
-  background: rgba(252, 115, 217, 0.527);
-  top: 19%;
-  left: 74%;
-  z-index: 0;
-  border-radius: 50px 70px 100px 500px;
-  -moz-border-radius: 50px 70px 100px 500px;
-  -webkit-border-radius: 50px 100px 100px 500px;
-  border: 0px solid #000000;
+  width: 90%;
 }
 
 .main .blogContent .blogPara .imgPara {
@@ -566,7 +419,6 @@ nav .navWrapper .navUser .userCart {
 
 .main .blogContent .blogPara .prevUpcomVers {
   margin-top: 40px;
-  padding-left: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -683,9 +535,13 @@ nav .navWrapper .navUser .userCart {
           align-items: center;
 }
 
+.main .blogContent .blogPara .blogSocials .socialIcons {
+  margin-right: 10px;
+}
+
 .main .blogContent .blogPara .blogSocials .socialIcons .socialIcons {
   font-size: 1.3rem;
-  margin-right: 10px;
+  margin-right: 20px;
   color: black;
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
@@ -710,10 +566,6 @@ nav .navWrapper .navUser .userCart {
 
 .main .blogContent .blogPara .blogSocials .sharePara {
   margin-top: 15px;
-}
-
-.main .blogContent .blogPara .techUIbtn {
-  margin-left: 13px;
 }
 
 .main .blogContent .blogPara .techUIbtn button {
@@ -747,9 +599,13 @@ nav .navWrapper .navUser .userCart {
 
 .main .blogContent .blogPara .relatedPost .postCards {
   margin-top: 40px;
+  margin-left: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .main .blogContent .blogPara .relatedPost .postCards .cardMain {

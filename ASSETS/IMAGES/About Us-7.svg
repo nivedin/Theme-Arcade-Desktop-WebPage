@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="530" height="271" viewBox="0 0 530 271">
+  <defs>
+    <filter id="Rectangle_1865" x="0" y="0" width="530" height="271" filterUnits="userSpaceOnUse">
+      <feOffset dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feFlood flood-color="#999" flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_11935" data-name="Group 11935" transform="translate(-1281 -3272)">
+    <g transform="matrix(1, 0, 0, 1, 1281, 3272)" filter="url(#Rectangle_1865)">
+      <rect id="Rectangle_1865-2" data-name="Rectangle 1865" width="440" height="181" rx="25" transform="translate(45 35)" fill="#fff"/>
+    </g>
+    <g id="Group_11853" data-name="Group 11853" transform="translate(-19 33)">
+      <ellipse id="Ellipse_3191" data-name="Ellipse 3191" cx="34" cy="33.5" rx="34" ry="33.5" transform="translate(1360 3331)" fill="#e0157d" opacity="0.41"/>
+      <text id="_03" data-name="03" transform="translate(1376 3374.604)" fill="#f21586" font-size="30" font-family="Poppins-Bold, Poppins" font-weight="700"><tspan x="0" y="0">03</tspan></text>
+    </g>
+    <path id="Path_18395" data-name="Path 18395" d="M44.182,0C59.511,0,69.209,9.394,69.209,24.5s5.177,29.784-10.151,29.784S0,25.6,0,10.495c0-6.389.939-6.4,8.295-7.617A286.4,286.4,0,0,1,44.182,0Z" transform="matrix(0.998, 0.07, -0.07, 0.998, 1689.365, 3307.578)" fill="#f29ec9"/>
+    <path id="Path_18396" data-name="Path 18396" d="M26.917,0c9.339,0,15.247,4.534,15.247,11.824S45.319,26.2,35.98,26.2,0,12.356,0,5.066C0,1.982.572,1.975,5.053,1.389,10.824.634,21.529,0,26.917,0Z" transform="matrix(0.998, 0.07, -0.07, 0.998, 1694.883, 3337.887)" fill="#f21586" opacity="0.48"/>
+  </g>
+</svg>

@@ -379,7 +379,8 @@ nav .navWrapper .navUser .userCart {
 }
 
 .main .cartContent .rytCartTotal .cardCouponContainer {
-  height: 88vh;
+  min-height: 610px;
+  max-height: 690px;
   margin-top: 20px;
   border-left: 4px solid #eeeeee;
   padding: 0 0 0 12%;
@@ -529,7 +530,7 @@ nav .navWrapper .navUser .userCart {
   height: 100%;
   padding: 4% 2% 2% 3%;
   background: url("../ASSETS/IMAGES/Background.svg");
-  background-size: contain;
+  background-size: cover;
 }
 
 .footer .footerContent .footerLogo {

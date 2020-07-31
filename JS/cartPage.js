@@ -21,15 +21,19 @@ const prdPrice = 150;
 
 let plusBtn = document.querySelector(".plus");
 let minusBtn = document.querySelector(".minus");
+let quantyPrice = document.querySelector(".priceCont");
 let quantityNumber = document.querySelector(".quantityNum");
 
-let defQuan = 2;
+let defQuan = 1;
+let quantyItemPrice = 150;
 
 let plusClick = () => {
-  quantityNumber.innerHTML = defQuan++;
+  quantityNumber.innerHTML = defQuan++ + 1;
+  quantyPrice.innerHTML = "₹" + quantyItemPrice * defQuan;
 };
 let minusClick = () => {
-  quantityNumber.innerHTML = defQuan--;
+  quantityNumber.innerHTML = defQuan-- - 1;
+  quantyPrice.innerHTML = "₹" + quantyItemPrice / defQuan;
 };
 
 plusBtn.addEventListener("click", plusClick);

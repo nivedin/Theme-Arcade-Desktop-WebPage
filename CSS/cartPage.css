@@ -1,0 +1,667 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: poppins, sans-serif;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  background: white;
+}
+
+nav {
+  height: 100%;
+  width: 100%;
+  color: wheat;
+  padding: 10px 30px;
+}
+
+nav .navWrapper {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  font-weight: 500;
+}
+
+nav .navWrapper .navLogo {
+  height: 80px;
+  width: 250px;
+}
+
+nav .navWrapper .navLogo img {
+  height: 100%;
+  width: 100%;
+}
+
+nav .navWrapper .navLinks {
+  margin-top: 15px;
+}
+
+nav .navWrapper .navLinks ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+nav .navWrapper .navLinks li {
+  margin-right: 20px;
+}
+
+nav .navWrapper .navLinks li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+nav .navWrapper .navLinks li a:hover {
+  border-bottom: 2px solid blue;
+}
+
+nav .navWrapper .navUser {
+  height: 100px;
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .navWrapper .navUser .userImage {
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+}
+
+nav .navWrapper .navUser .userImage img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+nav .navWrapper .navUser .userName {
+  width: 150px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+nav .navWrapper .navUser .userCart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 40px;
+  width: 40px;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.header {
+  margin-bottom: 25px;
+  height: 35vh;
+}
+
+.header .aboutBanner {
+  height: 70%;
+  background: #020024;
+  background: -webkit-gradient(linear, left top, right top, from(#567cc0), color-stop(41%, #3d609e), to(#224178));
+  background: linear-gradient(90deg, #567cc0 0%, #3d609e 41%, #224178 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#7f63ff",GradientType=1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.header .breadCrumbs {
+  margin-bottom: 20px;
+  height: 30%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  box-shadow: 1px 9px 20px 0px #5341db;
+  -webkit-box-shadow: 1px 0px 29px 0px #5341db;
+  -moz-box-shadow: 1px 20px 20px 0px #5341db;
+  color: #0c6096;
+  font-size: 1.3rem;
+}
+
+.header .breadCrumbs .rightArrow {
+  margin: 3px 10px 0 10px;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 2% 4% 0 6%;
+}
+
+.main .mainHeading {
+  font-weight: 600;
+}
+
+.main .cartContent {
+  margin-top: 30px;
+}
+
+.main .cartContent .lftContMain {
+  padding-right: 10px;
+}
+
+.main .cartContent .heading {
+  min-height: 50px;
+  text-align: center;
+  border-bottom: 4px solid #ebebeb;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.main .cartContent .heading h5 {
+  font-weight: 600;
+}
+
+.main .cartContent .contentItem {
+  min-height: 150px;
+  padding: 50px 0;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 4px solid #ebebeb;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.main .cartContent .contentItem .side1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+}
+
+.main .cartContent .contentItem .side1 .closeBtn {
+  color: red;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.main .cartContent .contentItem .side1 .prdImage {
+  height: 100px;
+  width: 150px;
+  margin: 0 15px;
+  -webkit-box-shadow: 2px 25px 62px -27px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 25px 62px -27px rgba(0, 0, 0, 0.75);
+  border-radius: 15px;
+}
+
+.main .cartContent .contentItem .side1 .prdImage img {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.main .cartContent .contentItem .side1 .prdName {
+  font-size: 0.8rem;
+  padding-left: 10px;
+}
+
+.main .cartContent .contentItem .side1 .prdName .prdctWhat {
+  font-size: 0.7;
+  font-weight: 700;
+  margin: 5px 5px 0 5px;
+}
+
+.main .cartContent .contentItem .side1 .prdName .prdctBy {
+  color: #b6b6b6;
+  margin: 0 5px 10px 5px;
+  font-size: 0.5;
+}
+
+.main .cartContent .contentItem .side1 .prdName .prdctId {
+  font-size: 0.6rem;
+  margin: 5px 5px 2px 5px;
+  font-weight: 600;
+  border-bottom: 1px solid black;
+}
+
+.main .cartContent .contentItem .side1 .prdName .pdtsIco {
+  margin: 5px 0 0 5px;
+}
+
+.main .cartContent .contentItem .side1 .prdName .pdtsIco .pdtsTage {
+  font-size: 0.7rem;
+}
+
+.main .cartContent .contentItem .side1 .prdName .pdtsIco button {
+  background: #07b407;
+  height: 15px;
+  width: 40px;
+  margin: 0;
+  color: white;
+  border-radius: 6px;
+  border: none;
+  font-size: 0.45rem;
+}
+
+.main .cartContent .contentItem .priceCont {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.main .cartContent .contentItem .quantityBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .cartContent .contentItem .quantityBtn .quantityButonBorder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  height: 50px;
+  border: 2px solid black;
+}
+
+.main .cartContent .contentItem .quantityBtn .quantityButonBorder .plus {
+  border: none;
+  outline: none;
+  width: 50px;
+  height: 100%;
+  background: white;
+  border-right: 2px solid black;
+  font-size: 1.3rem;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.main .cartContent .contentItem .quantityBtn .quantityButonBorder .plus:hover {
+  background: #e63636;
+}
+
+.main .cartContent .contentItem .quantityBtn .quantityButonBorder .quantityNum {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.main .cartContent .contentItem .quantityBtn .quantityButonBorder .minus {
+  border: none;
+  outline: none;
+  width: 50px;
+  height: 100%;
+  background: white;
+  border-left: 2px solid black;
+  font-size: 1.3rem;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.main .cartContent .contentItem .quantityBtn .quantityButonBorder .minus:hover {
+  background: #24db2d;
+}
+
+.main .cartContent .rytCartTotal {
+  padding: 0;
+  text-align: center;
+}
+
+.main .cartContent .rytCartTotal .cartTotal {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.main .cartContent .rytCartTotal .cardCouponContainer {
+  height: 88vh;
+  margin-top: 20px;
+  border-left: 4px solid #eeeeee;
+  padding: 0 0 0 12%;
+}
+
+.main .cartContent .rytCartTotal .cardCouponContainer .checkoutCard {
+  padding: 6% 8%;
+  -webkit-box-shadow: -1px -1px 19px -6px rgba(158, 158, 158, 0.75);
+  box-shadow: -1px -1px 19px -6px rgba(158, 158, 158, 0.75);
+  border-radius: 10px;
+}
+
+.main .cartContent .rytCartTotal .cardCouponContainer .checkoutCard .checkOutContent {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.main .cartContent .rytCartTotal .cardCouponContainer .checkoutCard .checkOutContent .subTotal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .cartContent .rytCartTotal .cardCouponContainer .checkoutCard .checkOutContent .taxesLicense {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .cartContent .rytCartTotal .cardCouponContainer .checkoutCard .checkOutContent .totalAmo {
+  margin-top: 30px;
+  font-size: 1.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .cartContent .rytCartTotal .cardCouponContainer .checkoutCard .secureCheckout {
+  width: 200px;
+  height: 45px;
+  border-radius: 8px;
+  background: #0c6096;
+  font-weight: 600;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+}
+
+.main .cartContent .rytCartTotal .cardCouponContainer .checkoutCard .allPaymentSecure {
+  margin: 30px 0 10px 0;
+  font-size: 0.65rem;
+  color: #fcbf4c;
+}
+
+.main .cartContent .rytCartTotal .cardCouponContainer .enterCodeButn {
+  margin-top: 60px;
+}
+
+.main .cartContent .rytCartTotal .cardCouponContainer .enterCodeButn input {
+  border: 2px solid #0c6096;
+  outline: none;
+  height: 40px;
+  width: 230px;
+  border-radius: 8px;
+  padding: 0 3%;
+}
+
+.main .cartContent .rytCartTotal .cardCouponContainer .enterCodeButn input::-webkit-input-placeholder {
+  color: #969696;
+  font-size: 0.8rem;
+}
+
+.main .cartContent .rytCartTotal .cardCouponContainer .enterCodeButn input:-ms-input-placeholder {
+  color: #969696;
+  font-size: 0.8rem;
+}
+
+.main .cartContent .rytCartTotal .cardCouponContainer .enterCodeButn input::-ms-input-placeholder {
+  color: #969696;
+  font-size: 0.8rem;
+}
+
+.main .cartContent .rytCartTotal .cardCouponContainer .enterCodeButn input::placeholder {
+  color: #969696;
+  font-size: 0.8rem;
+}
+
+.main .cartContent .rytCartTotal .cardCouponContainer .enterCodeButn .applyCoupon {
+  margin-top: 20px;
+  width: 140px;
+  border-radius: 8px;
+  background: #234581;
+  color: white;
+  font-size: 0.9rem;
+  height: 40px;
+  border: none;
+  outline: none;
+}
+
+.othersAlsoLiked {
+  padding: 4% 6%;
+}
+
+.othersAlsoLiked h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.othersAlsoLiked .imageSlider {
+  padding: 4% 4%;
+}
+
+.othersAlsoLiked .imageSlider .swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.othersAlsoLiked .imageSlider .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  border-radius: 8px;
+}
+
+.footer {
+  height: 100%;
+  padding: 4% 2% 2% 3%;
+  background: url("../ASSETS/IMAGES/Background.svg");
+  background-size: contain;
+}
+
+.footer .footerContent .footerLogo {
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.footer .footerContent .footerLogo img {
+  height: 100%;
+}
+
+.footer .footerContent .footerPara {
+  padding-top: 2%;
+  font-weight: 500;
+  width: 85%;
+}
+
+.footer .footerContent .middleFooter {
+  margin-top: 50px;
+}
+
+.footer .footerContent .middleFooter .footerConHeading {
+  font-size: 1.3rem;
+}
+
+.footer .footerContent .middleFooter .footerConHeading h5 {
+  position: relative;
+  font-weight: 700;
+}
+
+.footer .footerContent .middleFooter .footerConHeading h5::before {
+  position: absolute;
+  content: "";
+  margin: 5px 0;
+  height: 6px;
+  width: 18%;
+  background: #090979;
+  top: 100%;
+  left: 0;
+}
+
+.footer .footerContent .middleFooter ul {
+  list-style: none;
+  padding-top: 20px;
+  font-size: 1rem;
+  color: #252525;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.footer .footerContent .middleFooter .contactdetails {
+  width: 80%;
+}
+
+.footer .footerContent .middleFooter .contactdetails .footerConHeading {
+  padding-bottom: 10px;
+}
+
+.footer .footerContent .middleFooter .contactdetails .footerConHeading h4 {
+  position: relative;
+  font-weight: 700;
+}
+
+.footer .footerContent .middleFooter .contactdetails .footerConHeading h4::after {
+  position: absolute;
+  margin: 5px 0;
+  content: "";
+  height: 6px;
+  width: 10%;
+  background: #090979;
+  top: 100%;
+  left: 0;
+}
+
+.footer .footerContent .middleFooter .contactdetails .footDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer .footerContent .middleFooter .contactdetails .footDetails .lftDetail {
+  width: 100%;
+}
+
+.footer .footerContent .middleFooter .contactdetails .footDetails .rytDetail {
+  margin-left: 5%;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer .footerContent .footerConHeading {
+  font-size: 1rem;
+}
+
+.footer .footerContent .rytFooter {
+  margin-top: 50px;
+}
+
+.footer .footerContent .rytFooter .footerConHeading2 h4 {
+  position: relative;
+  color: #2f2fd1;
+  font-weight: 700;
+}
+
+.footer .footerContent .rytFooter .footerConHeading2 h4::after {
+  position: absolute;
+  margin: 5px 0;
+  content: "";
+  height: 6px;
+  width: 18%;
+  background: #6e6ef8;
+  top: 100%;
+  left: 0;
+}
+
+.footer .footerContent .rytFooter .footerSocial {
+  padding-top: 25px;
+}
+
+.footer .footerContent .rytFooter .footerSocial img {
+  height: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=cartPage.css.map */

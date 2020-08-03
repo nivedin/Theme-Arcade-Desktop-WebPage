@@ -619,6 +619,18 @@ nav .navWrapper .navUser .userCart {
           justify-content: flex-end;
 }
 
+.main .mainContent .mainRyt .mainRytContent .rytNoti .notiFooter .showMore {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.main .mainContent .mainRyt .mainRytContent .rytNoti .notiFooter .showMore:hover {
+  color: #2457c4;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 .footer {
   height: 100%;
   padding: 4% 2% 2% 3%;

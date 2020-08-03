@@ -894,6 +894,7 @@ header nav .navContainer .logSigButtons .signUp {
 
 .topChoices .topChoiceContainer .topChoiceContent .contentCards .card .card-body .card-title {
   font-size: 3.3rem;
+  font-weight: 600;
 }
 
 .topChoices .topChoiceContainer .topChoiceContent .contentCards .card .card-body .card-text {

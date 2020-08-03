@@ -69,16 +69,32 @@ nav .navWrapper .navLinks ul {
 }
 
 nav .navWrapper .navLinks li {
-  margin-right: 20px;
+  margin-right: 27px;
 }
 
 nav .navWrapper .navLinks li a {
   text-decoration: none;
   color: black;
+  position: relative;
 }
 
-nav .navWrapper .navLinks li a:hover {
-  border-bottom: 2px solid blue;
+nav .navWrapper .navLinks li a::after {
+  position: absolute;
+  margin: 0;
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  content: "";
+  width: 0;
+  height: 3px;
+  z-index: 1;
+  background: #2222a5;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+nav .navWrapper .navLinks li a:hover::after {
+  width: 100%;
 }
 
 nav .navWrapper .navUser {
@@ -145,8 +161,8 @@ nav .navWrapper .navUser .userCart {
 .header .aboutBanner {
   height: 70%;
   background: #020024;
-  background: -webkit-gradient(linear, left top, right top, from(#7f63ff), color-stop(41%, #1414ad), to(#1f1a80));
-  background: linear-gradient(90deg, #7f63ff 0%, #1414ad 41%, #1f1a80 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#5075b7), color-stop(41%, #3a5c9a), to(#25447b));
+  background: linear-gradient(90deg, #5075b7 0%, #3a5c9a 41%, #25447b 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#7f63ff",GradientType=1);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -176,7 +192,7 @@ nav .navWrapper .navUser .userCart {
           align-items: center;
   -webkit-box-shadow: 2px 15px 42px -26px #2c15d9;
   box-shadow: 2px 15px 42px -26px #2c15d9;
-  color: #2c15d9;
+  color: #30729f;
   font-size: 1.3rem;
 }
 
@@ -201,7 +217,7 @@ nav .navWrapper .navUser .userCart {
   width: 410px;
   height: 45px;
   outline: none;
-  border: 1px solid blue;
+  border: 2px solid #ada8ff;
   padding: 10px;
   border-radius: 5px;
 }
@@ -215,8 +231,8 @@ nav .navWrapper .navUser .userCart {
 .main .mainContainer .mainContent .lftCont .email label {
   position: absolute;
   left: 35px;
-  top: 10px;
-  color: blue;
+  top: 13px;
+  color: #8986c9;
   font-size: 0.95rem;
   -webkit-transition: -webkit-transform 0.4s ease-in-out;
   transition: -webkit-transform 0.4s ease-in-out;
@@ -227,11 +243,12 @@ nav .navWrapper .navUser .userCart {
 .main .mainContainer .mainContent .lftCont .subject select {
   width: 410px;
   height: 45px;
-  border: 1px solid blue;
-  color: blue;
+  border: 2px solid #ada8ff;
+  color: #8986c9;
   font-size: 0.95rem;
   padding: 10px;
   outline: none;
+  border-radius: 5px;
 }
 
 .main .mainContainer .mainContent .lftCont .message {
@@ -240,9 +257,11 @@ nav .navWrapper .navUser .userCart {
 
 .main .mainContainer .mainContent .lftCont .message textarea {
   position: relative;
-  border: 1px solid blue;
+  border: 2px solid #ada8ff;
   outline: none;
   padding: 20px 0 0 20px;
+  resize: none;
+  border-radius: 5px;
 }
 
 .main .mainContainer .mainContent .lftCont .message textarea:focus + label,
@@ -255,7 +274,7 @@ nav .navWrapper .navUser .userCart {
   position: absolute;
   left: 20px;
   top: 14px;
-  color: blue;
+  color: #8986c9;
   font-size: 0.95rem;
   -webkit-transition: -webkit-transform 0.4s ease-in-out;
   transition: -webkit-transform 0.4s ease-in-out;
@@ -264,19 +283,32 @@ nav .navWrapper .navUser .userCart {
 }
 
 .main .mainContainer .mainContent .lftCont button {
-  margin: 20px 25px 0 28px;
+  position: relative;
+  margin: 20px 25px 0 48px;
   height: 50px;
-  width: 78%;
+  width: 300px;
   border: none;
-  background: #2e2ea1;
+  background: -webkit-gradient(linear, left top, right top, from(#1f3e77), to(#295093));
+  background: linear-gradient(to right, #1f3e77, #295093);
   font-weight: 500;
   color: white;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.main .mainContainer .mainContent .lftCont button:hover {
+  background: white;
+  border: 3px double #ada8ff;
+  color: #133879;
 }
 
 .footer {
   min-height: 60vh;
   padding: 2%;
-  background: #f8f8f8;
+  padding: 4% 2% 2% 3%;
+  background: url("../ASSETS/IMAGES/Background.svg");
+  background-size: cover;
 }
 
 .footer .footerContent {

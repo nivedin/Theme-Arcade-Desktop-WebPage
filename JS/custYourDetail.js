@@ -11,7 +11,9 @@ let showMrClicked = () => {
 showMore.addEventListener("click", showMrClicked);
 
 let editBtn = document.querySelector(".editBtn");
-let inputBars = document.querySelectorAll(".formContent input");
+let inputBars = document.querySelectorAll(
+  ".persDetails .editableChange1 input"
+);
 
 let editClicked = () => {
   console.log("clicked");

@@ -69,17 +69,33 @@ nav .navWrapper .navLinks ul {
 }
 
 nav .navWrapper .navLinks li {
-  margin-right: 20px;
+  margin-right: 27px;
 }
 
 nav .navWrapper .navLinks li a {
   text-decoration: none;
   color: black;
-  font-weight: 600;
+  font-weight: 500;
+  position: relative;
 }
 
-nav .navWrapper .navLinks li a:hover {
-  border-bottom: 2px solid blue;
+nav .navWrapper .navLinks li a::after {
+  position: absolute;
+  margin: 0;
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  content: "";
+  width: 0;
+  height: 3px;
+  z-index: 1;
+  background: #2222a5;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+nav .navWrapper .navLinks li a:hover::after {
+  width: 100%;
 }
 
 nav .navWrapper .navUser {
@@ -204,14 +220,23 @@ nav .navWrapper .navUser .userCart {
 
 .main .mainContent .sideBar ul li {
   margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-size: 0.9rem;
   color: rgba(0, 0, 0, 0.829);
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
   cursor: pointer;
 }
 
 .main .mainContent .sideBar ul li .icoN {
   font-size: 1.2rem;
-  margin-right: 5px;
+  margin-right: 6px;
+}
+
+.main .mainContent .sideBar ul li p {
+  margin: 0 0 0 8px;
 }
 
 .main .mainContent .sideBar ul li:hover {
@@ -221,26 +246,34 @@ nav .navWrapper .navUser .userCart {
 
 .main .mainContent .sideBar ul .ico1 {
   color: #9080e9;
+  margin-right: 8px !important;
 }
 
 .main .mainContent .sideBar ul .ico2 {
   color: #f8798a;
+  margin-right: 8px !important;
 }
 
 .main .mainContent .sideBar ul .ico3 {
   color: #81e5f7;
+  margin-right: 8px !important;
 }
 
 .main .mainContent .sideBar ul .ico4 {
   color: #49be55;
+  margin-right: 6px !important;
 }
 
 .main .mainContent .sideBar ul .ico5 {
   color: #fd9982;
+  margin-right: 12px !important;
+  margin-left: 5px;
 }
 
 .main .mainContent .sideBar ul .ico6 {
   color: #eeb64a;
+  margin-right: 10px !important;
+  margin-left: 5px;
 }
 
 .main .mainContent .mainRyt {
@@ -305,6 +338,17 @@ nav .navWrapper .navUser .userCart {
   color: black;
 }
 
+.main .mainContent .mainRyt .mainRytContent .lftDetails .persDetails .yrPDetailsHeadin .editBtn {
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .persDetails .yrPDetailsHeadin .editBtn:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 .main .mainContent .mainRyt .mainRytContent .lftDetails .persDetails .formContent {
   padding-top: 20px;
 }
@@ -320,8 +364,9 @@ nav .navWrapper .navUser .userCart {
 
 .main .mainContent .mainRyt .mainRytContent .lftDetails .persDetails .formContent input {
   font-size: 0.9rem;
-  outline: 2px solid black;
+  border: 2px solid black;
   -moz-outline-radius: 5px;
+  border-radius: 10px;
 }
 
 .main .mainContent .mainRyt .mainRytContent .lftDetails .persDetails .butn {
@@ -338,12 +383,14 @@ nav .navWrapper .navUser .userCart {
 
 .main .mainContent .mainRyt .mainRytContent .lftDetails .persDetails .butn button {
   border: none;
-  height: 30px;
-  width: 50px;
+  height: 35px;
+  width: 70px;
   background: #295094;
   color: white;
   font-size: 0.8rem;
   font-weight: 600;
+  border-radius: 10px;
+  outline: none;
 }
 
 .main .mainContent .mainRyt .mainRytContent .lftDetails .bilDetails {
@@ -379,6 +426,17 @@ nav .navWrapper .navUser .userCart {
   color: black;
 }
 
+.main .mainContent .mainRyt .mainRytContent .lftDetails .bilDetails .yrPDetailsHeadin .editBtn2 {
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .bilDetails .yrPDetailsHeadin .editBtn2:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 .main .mainContent .mainRyt .mainRytContent .lftDetails .bilDetails .formContent {
   padding-top: 20px;
 }
@@ -394,8 +452,9 @@ nav .navWrapper .navUser .userCart {
 
 .main .mainContent .mainRyt .mainRytContent .lftDetails .bilDetails .formContent input {
   font-size: 0.9rem;
-  outline: 2px solid black;
+  border: 2px solid black;
   -moz-outline-radius: 5px;
+  border-radius: 10px;
 }
 
 .main .mainContent .mainRyt .mainRytContent .lftDetails .bilDetails .butn {
@@ -412,12 +471,14 @@ nav .navWrapper .navUser .userCart {
 
 .main .mainContent .mainRyt .mainRytContent .lftDetails .bilDetails .butn button {
   border: none;
-  height: 30px;
-  width: 50px;
+  height: 35px;
+  width: 70px;
   background: #295094;
   color: white;
   font-size: 0.8rem;
   font-weight: 600;
+  border-radius: 10px;
+  outline: none;
 }
 
 .main .mainContent .mainRyt .mainRytContent .rytNoti {
@@ -428,8 +489,7 @@ nav .navWrapper .navUser .userCart {
   width: 100%;
   padding: 0;
   border-radius: 5px;
-  min-height: 480px;
-  max-height: 490px;
+  height: 100%;
 }
 
 .main .mainContent .mainRyt .mainRytContent .rytNoti .notiHeading {
@@ -542,6 +602,12 @@ nav .navWrapper .navUser .userCart {
   font-weight: 600;
 }
 
+.main .mainContent .mainRyt .mainRytContent .rytNoti .notiContent .showMrCont.showMrDisp {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  display: none;
+}
+
 .main .mainContent .mainRyt .mainRytContent .rytNoti .notiFooter {
   font-size: 0.9rem;
   padding-right: 20px;
@@ -555,8 +621,9 @@ nav .navWrapper .navUser .userCart {
 
 .footer {
   height: 100%;
-  padding: 2%;
-  background: #f8f8f8;
+  padding: 4% 2% 2% 3%;
+  background: url("../ASSETS/IMAGES/Background.svg");
+  background-size: contain;
 }
 
 .footer .footerContent {
@@ -694,5 +761,81 @@ nav .navWrapper .navUser .userCart {
   height: 30px;
   margin-right: 10px;
   cursor: pointer;
+}
+
+.scrollToTopBtn {
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  right: 2%;
+  bottom: 50px;
+  z-index: 5;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, right top, from(#0c3896), to(#2b65e4));
+  background: linear-gradient(to right, #0c3896, #2b65e4);
+  color: black;
+  -webkit-box-shadow: 0px 10px 31px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 31px -10px rgba(117, 117, 117, 0.75);
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  -webkit-animation: toTopBtn 1.5s ease-in-out infinite;
+          animation: toTopBtn 1.5s ease-in-out infinite;
+}
+
+@-webkit-keyframes toTopBtn {
+  0% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
+    background: linear-gradient(to right, #3868cf, #0b3081);
+  }
+  25% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
+    background: linear-gradient(to right, #3868cf, #0b3081);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
+    background: linear-gradient(to right, #3868cf, #0b3081);
+  }
+  100% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
+    background: linear-gradient(to right, #3868cf, #0b3081);
+  }
+}
+
+@keyframes toTopBtn {
+  0% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
+    background: linear-gradient(to right, #3868cf, #0b3081);
+  }
+  25% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
+    background: linear-gradient(to right, #3868cf, #0b3081);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
+    background: linear-gradient(to right, #3868cf, #0b3081);
+  }
+  100% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
+    background: linear-gradient(to right, #3868cf, #0b3081);
+  }
 }
 /*# sourceMappingURL=custYourDetail.css.map */

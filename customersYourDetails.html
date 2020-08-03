@@ -78,7 +78,9 @@
                   <div class="persDetails">
                     <div class="yrPDetailsHeadin">
                       <h5>YOUR PERSONAL DETAILS</h5>
-                      <p><i class="editIcon far fa-edit"></i> Edit</p>
+                      <p class="editBtn">
+                        <i class="editIcon far fa-edit"></i> Edit
+                      </p>
                     </div>
                     <div class="formContent">
                       <form>
@@ -91,6 +93,7 @@
                               type="text"
                               class="form-control"
                               placeholder="First name"
+                              readonly
                             />
                           </div>
                           <div class="form-group col-6">
@@ -101,6 +104,7 @@
                               type="text"
                               class="form-control"
                               placeholder="Last name"
+                              readonly
                             />
                           </div>
                         </div>
@@ -112,6 +116,7 @@
                             type="tel"
                             class="form-control"
                             placeholder="9945038564"
+                            readonly
                           />
                         </div>
                         <div class="form-group">
@@ -122,6 +127,7 @@
                             type="email"
                             class="form-control"
                             placeholder="Emailme@12345@gmail.com"
+                            readonly
                           />
                         </div>
                         <div class="butn">
@@ -134,7 +140,9 @@
                     <div class="persDetails">
                       <div class="yrPDetailsHeadin">
                         <h5>YOUR BILLING DETAILS</h5>
-                        <p><i class="editIcon far fa-edit"></i> Edit</p>
+                        <p class="editBtn2">
+                          <i class="editIcon far fa-edit"></i> Edit
+                        </p>
                       </div>
                       <div class="formContent">
                         <form>
@@ -144,22 +152,27 @@
                               type="text"
                               class="form-control"
                               placeholder="#94384931ADGB"
+                              readonly
                             />
                           </div>
-                          <div class="form-group">
-                            <label for="inputEmail4"
-                              >Address <span>*</span></label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              placeholder="House Number And Street Name"
-                            /><br />
-                            <input
-                              type="text"
-                              class="form-control"
-                              placeholder="Apartment, Suite, Unit, Etc"
-                            />
+                          <div class="editChangable">
+                            <div class="form-group">
+                              <label for="inputEmail4"
+                                >Address <span>*</span></label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                placeholder="House Number And Street Name"
+                                readonly
+                              /><br />
+                              <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Apartment, Suite, Unit, Etc"
+                                readonly
+                              />
+                            </div>
                           </div>
                           <div class="butn">
                             <button>SAVE</button>
@@ -229,9 +242,45 @@
                         </div>
                       </div>
                     </div>
+                    <div class="showMrCont showMrDisp">
+                      <div class="cont1">
+                        <div class="row">
+                          <div class="lftCont col-3">
+                            <div class="ico ico3">
+                              <i class="far fa-star"></i>
+                            </div>
+                          </div>
+                          <div class="rytCont col-9">
+                            <div class="subHead">
+                              <p>New Rating</p>
+                              <p>1hr ago</p>
+                            </div>
+                            <p>Hurray! You've got a new rating.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cont1">
+                        <div class="row">
+                          <div class="lftCont col-3">
+                            <div class="ico ico1">
+                              <i class="far fa-bell"></i>
+                            </div>
+                          </div>
+                          <div class="rytCont col-9">
+                            <div class="subHead">
+                              <p>New Message</p>
+                              <p>1hr ago</p>
+                            </div>
+                            <p>Your Theme is ready to download!</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div class="notiFooter">
-                    <p>More <i class="fas fa-chevron-right"></i></p>
+                    <p class="showMore">
+                      More <i class="fas fa-chevron-right"></i>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -321,6 +370,10 @@
         </div>
       </div>
     </section>
+
+    <div class="scrollToTopBtn">
+      <i class="fas fa-chevron-up"></i>
+    </div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script

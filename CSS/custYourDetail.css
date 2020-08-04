@@ -13,15 +13,26 @@ body {
   background: white;
 }
 
+.header {
+  min-height: 50vh;
+}
+
+.navMain {
+  width: 100%;
+  min-height: 17vh;
+}
+
 nav {
-  height: 100%;
+  min-height: 17vh;
   width: 100%;
   color: wheat;
-  padding: 10px 30px;
+  position: fixed;
+  z-index: 5;
 }
 
 nav .navWrapper {
   background-color: white;
+  padding: 10px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -37,6 +48,7 @@ nav .navWrapper {
           align-items: center;
   color: black;
   font-weight: 500;
+  min-height: 100%;
 }
 
 nav .navWrapper .navLogo {
@@ -66,6 +78,7 @@ nav .navWrapper .navLinks ul {
           justify-content: space-evenly;
   list-style: none;
   font-size: 1.2rem;
+  margin-left: 20px;
 }
 
 nav .navWrapper .navLinks li {
@@ -154,13 +167,15 @@ nav .navWrapper .navUser .userCart {
   border-radius: 50%;
 }
 
-.header {
+.abtBread {
   margin-bottom: 25px;
   height: 35vh;
+  position: relative;
+  z-index: 3;
 }
 
-.header .aboutBanner {
-  height: 70%;
+.abtBread .aboutBanner {
+  min-height: 70%;
   background: #020024;
   background: -webkit-gradient(linear, left top, right top, from(#567cc0), color-stop(41%, #3d609e), to(#224178));
   background: linear-gradient(90deg, #567cc0 0%, #3d609e 41%, #224178 100%);
@@ -179,7 +194,7 @@ nav .navWrapper .navUser .userCart {
   font-weight: 500;
 }
 
-.header .breadCrumbs {
+.abtBread .breadCrumbs {
   margin-bottom: 20px;
   height: 30%;
   background-color: white;
@@ -199,7 +214,7 @@ nav .navWrapper .navUser .userCart {
   font-size: 1.3rem;
 }
 
-.header .breadCrumbs .rightArrow {
+.abtBread .breadCrumbs .rightArrow {
   margin: 3px 10px 0 10px;
 }
 
@@ -638,10 +653,6 @@ nav .navWrapper .navUser .userCart {
   background-size: contain;
 }
 
-.footer .footerContent {
-  padding-left: 3%;
-}
-
 .footer .footerContent .footerLogo {
   height: 50px;
   margin-bottom: 20px;
@@ -654,7 +665,8 @@ nav .navWrapper .navUser .userCart {
 .footer .footerContent .footerPara {
   padding-top: 2%;
   font-weight: 500;
-  width: 85%;
+  width: 100%;
+  font-size: 0.9rem;
 }
 
 .footer .footerContent .middleFooter {
@@ -684,13 +696,14 @@ nav .navWrapper .navUser .userCart {
 .footer .footerContent .middleFooter ul {
   list-style: none;
   padding-top: 20px;
-  font-size: 1rem;
+  font-size: 0.94rem;
   color: #252525;
   font-weight: 500;
   cursor: pointer;
 }
 
 .footer .footerContent .middleFooter .contactdetails {
+  font-size: 0.94rem;
   width: 80%;
 }
 

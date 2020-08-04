@@ -650,7 +650,7 @@ nav .navWrapper .navUser .userCart {
   height: 100%;
   padding: 4% 2% 2% 3%;
   background: url("../ASSETS/IMAGES/Background.svg");
-  background-size: contain;
+  background-size: cover;
 }
 
 .footer .footerContent .footerLogo {

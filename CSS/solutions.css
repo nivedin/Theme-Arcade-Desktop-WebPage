@@ -13,11 +13,21 @@ body {
   background: white;
 }
 
+.header {
+  min-height: 50vh;
+}
+
+.navMain {
+  width: 100%;
+  min-height: 17vh;
+}
+
 nav {
-  height: 100%;
+  min-height: 17vh;
   width: 100%;
   color: wheat;
-  padding: 10px 30px;
+  position: fixed;
+  z-index: 5;
 }
 
 nav .navWrapper {
@@ -25,6 +35,7 @@ nav .navWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 10px 30px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -69,16 +80,32 @@ nav .navWrapper .navLinks ul {
 }
 
 nav .navWrapper .navLinks li {
-  margin-right: 20px;
+  margin-right: 27px;
 }
 
 nav .navWrapper .navLinks li a {
   text-decoration: none;
   color: black;
+  position: relative;
 }
 
-nav .navWrapper .navLinks li a:hover {
-  border-bottom: 2px solid blue;
+nav .navWrapper .navLinks li a::after {
+  position: absolute;
+  margin: 0;
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  content: "";
+  width: 0;
+  height: 3px;
+  z-index: 1;
+  background: #2222a5;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+nav .navWrapper .navLinks li a:hover::after {
+  width: 100%;
 }
 
 nav .navWrapper .navUser {
@@ -137,16 +164,16 @@ nav .navWrapper .navUser .userCart {
   border-radius: 50%;
 }
 
-.header {
+.abtBread {
   height: 30vh;
   background: blue;
 }
 
-.header .aboutBanner {
+.abtBread .aboutBanner {
   height: 70%;
   background: #020024;
-  background: -webkit-gradient(linear, left top, right top, from(#7f63ff), color-stop(41%, #1414ad), to(#1f1a80));
-  background: linear-gradient(90deg, #7f63ff 0%, #1414ad 41%, #1f1a80 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#567dc0), color-stop(41%, #3b5d9b), to(#26457d));
+  background: linear-gradient(90deg, #567dc0 0%, #3b5d9b 41%, #26457d 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#7f63ff",GradientType=1);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -162,7 +189,7 @@ nav .navWrapper .navUser .userCart {
   font-weight: 500;
 }
 
-.header .breadCrumbs {
+.abtBread .breadCrumbs {
   height: 30%;
   background-color: white;
   display: -webkit-box;
@@ -176,16 +203,18 @@ nav .navWrapper .navUser .userCart {
           align-items: center;
   -webkit-box-shadow: 2px 15px 42px -26px #2c15d9;
   box-shadow: 2px 15px 42px -26px #2c15d9;
-  color: #2c15d9;
+  color: #0c6096;
   font-size: 1.3rem;
 }
 
-.header .breadCrumbs .rightArrow {
+.abtBread .breadCrumbs .rightArrow {
   margin: 3px 10px 0 10px;
 }
 
 .main {
   height: 100%;
+  background: url("../ASSETS/IMAGES/Group 11046.svg");
+  background-size: cover;
 }
 
 .main .mainContainer {
@@ -201,6 +230,7 @@ nav .navWrapper .navUser .userCart {
 }
 
 .main .mainContainer .mainContent .lftCont {
+  padding-left: 50px;
   height: 350px;
 }
 
@@ -209,9 +239,10 @@ nav .navWrapper .navUser .userCart {
 }
 
 .main .mainContainer .mainContent .rytCont p {
-  font-size: 1.25rem;
-  font-weight: 500;
-  line-height: 35px;
+  font-size: 1.12rem;
+  font-weight: 600;
+  line-height: 33px;
+  width: 97.9%;
 }
 
 .features {
@@ -253,8 +284,8 @@ nav .navWrapper .navUser .userCart {
 
 .offerBanner {
   min-height: 20vh;
-  background: -webkit-gradient(linear, left top, right top, from(#3919c7), color-stop(41%, #1414ad), to(#1f1a80));
-  background: linear-gradient(90deg, #3919c7 0%, #1414ad 41%, #1f1a80 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#284e91), color-stop(41%, #234480), to(#1e3c72));
+  background: linear-gradient(90deg, #284e91 0%, #234480 41%, #1e3c72 100%);
 }
 
 .offerBanner .offBanContainer {
@@ -327,7 +358,7 @@ nav .navWrapper .navUser .userCart {
   position: absolute;
   height: 5px;
   width: 39px;
-  background-color: #1414ad;
+  background-color: #0b5e94;
   top: 12%;
   left: -5%;
 }
@@ -371,8 +402,8 @@ nav .navWrapper .navUser .userCart {
   position: relative;
   height: 45px;
   width: 45px;
-  background: -webkit-gradient(linear, left top, right top, from(#4f33ca), color-stop(41%, #2f2fb3), to(#3630a1));
-  background: linear-gradient(90deg, #4f33ca 0%, #2f2fb3 41%, #3630a1 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#395c99), color-stop(41%, #34548b), to(#314e83));
+  background: linear-gradient(90deg, #395c99 0%, #34548b 41%, #314e83 100%);
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -393,7 +424,7 @@ nav .navWrapper .navUser .userCart {
 
 .whyChooseUs .chseUsContainer .chseUsContent .chooseTD .Lnumber .tickCircle {
   position: absolute;
-  color: #3ada3a;
+  color: #00d18b;
   top: 70%;
   left: 78%;
 }
@@ -406,6 +437,36 @@ nav .navWrapper .navUser .userCart {
 
 .whyChooseUs .chseUsContainer .chseUsContent .chooseTD .RTitDes span {
   color: #888888;
+}
+
+.whyChooseUs .chseUsContainer .chseUsContent .chooseTD .lineDot {
+  position: absolute;
+  top: 70%;
+  left: -4.5%;
+  width: 40px;
+  border-right: 2px dashed #10eca3;
+  -webkit-animation: dotCompletion 2s ease-in-out forwards;
+          animation: dotCompletion 2s ease-in-out forwards;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+@-webkit-keyframes dotCompletion {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 40px;
+  }
+}
+
+@keyframes dotCompletion {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 40px;
+  }
 }
 
 .whyChooseUs .chseUsContainer .chseUsContent .btnContent {
@@ -421,12 +482,12 @@ nav .navWrapper .navUser .userCart {
 }
 
 .whyChooseUs .chseUsContainer .chseUsContent .btnContent button {
-  height: 50px;
-  width: 200px;
-  background: -webkit-gradient(linear, left top, right top, from(#4f33ca), color-stop(41%, #2f2fb3), to(#3630a1));
-  background: linear-gradient(90deg, #4f33ca 0%, #2f2fb3 41%, #3630a1 100%);
+  height: 65px;
+  width: 230px;
+  background: -webkit-gradient(linear, left top, right top, from(#3d5f9c), color-stop(41%, #39588f), to(#355083));
+  background: linear-gradient(90deg, #3d5f9c 0%, #39588f 41%, #355083 100%);
   border: none;
-  border-radius: 2px;
+  border-radius: 5px;
   margin-left: 20px;
   color: white;
   font-weight: 500;
@@ -442,9 +503,13 @@ nav .navWrapper .navUser .userCart {
 
 .custFeddback .custFeedContainer .custFeedHeading {
   text-align: center;
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
 }
 
 .custFeddback .custFeedContainer .custFeedContent {
+  background: url("../ASSETS/IMAGES/HomePage_Customer_Numbers_BG.svg");
+  background-size: cover;
   padding: 5% 5%;
 }
 
@@ -463,9 +528,21 @@ nav .navWrapper .navUser .userCart {
   width: 430px;
   text-align: center;
   -webkit-box-shadow: 20px 20px 45px -34px #545454;
-  box-shadow: 6px 6px 47px -40px #545454;
+  box-shadow: 6px 6px 47px -40px #272727;
   border-radius: 10px;
   border: 1px solid #f8f8f8;
+  background: white;
+}
+
+.custFeddback .custFeedContainer .custFeedContent .carousel-inner .carousel-item .cardMain .quoteBg {
+  position: absolute;
+  left: 45%;
+  top: 12%;
+  height: 40px;
+}
+
+.custFeddback .custFeedContainer .custFeedContent .carousel-inner .carousel-item .cardMain .quoteBg img {
+  height: 100%;
 }
 
 .custFeddback .custFeedContainer .custFeedContent .carousel-inner .carousel-item .cardMain .cardImage {
@@ -491,7 +568,7 @@ nav .navWrapper .navUser .userCart {
   padding: 10% 6% 4% 6%;
   font-size: 0.78rem;
   font-weight: 500;
-  color: #6d6d6d;
+  color: #8b8b8b;
 }
 
 .custFeddback .custFeedContainer .custFeedContent a {
@@ -516,6 +593,7 @@ nav .navWrapper .navUser .userCart {
   font-size: 1.2rem;
   -webkit-box-shadow: 0px 1px 16px -3px rgba(50, 50, 50, 0.83);
   box-shadow: 0px 1px 16px -7px rgba(50, 50, 50, 0.83);
+  background: white;
 }
 
 .custFeddback .custFeedContainer .custFeedContent a .carousel-control-icon :hover {
@@ -590,21 +668,18 @@ nav .navWrapper .navUser .userCart {
   width: 90px;
   font-size: 0.7rem;
   font-weight: 500;
-  border-radius: 2px;
+  border-radius: 5px;
   border: none;
   color: white;
-  background: -webkit-gradient(linear, left top, right top, from(#1b13a7), color-stop(41%, #2c2ca3), to(#2c129e));
-  background: linear-gradient(90deg, #1b13a7 0%, #2c2ca3 41%, #2c129e 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#3d5f9c), color-stop(41%, #39588f), to(#355083));
+  background: linear-gradient(90deg, #3d5f9c 0%, #39588f 41%, #355083 100%);
 }
 
 .footer {
   height: 100%;
-  padding: 2%;
-  background: #f8f8f8;
-}
-
-.footer .footerContent {
-  padding-left: 3%;
+  padding: 4% 2% 2% 3%;
+  background: url("../ASSETS/IMAGES/Background.svg");
+  background-size: cover;
 }
 
 .footer .footerContent .footerLogo {
@@ -619,7 +694,8 @@ nav .navWrapper .navUser .userCart {
 .footer .footerContent .footerPara {
   padding-top: 2%;
   font-weight: 500;
-  width: 85%;
+  width: 100%;
+  font-size: 0.9rem;
 }
 
 .footer .footerContent .middleFooter {
@@ -649,13 +725,14 @@ nav .navWrapper .navUser .userCart {
 .footer .footerContent .middleFooter ul {
   list-style: none;
   padding-top: 20px;
-  font-size: 1rem;
+  font-size: 0.94rem;
   color: #252525;
   font-weight: 500;
   cursor: pointer;
 }
 
 .footer .footerContent .middleFooter .contactdetails {
+  font-size: 0.94rem;
   width: 80%;
 }
 
@@ -738,5 +815,81 @@ nav .navWrapper .navUser .userCart {
   height: 30px;
   margin-right: 10px;
   cursor: pointer;
+}
+
+.scrollToTopBtn {
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  right: 2%;
+  bottom: 50px;
+  z-index: 5;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, right top, from(#0c3896), to(#2b65e4));
+  background: linear-gradient(to right, #0c3896, #2b65e4);
+  color: black;
+  -webkit-box-shadow: 0px 10px 31px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 31px -10px rgba(117, 117, 117, 0.75);
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  -webkit-animation: toTopBtn 1.5s ease-in-out infinite;
+          animation: toTopBtn 1.5s ease-in-out infinite;
+}
+
+@-webkit-keyframes toTopBtn {
+  0% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
+    background: linear-gradient(to right, #3868cf, #0b3081);
+  }
+  25% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
+    background: linear-gradient(to right, #3868cf, #0b3081);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
+    background: linear-gradient(to right, #3868cf, #0b3081);
+  }
+  100% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
+    background: linear-gradient(to right, #3868cf, #0b3081);
+  }
+}
+
+@keyframes toTopBtn {
+  0% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
+    background: linear-gradient(to right, #3868cf, #0b3081);
+  }
+  25% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
+    background: linear-gradient(to right, #3868cf, #0b3081);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
+    background: linear-gradient(to right, #3868cf, #0b3081);
+  }
+  100% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
+    background: linear-gradient(to right, #3868cf, #0b3081);
+  }
 }
 /*# sourceMappingURL=solutions.css.map */

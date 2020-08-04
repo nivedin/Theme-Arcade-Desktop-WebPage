@@ -13,11 +13,21 @@ body {
   background: white;
 }
 
+.header {
+  min-height: 50vh;
+}
+
+.navMain {
+  width: 100%;
+  min-height: 17vh;
+}
+
 nav {
-  height: 100%;
+  min-height: 17vh;
   width: 100%;
   color: wheat;
-  padding: 10px 30px;
+  position: fixed;
+  z-index: 5;
 }
 
 nav .navWrapper {
@@ -25,6 +35,7 @@ nav .navWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 10px 30px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -69,16 +80,32 @@ nav .navWrapper .navLinks ul {
 }
 
 nav .navWrapper .navLinks li {
-  margin-right: 20px;
+  margin-right: 27px;
 }
 
 nav .navWrapper .navLinks li a {
   text-decoration: none;
   color: black;
+  position: relative;
 }
 
-nav .navWrapper .navLinks li a:hover {
-  border-bottom: 2px solid blue;
+nav .navWrapper .navLinks li a::after {
+  position: absolute;
+  margin: 0;
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  content: "";
+  width: 0;
+  height: 3px;
+  z-index: 1;
+  background: #2222a5;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+nav .navWrapper .navLinks li a:hover::after {
+  width: 100%;
 }
 
 nav .navWrapper .navUser {
@@ -137,16 +164,16 @@ nav .navWrapper .navUser .userCart {
   border-radius: 50%;
 }
 
-.header {
+.abtBread {
   height: 30vh;
   background: blue;
 }
 
-.header .aboutBanner {
+.abtBread .aboutBanner {
   height: 70%;
   background: #020024;
-  background: -webkit-gradient(linear, left top, right top, from(#7f63ff), color-stop(41%, #1414ad), to(#1f1a80));
-  background: linear-gradient(90deg, #7f63ff 0%, #1414ad 41%, #1f1a80 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#567dc0), color-stop(41%, #3b5d9b), to(#26457d));
+  background: linear-gradient(90deg, #567dc0 0%, #3b5d9b 41%, #26457d 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#7f63ff",GradientType=1);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -162,7 +189,7 @@ nav .navWrapper .navUser .userCart {
   font-weight: 500;
 }
 
-.header .breadCrumbs {
+.abtBread .breadCrumbs {
   height: 30%;
   background-color: white;
   display: -webkit-box;
@@ -176,11 +203,11 @@ nav .navWrapper .navUser .userCart {
           align-items: center;
   -webkit-box-shadow: 2px 15px 42px -26px #2c15d9;
   box-shadow: 2px 15px 42px -26px #2c15d9;
-  color: #2c15d9;
+  color: #0c6096;
   font-size: 1.3rem;
 }
 
-.header .breadCrumbs .rightArrow {
+.abtBread .breadCrumbs .rightArrow {
   margin: 3px 10px 0 10px;
 }
 
@@ -194,6 +221,7 @@ nav .navWrapper .navUser .userCart {
 
 .main .mainContainer .carouselItem {
   width: 100%;
+  padding: 0 4%;
 }
 
 .main .mainContainer .carouselItem .swiper-container {
@@ -202,22 +230,23 @@ nav .navWrapper .navUser .userCart {
 }
 
 .main .mainContainer .carouselItem .swiper-container .swiper-wrapper {
-  padding: 0 8%;
+  padding: 0 6%;
 }
 
 .main .mainContainer .carouselItem .swiper-container .swiper-wrapper .swiper-slide {
   height: 300px;
-  max-width: 310px;
+  max-width: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: 25px;
 }
 
 .main .mainContainer .carouselItem .swiper-container .swiper-wrapper .swiper-slide .cardMain {
-  height: 250px;
+  height: 260px;
   width: 250px;
   -webkit-box-shadow: 0px 2px 22px -7px rgba(92, 92, 92, 0.75);
   box-shadow: 0px 2px 22px -7px rgba(92, 92, 92, 0.75);
@@ -225,15 +254,13 @@ nav .navWrapper .navUser .userCart {
 }
 
 .main .mainContainer .carouselItem .swiper-container .swiper-wrapper .swiper-slide .cardMain .cardImg {
-  height: 165px;
+  height: 172.5px;
   width: 250px;
-  border-radius: 15px;
 }
 
 .main .mainContainer .carouselItem .swiper-container .swiper-wrapper .swiper-slide .cardMain .cardImg img {
   height: 100%;
   width: 100%;
-  border-radius: 15px;
 }
 
 .main .mainContainer .carouselItem .swiper-container .swiper-wrapper .swiper-slide .cardMain .cardBody {
@@ -267,10 +294,10 @@ nav .navWrapper .navUser .userCart {
 
 .main .mainContainer .carouselItem .swiper-container .swiper-wrapper .swiper-slide .cardMain .cardFooter .travelBanner {
   height: 20px;
-  width: 40px;
+  width: 45px;
   background: #48bb58;
   color: white;
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -342,10 +369,11 @@ nav .navWrapper .navUser .userCart {
 
 .blogItemSearch .blogItemContainer .lftCards .mainCard .cardBody .cardHead .headButTime .greenBg {
   height: 20px;
-  width: 40px;
+  width: 45px;
   background: #48bb58;
   color: white;
-  font-size: 0.65rem;
+  font-size: 0.6rem;
+  padding-top: 2px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -364,7 +392,7 @@ nav .navWrapper .navUser .userCart {
 
 .blogItemSearch .blogItemContainer .lftCards .mainCard .cardBody .bodyPara {
   font-size: 0.9rem;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .blogItemSearch .blogItemContainer .lftCards .mainCard .cardBody .bodyPara .readMore {
@@ -553,18 +581,15 @@ nav .navWrapper .navUser .userCart {
   border-radius: 2px;
   border: none;
   color: white;
-  background: -webkit-gradient(linear, left top, right top, from(#1b13a7), color-stop(41%, #2c2ca3), to(#2c129e));
-  background: linear-gradient(90deg, #1b13a7 0%, #2c2ca3 41%, #2c129e 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#3a6abd), to(#244784));
+  background: linear-gradient(to bottom, #3a6abd, #244784);
 }
 
 .footer {
   height: 100%;
-  padding: 2%;
-  background: #f8f8f8;
-}
-
-.footer .footerContent {
-  padding-left: 3%;
+  padding: 4% 2% 2% 3%;
+  background: url("../ASSETS/IMAGES/Background.svg");
+  background-size: cover;
 }
 
 .footer .footerContent .footerLogo {
@@ -579,7 +604,8 @@ nav .navWrapper .navUser .userCart {
 .footer .footerContent .footerPara {
   padding-top: 2%;
   font-weight: 500;
-  width: 85%;
+  width: 100%;
+  font-size: 0.9rem;
 }
 
 .footer .footerContent .middleFooter {
@@ -587,7 +613,7 @@ nav .navWrapper .navUser .userCart {
 }
 
 .footer .footerContent .middleFooter .footerConHeading {
-  font-size: 1.3rem;
+  font-size: 0.85rem;
 }
 
 .footer .footerContent .middleFooter .footerConHeading h5 {
@@ -609,13 +635,14 @@ nav .navWrapper .navUser .userCart {
 .footer .footerContent .middleFooter ul {
   list-style: none;
   padding-top: 20px;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #252525;
   font-weight: 500;
   cursor: pointer;
 }
 
 .footer .footerContent .middleFooter .contactdetails {
+  font-size: 0.85rem;
   width: 80%;
 }
 
@@ -698,5 +725,81 @@ nav .navWrapper .navUser .userCart {
   height: 30px;
   margin-right: 10px;
   cursor: pointer;
+}
+
+.scrollToTopBtn {
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  right: 2%;
+  bottom: 50px;
+  z-index: 5;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, right top, from(#0c3896), to(#2b65e4));
+  background: linear-gradient(to right, #0c3896, #2b65e4);
+  color: black;
+  -webkit-box-shadow: 0px 10px 31px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 31px -10px rgba(117, 117, 117, 0.75);
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  -webkit-animation: toTopBtn 1.5s ease-in-out infinite;
+          animation: toTopBtn 1.5s ease-in-out infinite;
+}
+
+@-webkit-keyframes toTopBtn {
+  0% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
+    background: linear-gradient(to right, #3868cf, #0b3081);
+  }
+  25% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
+    background: linear-gradient(to right, #3868cf, #0b3081);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
+    background: linear-gradient(to right, #3868cf, #0b3081);
+  }
+  100% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
+    background: linear-gradient(to right, #3868cf, #0b3081);
+  }
+}
+
+@keyframes toTopBtn {
+  0% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
+    background: linear-gradient(to right, #3868cf, #0b3081);
+  }
+  25% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
+    background: linear-gradient(to right, #3868cf, #0b3081);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
+    background: linear-gradient(to right, #3868cf, #0b3081);
+  }
+  100% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
+    background: linear-gradient(to right, #3868cf, #0b3081);
+  }
 }
 /*# sourceMappingURL=blogCombined.css.map */

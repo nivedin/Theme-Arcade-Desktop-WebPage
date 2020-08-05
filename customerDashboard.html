@@ -12,43 +12,48 @@
     />
   </head>
   <body>
-    <nav data-aos="fade-down" data-aos-duration="1000">
-      <div class="navWrapper">
-        <div class="navLogo">
-          <img src="./ASSETS/IMAGES/themeArcadeLogo.svg" alt="Logo" />
-        </div>
-        <div class="navLinks">
-          <ul>
-            <li><a href="#"> Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Solutions</a></li>
-            <li><a href="#">Developers</a></li>
-            <li></li>
-          </ul>
-        </div>
-        <div class="navUser">
-          <div class="userImage">
-            <a href="./userPage.html"
-              ><img src="./ASSETS/IMAGES/prof1.jpeg" alt="userImage"
-            /></a>
+    <div class="header">
+      <div class="navMain">
+        <nav data-aos="fade-down" data-aos-duration="1000">
+          <div class="navWrapper">
+            <div class="navLogo">
+              <img src="./ASSETS/IMAGES/themeArcadeLogo.svg" alt="Logo" />
+            </div>
+            <div class="navLinks">
+              <ul>
+                <li><a href="#"> Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Solutions</a></li>
+                <li><a href="#">Developers</a></li>
+                <li></li>
+              </ul>
+            </div>
+            <div class="navUser">
+              <div class="userImage">
+                <a href="./userPage.html"
+                  ><img src="./ASSETS/IMAGES/prof1.jpeg" alt="userImage"
+                /></a>
+              </div>
+              <div class="userName">
+                Hi,Nivedin <i class="fas fa-arrow-circle-down"></i>
+              </div>
+              <div class="userCart"><i class="fas fa-shopping-cart"></i></div>
+            </div>
           </div>
-          <div class="userName">
-            Hi,Nivedin <i class="fas fa-arrow-circle-down"></i>
-          </div>
-          <div class="userCart"><i class="fas fa-shopping-cart"></i></div>
-        </div>
+        </nav>
       </div>
-    </nav>
 
-    <section class="header">
-      <div class="aboutBanner">
-        CUSTOMER PAGE
-      </div>
-      <div class="breadCrumbs">
-        Home <i class="rightArrow fas fa-angle-double-right"></i> Customer Page
-      </div>
-    </section>
+      <section class="abtBread">
+        <div class="aboutBanner">
+          CUSTOMER PAGE
+        </div>
+        <div class="breadCrumbs">
+          Home <i class="rightArrow fas fa-angle-double-right"></i> Customer
+          Page
+        </div>
+      </section>
+    </div>
 
     <section class="main">
       <div class="mainContent">
@@ -95,62 +100,70 @@
                       <button class="editBtn">Edit</button>
                       <div class="formContent">
                         <form>
-                          <div class="row">
-                            <div class="form-group col-6">
-                              <label for="inputFirst"
-                                >First Name <span>*</span></label
+                          <div class="editableFeild">
+                            <div class="row">
+                              <div class="form-group col-6">
+                                <label for="inputFirst"
+                                  >First Name <span>*</span></label
+                                >
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  placeholder="First name"
+                                  readonly
+                                />
+                              </div>
+                              <div class="form-group col-6">
+                                <label for="inputLast"
+                                  >Last Name <span>*</span></label
+                                >
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  placeholder="Last name"
+                                  readonly
+                                />
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label for="inputEmail4"
+                                >Address <span>*</span></label
                               >
                               <input
                                 type="text"
                                 class="form-control"
-                                placeholder="First name"
-                              />
-                            </div>
-                            <div class="form-group col-6">
-                              <label for="inputLast"
-                                >Last Name <span>*</span></label
-                              >
+                                placeholder="House Number And Street Name"
+                                readonly
+                              /><br />
                               <input
                                 type="text"
                                 class="form-control"
-                                placeholder="Last name"
+                                placeholder="Apartment, Suite, Unit, Etc"
+                                readonly
                               />
                             </div>
-                          </div>
-                          <div class="form-group">
-                            <label for="inputEmail4"
-                              >Address <span>*</span></label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              placeholder="House Number And Street Name"
-                            /><br />
-                            <input
-                              type="text"
-                              class="form-control"
-                              placeholder="Apartment, Suite, Unit, Etc"
-                            />
-                          </div>
-                          <div class="form-group">
-                            <label for="inputPhone"
-                              >Phone Number <span>*</span></label
-                            >
-                            <input
-                              type="tel"
-                              class="form-control"
-                              placeholder="9945038564"
-                            />
-                          </div>
-                          <div class="form-group">
-                            <label for="inputEmail4"
-                              >Email Address <span>*</span></label
-                            >
-                            <input
-                              type="email"
-                              class="form-control"
-                              placeholder="Emailme@12345@gmail.com"
-                            />
+                            <div class="form-group">
+                              <label for="inputPhone"
+                                >Phone Number <span>*</span></label
+                              >
+                              <input
+                                type="tel"
+                                class="form-control"
+                                readonly
+                                placeholder="9945038564"
+                              />
+                            </div>
+                            <div class="form-group">
+                              <label for="inputEmail4"
+                                >Email Address <span>*</span></label
+                              >
+                              <input
+                                type="email"
+                                class="form-control"
+                                placeholder="Emailme@12345@gmail.com"
+                                readonly
+                              />
+                            </div>
                           </div>
                         </form>
                       </div>
@@ -396,7 +409,9 @@
                   <!-- // -->
                   <div class="invoiceMain">
                     <h6>INVOICE</h6>
-                    <button class="editBtn">EDIT</button>
+                    <a href="./invoicePage.html"
+                      ><button class="viewAll">View All</button></a
+                    >
                     <div class="invoiceCont">
                       <div class="invoiceCard">
                         <div class="smallHead">
@@ -540,6 +555,10 @@
         </div>
       </div>
     </section>
+
+    <div class="scrollToTopBtn">
+      <i class="fas fa-chevron-up"></i>
+    </div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script

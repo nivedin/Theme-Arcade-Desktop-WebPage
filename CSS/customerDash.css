@@ -13,11 +13,21 @@ body {
   background: white;
 }
 
+.header {
+  min-height: 50vh;
+}
+
+.navMain {
+  width: 100%;
+  min-height: 17vh;
+}
+
 nav {
-  height: 100%;
+  min-height: 17vh;
   width: 100%;
   color: wheat;
-  padding: 10px 30px;
+  position: fixed;
+  z-index: 5;
 }
 
 nav .navWrapper {
@@ -25,6 +35,7 @@ nav .navWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 10px 30px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -69,17 +80,32 @@ nav .navWrapper .navLinks ul {
 }
 
 nav .navWrapper .navLinks li {
-  margin-right: 20px;
+  margin-right: 27px;
 }
 
 nav .navWrapper .navLinks li a {
   text-decoration: none;
   color: black;
-  font-weight: 600;
+  position: relative;
 }
 
-nav .navWrapper .navLinks li a:hover {
-  border-bottom: 2px solid blue;
+nav .navWrapper .navLinks li a::after {
+  position: absolute;
+  margin: 0;
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  content: "";
+  width: 0;
+  height: 3px;
+  z-index: 1;
+  background: #2222a5;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+nav .navWrapper .navLinks li a:hover::after {
+  width: 100%;
 }
 
 nav .navWrapper .navUser {
@@ -138,16 +164,16 @@ nav .navWrapper .navUser .userCart {
   border-radius: 50%;
 }
 
-.header {
-  margin-bottom: 25px;
-  height: 35vh;
+.abtBread {
+  height: 30vh;
+  background: blue;
 }
 
-.header .aboutBanner {
+.abtBread .aboutBanner {
   height: 70%;
   background: #020024;
-  background: -webkit-gradient(linear, left top, right top, from(#567cc0), color-stop(41%, #3d609e), to(#224178));
-  background: linear-gradient(90deg, #567cc0 0%, #3d609e 41%, #224178 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#567dc0), color-stop(41%, #3b5d9b), to(#26457d));
+  background: linear-gradient(90deg, #567dc0 0%, #3b5d9b 41%, #26457d 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#7f63ff",GradientType=1);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -163,8 +189,7 @@ nav .navWrapper .navUser .userCart {
   font-weight: 500;
 }
 
-.header .breadCrumbs {
-  margin-bottom: 20px;
+.abtBread .breadCrumbs {
   height: 30%;
   background-color: white;
   display: -webkit-box;
@@ -176,14 +201,13 @@ nav .navWrapper .navUser .userCart {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  box-shadow: 1px 9px 20px 0px #5341db;
-  -webkit-box-shadow: 1px 0px 29px 0px #5341db;
-  -moz-box-shadow: 1px 20px 20px 0px #5341db;
+  -webkit-box-shadow: 2px 15px 42px -26px #2c15d9;
+  box-shadow: 2px 15px 42px -26px #2c15d9;
   color: #0c6096;
   font-size: 1.3rem;
 }
 
-.header .breadCrumbs .rightArrow {
+.abtBread .breadCrumbs .rightArrow {
   margin: 3px 10px 0 10px;
 }
 
@@ -346,9 +370,19 @@ nav .navWrapper .navUser .userCart {
 
 .main .mainContent .mainRyt .mainRytContent .lftDetails .persDetails .persDetailMain .formContent input {
   font-size: 0.9rem;
-  outline: 2px solid black;
-  -moz-outline-radius: 5px;
-  -moz-outline-radius: 5px;
+  border: 2px solid black;
+  height: 40px;
+  border-radius: 8px;
+  background: white;
+  outline: none;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .persDetails .persDetailMain .formContent input:-moz-read-only {
+  background: #e0e0ec;
+}
+
+.main .mainContent .mainRyt .mainRytContent .lftDetails .persDetails .persDetailMain .formContent input:read-only {
+  background: #e0e0ec;
 }
 
 .main .mainContent .mainRyt .mainRytContent .lftDetails .bilDetails {
@@ -673,7 +707,7 @@ nav .navWrapper .navUser .userCart {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 600;
 }
 
@@ -710,7 +744,7 @@ nav .navWrapper .navUser .userCart {
   padding: 0;
   -webkit-transform: translate(10px, -5px);
           transform: translate(10px, -5px);
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .main .mainContent .mainRyt .mainRytContent .rytNoti .accountStatus .accBody .lftAcco span {
@@ -726,18 +760,18 @@ nav .navWrapper .navUser .userCart {
 .main .mainContent .mainRyt .mainRytContent .rytNoti .accountStatus .accoFooter .deltAcco {
   cursor: pointer;
   padding: 1% 0 1% 2%;
-  height: 20px;
-  width: 110px;
+  height: 18px;
+  width: 100px;
   border-radius: 10px;
-  font-size: 0.65rem;
-  font-weight: 500;
+  font-size: 0.6rem;
+  font-weight: 600;
   background: #ff5a5e;
 }
 
 .main .mainContent .mainRyt .mainRytContent .rytNoti .recentOrder {
   position: relative;
-  margin-top: 20px;
-  border-radius: 5px;
+  margin-top: 35px;
+  border-radius: 8px;
   -webkit-box-shadow: 0px -1px 10px -1px rgba(170, 170, 170, 0.75);
   box-shadow: 0px -1px 10px -1px rgba(170, 170, 170, 0.75);
   padding: 5% 6%;
@@ -883,18 +917,18 @@ nav .navWrapper .navUser .userCart {
   font-weight: 600;
 }
 
-.main .mainContent .mainRyt .mainRytContent .rytNoti .invoiceMain .editBtn {
+.main .mainContent .mainRyt .mainRytContent .rytNoti .invoiceMain .viewAll {
   position: absolute;
   top: -14px;
   right: 20px;
   height: 28px;
-  width: 50px;
+  width: 70px;
   text-transform: uppercase;
   border: none;
   outline: none;
   background: #2d61ad;
   color: white;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .main .mainContent .mainRyt .mainRytContent .rytNoti .invoiceMain .invoiceCont {
@@ -1126,5 +1160,81 @@ nav .navWrapper .navUser .userCart {
   height: 30px;
   margin-right: 10px;
   cursor: pointer;
+}
+
+.scrollToTopBtn {
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  right: 2%;
+  bottom: 50px;
+  z-index: 5;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, right top, from(#0c3896), to(#2b65e4));
+  background: linear-gradient(to right, #0c3896, #2b65e4);
+  color: black;
+  -webkit-box-shadow: 0px 10px 31px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 31px -10px rgba(117, 117, 117, 0.75);
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  -webkit-animation: toTopBtn 1.5s ease-in-out infinite;
+          animation: toTopBtn 1.5s ease-in-out infinite;
+}
+
+@-webkit-keyframes toTopBtn {
+  0% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
+    background: linear-gradient(to right, #3868cf, #0b3081);
+  }
+  25% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
+    background: linear-gradient(to right, #3868cf, #0b3081);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
+    background: linear-gradient(to right, #3868cf, #0b3081);
+  }
+  100% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
+    background: linear-gradient(to right, #3868cf, #0b3081);
+  }
+}
+
+@keyframes toTopBtn {
+  0% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
+    background: linear-gradient(to right, #3868cf, #0b3081);
+  }
+  25% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
+    background: linear-gradient(to right, #3868cf, #0b3081);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
+    background: linear-gradient(to right, #3868cf, #0b3081);
+  }
+  100% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
+    background: linear-gradient(to right, #3868cf, #0b3081);
+  }
 }
 /*# sourceMappingURL=customerDash.css.map */

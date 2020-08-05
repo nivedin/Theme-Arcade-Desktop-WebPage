@@ -14,11 +14,21 @@ body {
   overflow-x: hidden;
 }
 
+.header {
+  min-height: 50vh;
+}
+
+.navMain {
+  width: 100%;
+  min-height: 17vh;
+}
+
 nav {
-  height: 100%;
+  min-height: 17vh;
   width: 100%;
   color: wheat;
-  padding: 10px 30px;
+  position: fixed;
+  z-index: 5;
 }
 
 nav .navWrapper {
@@ -26,6 +36,7 @@ nav .navWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 10px 30px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -70,16 +81,32 @@ nav .navWrapper .navLinks ul {
 }
 
 nav .navWrapper .navLinks li {
-  margin-right: 20px;
+  margin-right: 27px;
 }
 
 nav .navWrapper .navLinks li a {
   text-decoration: none;
   color: black;
+  position: relative;
 }
 
-nav .navWrapper .navLinks li a:hover {
-  border-bottom: 2px solid blue;
+nav .navWrapper .navLinks li a::after {
+  position: absolute;
+  margin: 0;
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  content: "";
+  width: 0;
+  height: 3px;
+  z-index: 1;
+  background: #2222a5;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+nav .navWrapper .navLinks li a:hover::after {
+  width: 100%;
 }
 
 nav .navWrapper .navUser {
@@ -138,16 +165,16 @@ nav .navWrapper .navUser .userCart {
   border-radius: 50%;
 }
 
-.header {
+.abtBread {
   height: 30vh;
   background: blue;
 }
 
-.header .aboutBanner {
+.abtBread .aboutBanner {
   height: 70%;
   background: #020024;
-  background: -webkit-gradient(linear, left top, right top, from(#7f63ff), color-stop(41%, #1414ad), to(#1f1a80));
-  background: linear-gradient(90deg, #7f63ff 0%, #1414ad 41%, #1f1a80 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#567dc0), color-stop(41%, #3b5d9b), to(#26457d));
+  background: linear-gradient(90deg, #567dc0 0%, #3b5d9b 41%, #26457d 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#7f63ff",GradientType=1);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -163,7 +190,7 @@ nav .navWrapper .navUser .userCart {
   font-weight: 500;
 }
 
-.header .breadCrumbs {
+.abtBread .breadCrumbs {
   height: 30%;
   background-color: white;
   display: -webkit-box;
@@ -177,11 +204,11 @@ nav .navWrapper .navUser .userCart {
           align-items: center;
   -webkit-box-shadow: 2px 15px 42px -26px #2c15d9;
   box-shadow: 2px 15px 42px -26px #2c15d9;
-  color: #2c15d9;
+  color: #0c6096;
   font-size: 1.3rem;
 }
 
-.header .breadCrumbs .rightArrow {
+.abtBread .breadCrumbs .rightArrow {
   margin: 3px 10px 0 10px;
 }
 
@@ -621,7 +648,7 @@ nav .navWrapper .navUser .userCart {
 }
 
 .main .blogContent .blogPara .relatedPost .postCards .cardMain .cardImg {
-  height: 165px;
+  height: 175px;
   width: 250px;
   border-radius: 15px;
 }
@@ -828,5 +855,81 @@ nav .navWrapper .navUser .userCart {
   height: 30px;
   margin-right: 10px;
   cursor: pointer;
+}
+
+.scrollToTopBtn {
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  right: 2%;
+  bottom: 50px;
+  z-index: 5;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, right top, from(#0c3896), to(#2b65e4));
+  background: linear-gradient(to right, #0c3896, #2b65e4);
+  color: black;
+  -webkit-box-shadow: 0px 10px 31px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 31px -10px rgba(117, 117, 117, 0.75);
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  -webkit-animation: toTopBtn 1.5s ease-in-out infinite;
+          animation: toTopBtn 1.5s ease-in-out infinite;
+}
+
+@-webkit-keyframes toTopBtn {
+  0% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
+    background: linear-gradient(to right, #3868cf, #0b3081);
+  }
+  25% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
+    background: linear-gradient(to right, #3868cf, #0b3081);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
+    background: linear-gradient(to right, #3868cf, #0b3081);
+  }
+  100% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
+    background: linear-gradient(to right, #3868cf, #0b3081);
+  }
+}
+
+@keyframes toTopBtn {
+  0% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
+    background: linear-gradient(to right, #3868cf, #0b3081);
+  }
+  25% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
+    background: linear-gradient(to right, #3868cf, #0b3081);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
+    background: linear-gradient(to right, #3868cf, #0b3081);
+  }
+  100% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
+    background: linear-gradient(to right, #3868cf, #0b3081);
+  }
 }
 /*# sourceMappingURL=blogIndividual.css.map */

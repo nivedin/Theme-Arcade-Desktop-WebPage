@@ -13,11 +13,21 @@ body {
   background: white;
 }
 
+.header {
+  min-height: 50vh;
+}
+
+.navMain {
+  width: 100%;
+  min-height: 17vh;
+}
+
 nav {
-  height: 100%;
+  min-height: 17vh;
   width: 100%;
   color: wheat;
-  padding: 10px 30px;
+  position: fixed;
+  z-index: 5;
 }
 
 nav .navWrapper {
@@ -25,6 +35,7 @@ nav .navWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 10px 30px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -69,17 +80,32 @@ nav .navWrapper .navLinks ul {
 }
 
 nav .navWrapper .navLinks li {
-  margin-right: 20px;
+  margin-right: 27px;
 }
 
 nav .navWrapper .navLinks li a {
   text-decoration: none;
   color: black;
-  font-weight: 600;
+  position: relative;
 }
 
-nav .navWrapper .navLinks li a:hover {
-  border-bottom: 2px solid blue;
+nav .navWrapper .navLinks li a::after {
+  position: absolute;
+  margin: 0;
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  content: "";
+  width: 0;
+  height: 3px;
+  z-index: 1;
+  background: #2222a5;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+nav .navWrapper .navLinks li a:hover::after {
+  width: 100%;
 }
 
 nav .navWrapper .navUser {
@@ -138,16 +164,16 @@ nav .navWrapper .navUser .userCart {
   border-radius: 50%;
 }
 
-.header {
-  margin-bottom: 25px;
-  height: 35vh;
+.abtBread {
+  height: 30vh;
+  background: blue;
 }
 
-.header .aboutBanner {
+.abtBread .aboutBanner {
   height: 70%;
   background: #020024;
-  background: -webkit-gradient(linear, left top, right top, from(#567cc0), color-stop(41%, #3d609e), to(#224178));
-  background: linear-gradient(90deg, #567cc0 0%, #3d609e 41%, #224178 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#567dc0), color-stop(41%, #3b5d9b), to(#26457d));
+  background: linear-gradient(90deg, #567dc0 0%, #3b5d9b 41%, #26457d 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#7f63ff",GradientType=1);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -163,8 +189,7 @@ nav .navWrapper .navUser .userCart {
   font-weight: 500;
 }
 
-.header .breadCrumbs {
-  margin-bottom: 20px;
+.abtBread .breadCrumbs {
   height: 30%;
   background-color: white;
   display: -webkit-box;
@@ -176,14 +201,13 @@ nav .navWrapper .navUser .userCart {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  box-shadow: 1px 9px 20px 0px #5341db;
-  -webkit-box-shadow: 1px 0px 29px 0px #5341db;
-  -moz-box-shadow: 1px 20px 20px 0px #5341db;
+  -webkit-box-shadow: 2px 15px 42px -26px #2c15d9;
+  box-shadow: 2px 15px 42px -26px #2c15d9;
   color: #0c6096;
   font-size: 1.3rem;
 }
 
-.header .breadCrumbs .rightArrow {
+.abtBread .breadCrumbs .rightArrow {
   margin: 3px 10px 0 10px;
 }
 
@@ -235,10 +259,28 @@ nav .navWrapper .navUser .userCart {
   text-align: left;
 }
 
-.main .cartContent .contentItem .side1 .closeBtn {
+.main .cartContent .contentItem .side1 .removeCloseBtn {
+  position: relative;
   color: red;
   font-size: 1.3rem;
   cursor: pointer;
+  background: none;
+  border: none;
+  position: relative;
+  height: 20px;
+  width: 20px;
+  outline: none;
+  border-radius: 5px;
+}
+
+.main .cartContent .contentItem .side1 .removeCloseBtn::after {
+  position: absolute;
+  height: 100%;
+  width: 104%;
+  background: rgba(255, 0, 0, 0.24);
+  content: "";
+  top: 30%;
+  left: 2%;
 }
 
 .main .cartContent .contentItem .side1 .prdImage {
@@ -299,7 +341,7 @@ nav .navWrapper .navUser .userCart {
   font-size: 0.45rem;
 }
 
-.main .cartContent .contentItem .priceCont {
+.main .cartContent .contentItem .priceValue {
   font-size: 1.2rem;
   font-weight: 600;
 }
@@ -326,46 +368,69 @@ nav .navWrapper .navUser .userCart {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 200px;
-  height: 50px;
+  width: 160px;
+  height: 40px;
   border: 2px solid black;
+  border-radius: 5px;
 }
 
 .main .cartContent .contentItem .quantityBtn .quantityButonBorder .plus {
-  border: none;
-  outline: none;
-  width: 50px;
-  height: 100%;
-  background: white;
-  border-right: 2px solid black;
-  font-size: 1.3rem;
-  -webkit-transition: 0.3s all ease-in-out;
-  transition: 0.3s all ease-in-out;
-}
-
-.main .cartContent .contentItem .quantityBtn .quantityButonBorder .plus:hover {
-  background: #e63636;
-}
-
-.main .cartContent .contentItem .quantityBtn .quantityButonBorder .quantityNum {
-  font-size: 1.3rem;
-  font-weight: 600;
-}
-
-.main .cartContent .contentItem .quantityBtn .quantityButonBorder .minus {
+  position: relative;
   border: none;
   outline: none;
   width: 50px;
   height: 100%;
   background: white;
   border-left: 2px solid black;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.main .cartContent .contentItem .quantityBtn .quantityButonBorder .plus:hover {
+  background: #24db2d;
+}
+
+.main .cartContent .contentItem .quantityBtn .quantityButonBorder .plus::after {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 0, 21, 0.014);
+  position: absolute;
+  content: "";
+}
+
+.main .cartContent .contentItem .quantityBtn .quantityButonBorder .quantityNum {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.main .cartContent .contentItem .quantityBtn .quantityButonBorder .minus {
+  position: relative;
+  border: none;
+  outline: none;
+  width: 50px;
+  height: 100%;
+  background: white;
+  border-right: 2px solid black;
+  font-size: 1.2rem;
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
 }
 
 .main .cartContent .contentItem .quantityBtn .quantityButonBorder .minus:hover {
-  background: #24db2d;
+  background: #e63636;
+}
+
+.main .cartContent .contentItem .quantityBtn .quantityButonBorder .minus::after {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(30, 255, 0, 0.014);
+  position: absolute;
+  content: "";
 }
 
 .main .cartContent .rytCartTotal {
@@ -664,5 +729,81 @@ nav .navWrapper .navUser .userCart {
   height: 30px;
   margin-right: 10px;
   cursor: pointer;
+}
+
+.scrollToTopBtn {
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  right: 2%;
+  bottom: 50px;
+  z-index: 5;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, right top, from(#0c3896), to(#2b65e4));
+  background: linear-gradient(to right, #0c3896, #2b65e4);
+  color: black;
+  -webkit-box-shadow: 0px 10px 31px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 31px -10px rgba(117, 117, 117, 0.75);
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  -webkit-animation: toTopBtn 1.5s ease-in-out infinite;
+          animation: toTopBtn 1.5s ease-in-out infinite;
+}
+
+@-webkit-keyframes toTopBtn {
+  0% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
+    background: linear-gradient(to right, #3868cf, #0b3081);
+  }
+  25% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
+    background: linear-gradient(to right, #3868cf, #0b3081);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
+    background: linear-gradient(to right, #3868cf, #0b3081);
+  }
+  100% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
+    background: linear-gradient(to right, #3868cf, #0b3081);
+  }
+}
+
+@keyframes toTopBtn {
+  0% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
+    background: linear-gradient(to right, #3868cf, #0b3081);
+  }
+  25% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
+    background: linear-gradient(to right, #3868cf, #0b3081);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
+    background: linear-gradient(to right, #3868cf, #0b3081);
+  }
+  100% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
+    background: linear-gradient(to right, #3868cf, #0b3081);
+  }
 }
 /*# sourceMappingURL=cartPage.css.map */

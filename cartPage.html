@@ -17,43 +17,47 @@
     />
   </head>
   <body>
-    <nav data-aos="fade-down" data-aos-duration="1000">
-      <div class="navWrapper">
-        <div class="navLogo">
-          <img src="./ASSETS/IMAGES/themeArcadeLogo.svg" alt="Logo" />
-        </div>
-        <div class="navLinks">
-          <ul>
-            <li><a href="#"> Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Solutions</a></li>
-            <li><a href="#">Developers</a></li>
-            <li></li>
-          </ul>
-        </div>
-        <div class="navUser">
-          <div class="userImage">
-            <a href="./userPage.html"
-              ><img src="./ASSETS/IMAGES/prof1.jpeg" alt="userImage"
-            /></a>
+    <div class="header">
+      <div class="navMain">
+        <nav data-aos="fade-down" data-aos-duration="1000">
+          <div class="navWrapper">
+            <div class="navLogo">
+              <img src="./ASSETS/IMAGES/themeArcadeLogo.svg" alt="Logo" />
+            </div>
+            <div class="navLinks">
+              <ul>
+                <li><a href="#"> Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Solutions</a></li>
+                <li><a href="#">Developers</a></li>
+                <li></li>
+              </ul>
+            </div>
+            <div class="navUser">
+              <div class="userImage">
+                <a href="./userPage.html"
+                  ><img src="./ASSETS/IMAGES/prof1.jpeg" alt="userImage"
+                /></a>
+              </div>
+              <div class="userName">
+                Hi,Nivedin <i class="fas fa-arrow-circle-down"></i>
+              </div>
+              <div class="userCart"><i class="fas fa-shopping-cart"></i></div>
+            </div>
           </div>
-          <div class="userName">
-            Hi,Nivedin <i class="fas fa-arrow-circle-down"></i>
-          </div>
-          <div class="userCart"><i class="fas fa-shopping-cart"></i></div>
-        </div>
+        </nav>
       </div>
-    </nav>
 
-    <section class="header">
-      <div class="aboutBanner">
-        SHOPPING CART
-      </div>
-      <div class="breadCrumbs">
-        Home <i class="rightArrow fas fa-angle-double-right"></i> Cart
-      </div>
-    </section>
+      <section class="abtBread">
+        <div class="aboutBanner">
+          SHOPPING CART
+        </div>
+        <div class="breadCrumbs">
+          Home <i class="rightArrow fas fa-angle-double-right"></i> Cart
+        </div>
+      </section>
+    </div>
 
     <section class="main">
       <h4 class="mainHeading">ITEMS IN YOUR CART</h4>
@@ -71,7 +75,9 @@
               <div class="contentItem row">
                 <div class="col-5">
                   <div class="side1">
-                    <i class="closeBtn fas fa-window-close"></i>
+                    <button class="removeCloseBtn">
+                      <i class="removeCloseBtnIco fas fa-window-close"></i>
+                    </button>
                     <div class="prdImage">
                       <img
                         src="./ASSETS/IMAGES/jud-mackrill-Of_m3hMsoAA-unsplash.jpg"
@@ -89,16 +95,25 @@
                     </div>
                   </div>
                 </div>
-                <div class="priceCont col-3">₹ 150</div>
+                <div class="priceValue col-3">
+                  ₹ <span id="priceCont">150</span>
+                </div>
                 <div class="col-4">
                   <div class="quantityBtn">
                     <div class="quantityButonBorder">
-                      <button class="plus">
-                        <i class="fas fa-plus-circle"></i>
+                      <button
+                        class="minus"
+                        onclick="decreaseItem('quantityNum','priceCont')"
+                      >
+                        <i class="trashIcon fas fa-trash"></i>
                       </button>
-                      <div class="quantityNum">1</div>
-                      <button class="minus">
-                        <i class="fas fa-minus-circle"></i>
+                      <div id="quantityNum">1</div>
+
+                      <button
+                        class="plus"
+                        onclick="increaseItem('quantityNum','priceCont')"
+                      >
+                        <i class="plusIcon fas fa-plus-circle"></i>
                       </button>
                     </div>
                   </div>
@@ -109,7 +124,9 @@
               <div class="contentItem row">
                 <div class="col-5">
                   <div class="side1">
-                    <i class="closeBtn fas fa-window-close"></i>
+                    <button class="removeCloseBtn">
+                      <i class="removeCloseBtnIco fas fa-window-close"></i>
+                    </button>
                     <div class="prdImage">
                       <img
                         src="./ASSETS/IMAGES/jud-mackrill-Of_m3hMsoAA-unsplash.jpg"
@@ -127,16 +144,25 @@
                     </div>
                   </div>
                 </div>
-                <div class="priceCont col-3">₹ 150</div>
+                <div class="priceValue col-3">
+                  ₹ <span id="priceCont2">150</span>
+                </div>
                 <div class="col-4">
                   <div class="quantityBtn">
                     <div class="quantityButonBorder">
-                      <button class="plus">
-                        <i class=" fas fa-plus-circle"></i>
+                      <button
+                        class="minus"
+                        onclick="decreaseItem('quantityNum2','priceCont2')"
+                      >
+                        <i class="trashIcon fas fa-trash"></i>
                       </button>
-                      <div class="quantityNum">1</div>
-                      <button class="minus">
-                        <i class="fas fa-minus-circle"></i>
+                      <div id="quantityNum2">1</div>
+
+                      <button
+                        class="plus"
+                        onclick="increaseItem('quantityNum2','priceCont2')"
+                      >
+                        <i class="plusIcon fas fa-plus-circle"></i>
                       </button>
                     </div>
                   </div>
@@ -147,7 +173,9 @@
               <div class="contentItem row">
                 <div class="col-5">
                   <div class="side1">
-                    <i class="closeBtn fas fa-window-close"></i>
+                    <button class="removeCloseBtn">
+                      <i class="removeCloseBtnIco fas fa-window-close"></i>
+                    </button>
                     <div class="prdImage">
                       <img
                         src="./ASSETS/IMAGES/jud-mackrill-Of_m3hMsoAA-unsplash.jpg"
@@ -165,16 +193,25 @@
                     </div>
                   </div>
                 </div>
-                <div class="priceCont col-3">₹ 150</div>
+                <div class="priceValue col-3">
+                  ₹ <span id="priceCont3">150</span>
+                </div>
                 <div class="col-4">
                   <div class="quantityBtn">
                     <div class="quantityButonBorder">
-                      <button class="plus">
-                        <i class="fas fa-plus-circle"></i>
+                      <button
+                        class="minus"
+                        onclick="decreaseItem('quantityNum3','priceCont3')"
+                      >
+                        <i class="trashIcon fas fa-trash"></i>
                       </button>
-                      <div class="quantityNum">1</div>
-                      <button class="minus">
-                        <i class="fas fa-minus-circle"></i>
+                      <div id="quantityNum3">1</div>
+
+                      <button
+                        class="plus"
+                        onclick="increaseItem('quantityNum3','priceCont3')"
+                      >
+                        <i class="plusIcon fas fa-plus-circle"></i>
                       </button>
                     </div>
                   </div>
@@ -191,7 +228,7 @@
                   <div class="checkOutContent">
                     <div class="subTotal">
                       <p>Sub-Total</p>
-                      <p>₹ 300</p>
+                      <p>₹ <span id="totalAmount"> 450</span></p>
                     </div>
                     <div class="taxesLicense">
                       <p>Taxes & License</p>
@@ -199,7 +236,7 @@
                     </div>
                     <div class="totalAmo">
                       <p>Total</p>
-                      <p>₹380</p>
+                      <p>₹<span id="totalAmountPlusTax"> 530</span></p>
                     </div>
                   </div>
                   <button class="secureCheckout">
@@ -214,8 +251,11 @@
                     type="search"
                     name="coupon"
                     placeholder="Enter Code Here"
+                    id="discountCode"
                   />
-                  <button class="applyCoupon">Apply Coupon</button>
+                  <button class="applyCoupon" onclick="applyCoupon()">
+                    Apply Coupon
+                  </button>
                 </div>
               </div>
             </div>
@@ -365,6 +405,10 @@
         </div>
       </div>
     </section>
+
+    <div class="scrollToTopBtn">
+      <i class="fas fa-chevron-up"></i>
+    </div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>

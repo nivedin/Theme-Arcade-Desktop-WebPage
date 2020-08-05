@@ -46,3 +46,7 @@ scrollToTop.addEventListener("click", () => {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 });
+
+document.querySelector(".img-btn").addEventListener("click", function () {
+  document.querySelector(".cont").classList.toggle("s-signup");
+});

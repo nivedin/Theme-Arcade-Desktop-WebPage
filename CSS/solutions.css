@@ -235,7 +235,7 @@ nav .navWrapper .navUser .userCart {
 }
 
 .main .mainContainer .mainContent .lftCont img {
-  height: 100%;
+  height: 105%;
 }
 
 .main .mainContainer .mainContent .rytCont p {
@@ -243,6 +243,11 @@ nav .navWrapper .navUser .userCart {
   font-weight: 600;
   line-height: 33px;
   width: 97.9%;
+  text-align: left;
+}
+
+.main .mainContainer .mainContent .rytCont p:nth-child(2) {
+  margin-top: 30px;
 }
 
 .features {

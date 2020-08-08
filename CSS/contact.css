@@ -13,11 +13,21 @@ body {
   background: white;
 }
 
+.header {
+  min-height: 50vh;
+}
+
+.navMain {
+  width: 100%;
+  min-height: 17vh;
+}
+
 nav {
-  height: 100%;
+  min-height: 17vh;
   width: 100%;
   color: wheat;
-  padding: 10px 30px;
+  position: fixed;
+  z-index: 5;
 }
 
 nav .navWrapper {
@@ -25,6 +35,7 @@ nav .navWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 10px 30px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -153,16 +164,18 @@ nav .navWrapper .navUser .userCart {
   border-radius: 50%;
 }
 
-.header {
+.abtBread {
   height: 30vh;
   background: blue;
+  -webkit-box-shadow: 2px 35px 42px -27px #adc8fe;
+  box-shadow: 2px 35px 42px -27px #adc8fe;
 }
 
-.header .aboutBanner {
+.abtBread .aboutBanner {
   height: 70%;
   background: #020024;
-  background: -webkit-gradient(linear, left top, right top, from(#5075b7), color-stop(41%, #3a5c9a), to(#25447b));
-  background: linear-gradient(90deg, #5075b7 0%, #3a5c9a 41%, #25447b 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#567dc0), color-stop(41%, #3b5d9b), to(#26457d));
+  background: linear-gradient(90deg, #567dc0 0%, #3b5d9b 41%, #26457d 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#7f63ff",GradientType=1);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -178,7 +191,7 @@ nav .navWrapper .navUser .userCart {
   font-weight: 500;
 }
 
-.header .breadCrumbs {
+.abtBread .breadCrumbs {
   height: 30%;
   background-color: white;
   display: -webkit-box;
@@ -190,13 +203,11 @@ nav .navWrapper .navUser .userCart {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: 2px 15px 42px -26px #2c15d9;
-  box-shadow: 2px 15px 42px -26px #2c15d9;
-  color: #30729f;
+  color: #0c6096;
   font-size: 1.3rem;
 }
 
-.header .breadCrumbs .rightArrow {
+.abtBread .breadCrumbs .rightArrow {
   margin: 3px 10px 0 10px;
 }
 
@@ -217,7 +228,7 @@ nav .navWrapper .navUser .userCart {
   width: 410px;
   height: 45px;
   outline: none;
-  border: 2px solid #ada8ff;
+  border: 2px solid #8078ff;
   padding: 10px;
   border-radius: 5px;
 }
@@ -232,7 +243,7 @@ nav .navWrapper .navUser .userCart {
   position: absolute;
   left: 35px;
   top: 13px;
-  color: #8986c9;
+  color: #73a1c2;
   font-size: 0.95rem;
   -webkit-transition: -webkit-transform 0.4s ease-in-out;
   transition: -webkit-transform 0.4s ease-in-out;
@@ -243,8 +254,8 @@ nav .navWrapper .navUser .userCart {
 .main .mainContainer .mainContent .lftCont .subject select {
   width: 410px;
   height: 45px;
-  border: 2px solid #ada8ff;
-  color: #8986c9;
+  border: 2px solid #8078ff;
+  color: #73a1c2;
   font-size: 0.95rem;
   padding: 10px;
   outline: none;
@@ -257,7 +268,7 @@ nav .navWrapper .navUser .userCart {
 
 .main .mainContainer .mainContent .lftCont .message textarea {
   position: relative;
-  border: 2px solid #ada8ff;
+  border: 2px solid #8078ff;
   outline: none;
   padding: 20px 0 0 20px;
   resize: none;
@@ -274,7 +285,7 @@ nav .navWrapper .navUser .userCart {
   position: absolute;
   left: 20px;
   top: 14px;
-  color: #8986c9;
+  color: #73a1c2;
   font-size: 0.95rem;
   -webkit-transition: -webkit-transform 0.4s ease-in-out;
   transition: -webkit-transform 0.4s ease-in-out;
@@ -284,9 +295,9 @@ nav .navWrapper .navUser .userCart {
 
 .main .mainContainer .mainContent .lftCont button {
   position: relative;
-  margin: 20px 25px 0 48px;
+  margin: 20px 25px 0 0;
   height: 50px;
-  width: 300px;
+  width: 180px;
   border: none;
   background: -webkit-gradient(linear, left top, right top, from(#1f3e77), to(#295093));
   background: linear-gradient(to right, #1f3e77, #295093);
@@ -446,5 +457,76 @@ nav .navWrapper .navUser .userCart {
   height: 30px;
   margin-right: 10px;
   cursor: pointer;
+}
+
+.scrollToTopBtn {
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  right: 2%;
+  bottom: 50px;
+  z-index: 999;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 4px double #2b65e4;
+  background: white;
+  color: black;
+  -webkit-box-shadow: 0px 10px 31px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 31px -10px rgba(117, 117, 117, 0.75);
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-animation: toTopBtn 1.3s ease-in-out infinite;
+          animation: toTopBtn 1.3s ease-in-out infinite;
+}
+
+@-webkit-keyframes toTopBtn {
+  0% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  25% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    border: 4px double #1552d6;
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    border: 4px double white;
+  }
+}
+
+@keyframes toTopBtn {
+  0% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  25% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    border: 4px double #1552d6;
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    border: 4px double white;
+  }
+}
+
+.scrollToTopBtn:hover {
+  background: #1256e765;
+  border: 4px double white;
 }
 /*# sourceMappingURL=contact.css.map */

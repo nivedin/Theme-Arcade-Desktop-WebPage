@@ -221,16 +221,23 @@ nav .navWrapper .navUser .userCart {
 
 .main .mainContainer .carouselItem {
   width: 100%;
-  padding: 0 4%;
+  padding: 0 8% 0 5%;
+}
+
+.main .mainContainer .carouselItem .paginationArrow {
+  width: 110%;
+  -webkit-transform: translate(-50px, -140px);
+          transform: translate(-50px, -140px);
 }
 
 .main .mainContainer .carouselItem .swiper-container {
   width: 100%;
   height: 100%;
+  padding: 0 20px 0 40px;
 }
 
 .main .mainContainer .carouselItem .swiper-container .swiper-wrapper {
-  padding: 0 6%;
+  padding: 0 1%;
 }
 
 .main .mainContainer .carouselItem .swiper-container .swiper-wrapper .swiper-slide {
@@ -242,7 +249,7 @@ nav .navWrapper .navUser .userCart {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 25px;
+  margin-right: 32px;
 }
 
 .main .mainContainer .carouselItem .swiper-container .swiper-wrapper .swiper-slide .cardMain {

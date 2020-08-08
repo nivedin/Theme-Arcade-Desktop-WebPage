@@ -486,10 +486,10 @@ header nav .navContainer .logSigButtons .signUp {
 }
 
 .main .mainContainer .mainContent .lftPara button {
-  height: 30px;
-  width: 105px;
-  border-radius: 25px;
   margin-top: 25px;
+  height: 35px;
+  width: 115px;
+  border-radius: 25px;
 }
 
 .main .mainContainer .mainContent .lftPara .learMr {
@@ -538,10 +538,10 @@ header nav .navContainer .logSigButtons .signUp {
 .aboutUs .aboutUsContainer .abtHeading h1::after {
   position: absolute;
   content: "";
-  top: 105%;
-  left: 32.5%;
-  height: 8px;
-  width: 220px;
+  top: 120%;
+  left: 46%;
+  height: 4px;
+  width: 120px;
   background: -webkit-gradient(linear, left top, right top, from(#1515a5), to(blue));
   background: linear-gradient(to right, #1515a5, blue);
 }
@@ -553,19 +553,19 @@ header nav .navContainer .logSigButtons .signUp {
 }
 
 .aboutUs .aboutUsContainer .abtContent .lftPara {
-  padding: 95px 0 0 0;
+  padding: 150px 0 0 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
 .aboutUs .aboutUsContainer .abtContent .lftPara p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: white;
 }
 
 .aboutUs .aboutUsContainer .abtContent .lftPara .visit {
-  margin: 55px 0;
+  margin: 40px 0;
   position: relative;
   color: white;
 }
@@ -1366,7 +1366,7 @@ header nav .navContainer .logSigButtons .signUp {
 }
 
 .testimonals .tstContainer .tstContent .lftCont .carousel-inner .card .star {
-  color: yellow;
+  color: #ffd700;
 }
 
 .testimonals .tstContainer .tstContent .lftCont .carousel-inner .card::after {
@@ -1676,42 +1676,38 @@ header nav .navContainer .logSigButtons .signUp {
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  background: -webkit-gradient(linear, left top, right top, from(#0c3896), to(#2b65e4));
-  background: linear-gradient(to right, #0c3896, #2b65e4);
+  border: 4px double #2b65e4;
+  background: white;
   color: black;
   -webkit-box-shadow: 0px 10px 31px -10px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 10px 31px -10px rgba(117, 117, 117, 0.75);
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 600;
   text-align: center;
-  -webkit-animation: toTopBtn 1.5s ease-in-out infinite;
-          animation: toTopBtn 1.5s ease-in-out infinite;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-animation: toTopBtn 1.3s ease-in-out infinite;
+          animation: toTopBtn 1.3s ease-in-out infinite;
 }
 
 @-webkit-keyframes toTopBtn {
   0% {
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
-    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
-    background: linear-gradient(to right, #3868cf, #0b3081);
   }
   25% {
     -webkit-transform: scale(1);
             transform: scale(1);
-    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
-    background: linear-gradient(to right, #3868cf, #0b3081);
+    border: 4px double #1552d6;
   }
   50% {
     -webkit-transform: scale(1);
             transform: scale(1);
-    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
-    background: linear-gradient(to right, #3868cf, #0b3081);
   }
   100% {
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
-    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
-    background: linear-gradient(to right, #3868cf, #0b3081);
+    border: 4px double white;
   }
 }
 
@@ -1719,26 +1715,25 @@ header nav .navContainer .logSigButtons .signUp {
   0% {
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
-    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
-    background: linear-gradient(to right, #3868cf, #0b3081);
   }
   25% {
     -webkit-transform: scale(1);
             transform: scale(1);
-    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
-    background: linear-gradient(to right, #3868cf, #0b3081);
+    border: 4px double #1552d6;
   }
   50% {
     -webkit-transform: scale(1);
             transform: scale(1);
-    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
-    background: linear-gradient(to right, #3868cf, #0b3081);
   }
   100% {
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
-    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
-    background: linear-gradient(to right, #3868cf, #0b3081);
+    border: 4px double white;
   }
+}
+
+.scrollToTopBtn:hover {
+  background: #1256e765;
+  border: 4px double white;
 }
 /*# sourceMappingURL=landing.css.map */

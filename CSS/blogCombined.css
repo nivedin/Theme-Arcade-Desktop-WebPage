@@ -465,6 +465,7 @@ nav .navWrapper .navUser .userCart {
   width: 50px;
   outline: 0;
   border: none;
+  border-radius: 9px;
   color: white;
   background: -webkit-gradient(linear, left top, right top, from(#284d92), to(#26529e));
   background: linear-gradient(to right, #284d92, #26529e);

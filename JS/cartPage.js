@@ -44,25 +44,29 @@ const decreaseItem = (incdec, itemPrice) => {
   var itemVal = document.getElementById(incdec);
   var itemPrice = document.getElementById(itemPrice);
   var minusBtnIcons = itemVal.parentElement.querySelector(".minus");
-  if (itemVal.innerHTML <= 0) {
-    itemVal.innerHTML = 0;
-    itemPrice.innerHTML = parseInt(itemPrice.innerHTML) - 150;
-    minusBtnIcons.parentElement.parentElement.parentElement.parentElement.remove();
-  }
-  if (itemVal.innerHTML < 0) {
-    minusBtnIcons.children[0].classList.add("fa-trash");
-    minusBtnIcons.children[0].classList.remove("fa-minus-circle");
-    minusBtnIcons.parentElement.parentElement.parentElement.parentElement.remove();
-  }
+  // if (itemVal.innerHTML <= 0) {
+  //   itemVal.innerHTML = 0;
+  //   itemPrice.innerHTML = parseInt(itemPrice.innerHTML) - 150;
+  //   minusBtnIcons.parentElement.parentElement.parentElement.parentElement.remove();
+  // }
   if (itemVal.innerHTML <= 1) {
-    minusBtnIcons.children[0].classList.add("fa-trash");
     minusBtnIcons.children[0].classList.remove("fa-minus-circle");
+    minusBtnIcons.children[0].classList.add("fa-trash");
     itemVal.innerHTML = parseInt(itemVal.innerHTML) - 1;
     itemPrice.innerHTML = parseInt(itemPrice.innerHTML) - 150;
     totalAmount.innerHTML = parseInt(totalAmount.innerHTML) - 150;
     totalAmountPlusTax.innerHTML = parseInt(totalAmountPlusTax.innerHTML) - 150;
-
+    minusBtnIcons.parentElement.parentElement.parentElement.parentElement.remove();
     itemVal.innerHTML = 0;
+  }
+  if (itemVal.innerHTML <= 2) {
+    minusBtnIcons.children[0].classList.remove("fa-minus-circle");
+    minusBtnIcons.children[0].classList.add("fa-trash");
+    itemVal.innerHTML = parseInt(itemVal.innerHTML) - 1;
+    itemPrice.innerHTML = parseInt(itemPrice.innerHTML) - 150;
+    totalAmount.innerHTML = parseInt(totalAmount.innerHTML) - 150;
+    totalAmountPlusTax.innerHTML = parseInt(totalAmountPlusTax.innerHTML) - 150;
+    itemVal.innerHTML = 1;
   } else {
     itemVal.innerHTML = parseInt(itemVal.innerHTML) - 1;
     itemPrice.innerHTML = parseInt(itemPrice.innerHTML) - 150;

@@ -12,6 +12,8 @@
     />
   </head>
   <body>
+    <div class="header">
+      <div class="navMain">
     <nav data-aos="fade-down" data-aos-duration="1000">
       <div class="navWrapper">
         <div class="navLogo">
@@ -40,8 +42,9 @@
         </div>
       </div>
     </nav>
+    </div>
 
-    <section class="header">
+    <section class="abtBread">
       <div class="aboutBanner">
         INVOICES PAGE
       </div>
@@ -50,6 +53,7 @@
         Page<i class="rightArrow fas fa-angle-double-right"></i> Invoices Page
       </div>
     </section>
+    </div>
 
     <section class="main">
       <div class="mainContent">
@@ -74,10 +78,10 @@
             <div class="mainRytContent">
               <div class="mainRytHeading">
                 <h4><b>ALL INVOICES</b></h4>
-                <div class="rytHeadingBtn">
-                  <button class="transaction">All Transaction</button>
-                  <button class="pending">Pending</button>
-                  <button class="refund">Refunds</button>
+                <div class="rytHeadingBtn" id="filter-list">
+                  <button class="transaction filter" data-filter="all">All Transaction</button>
+                  <button class="pending filter" data-filter="1">Pending</button>
+                  <button class="refund filter" data-filter="2">Refunds</button>
                 </div>
               </div>
               <div class="mainRytOrderInvoice">
@@ -85,8 +89,8 @@
                 <div class="row">
                    
                   <div class="col-12 col-md-6">
-                    <div class="lftMain">
-                      <div class="lftCards card1">
+                    <div class="lftMain ">
+                      <div class="lftCards card1 filtr-item" data-category="1" >
                         <div class="cardHead">
                           <p class="orderID">ORDER ID: #9892DES</p>
                         </div>
@@ -114,7 +118,7 @@
                         </div>
                       </div>
 
-                      <div class="lftCards card2">
+                      <div class="lftCards card2 filtr-item" data-category="2" >
                         <div class="cardHead">
                           <p class="orderID">ORDER ID: #9892DES</p>
                         </div>
@@ -141,7 +145,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="lftCards card1">
+                      <div class="lftCards card1 filtr-item" data-category="1" data-sort="value">
                         <div class="cardHead">
                           <p class="orderID">ORDER ID: #9892DES</p>
                         </div>
@@ -168,7 +172,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="lftCards card2">
+                      <div class="lftCards card2 filtr-item" data-category="2" data-sort="value">
                         <div class="cardHead">
                           <p class="orderID">ORDER ID: #9892DES</p>
                         </div>
@@ -195,7 +199,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="lftCards card1">
+                      <div class="lftCards card1 filtr-item" data-category="1" data-sort="value">
                         <div class="cardHead">
                           <p class="orderID">ORDER ID: #9892DES</p>
                         </div>
@@ -222,7 +226,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="lftCards card2">
+                      <div class="lftCards card2 filtr-item" data-category="2" data-sort="value">
                         <div class="cardHead">
                           <p class="orderID">ORDER ID: #9892DES</p>
                         </div>
@@ -343,6 +347,95 @@
                                   <p class="refund">Refund Availability within 10 days of purchase, Thank You</p>
                               </div>
                           </div>
+                          <div class="invoice invoice2" style="display: none;">
+                              <div class="invoiceHead">
+                                  <h4>INVOICE2</h4>
+                                  <img src="./ASSETS/IMAGES/themeArcadeLogo.svg" alt="logo" class="themeLogo">
+                              </div>
+                              <div class="invoiceFrom">
+                                  <p class="from">From</p>
+                                  <p>ThemesArcade</p>
+                                  <p>a Digital Vault Company</p>
+                                  <p>20,A Wing Manmohan Apartment</p>
+                                  <p>Kamatwada,Pavan Nagar,Nashik -422006</p>
+                              </div>
+                              <div class="billToInvoice">
+                                  <div class="row">
+                                      <div class="col-8">
+                                        <p class="to">Bill To</p>
+                                        <p>Anthony Fernandes2</p>                    
+                                        <p>20,A Wing Manmohan Apartment</p>
+                                        <p>Kamatwada,Pavan Nagar,Nashik -422006</p>
+                                      </div>
+                                      <div class="col-2 no-gutters p-0">
+                                          <p class="invoiceNum">Invoice #</p>
+                                          <p class="invoiceDate">Invoice Date</p>
+                                      </div>
+                                      <div class="col-2 pl-3">
+                                        <p class="invoiceNum1">200</p>
+                                        <p class="invoiceDate1 ">30/02/2020</p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <hr style="background: black;">
+                              <div class="description">
+                                  <div class="row">
+                                      <div class="col-9">
+                                        <p class="desHead">
+                                            Description
+                                        </p>
+                                        <p class="desItem">
+                                            Theme #17821AED - Lifetime Liscense
+                                        </p>
+                                        <p class="desItem">
+                                            Theme #19810AED - Lifetime Liscense
+                                        </p>
+                                        <p class="desItem">
+                                            Theme #17810AED - Lifetime Liscense
+                                        </p>
+                                        <p class="desItem">
+                                            Theme #13823AED - Lifetime Liscense
+                                        </p>
+                                      </div>
+                                      <div class="col-1 p-0 ml-5">
+                                        <p class="desHead">
+                                            Amount
+                                        </p>
+                                        <p class="desItem">
+                                            180.00
+                                        </p>
+                                        <p class="desItem">
+                                           120.00
+                                        </p>
+                                        <p class="desItem">
+                                            270.00
+                                        </p>
+                                        <p class="desItem">
+                                            860.00
+                                        </p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <hr style="background: black;">
+                              <div class="subTotal">
+                                  <div class="row p-0">
+                                      <div class="col-9" style="text-align: right;">
+                                          <p>Subtotal</p>
+                                          <p>GST 12.0%</p>
+                                          <p class="total">Total</p>
+                                      </div>
+                                      <div class="col-1 p-0 ml-5" style="text-align: right;" >
+                                        <p>1010.00</p>
+                                        <p>73.00</p>
+                                        <p class="totalAmt"><i class="fas fa-rupee-sign"></i> 1073.20</p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="termsCond">
+                                  <p class="terms">Terms & Condition</p>
+                                  <p class="refund">Refund Availability within 10 days of purchase, Thank You</p>
+                              </div>
+                          </div>
                       </div>
                   </div>
                   </div>
@@ -443,6 +536,12 @@
       <i class="fas fa-chevron-up"></i>
     </div>
 
+
+    <script
+    src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+    crossorigin="anonymous"
+  ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script
       defer
@@ -452,7 +551,8 @@
       defer
       src="https://use.fontawesome.com/releases/v5.12.1/js/v4-shims.js"
     ></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="./JS/jquery.filterizr.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="./JS/invoicePage.js"></script>

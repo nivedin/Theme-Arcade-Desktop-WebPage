@@ -737,46 +737,42 @@ nav .navWrapper .navUser .userCart {
   position: fixed;
   right: 2%;
   bottom: 50px;
-  z-index: 5;
+  z-index: 999;
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  background: -webkit-gradient(linear, left top, right top, from(#0c3896), to(#2b65e4));
-  background: linear-gradient(to right, #0c3896, #2b65e4);
+  border: 4px double #2b65e4;
+  background: white;
   color: black;
   -webkit-box-shadow: 0px 10px 31px -10px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 10px 31px -10px rgba(117, 117, 117, 0.75);
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 600;
   text-align: center;
-  -webkit-animation: toTopBtn 1.5s ease-in-out infinite;
-          animation: toTopBtn 1.5s ease-in-out infinite;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-animation: toTopBtn 1.3s ease-in-out infinite;
+          animation: toTopBtn 1.3s ease-in-out infinite;
 }
 
 @-webkit-keyframes toTopBtn {
   0% {
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
-    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
-    background: linear-gradient(to right, #3868cf, #0b3081);
   }
   25% {
     -webkit-transform: scale(1);
             transform: scale(1);
-    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
-    background: linear-gradient(to right, #3868cf, #0b3081);
+    border: 4px double #1552d6;
   }
   50% {
     -webkit-transform: scale(1);
             transform: scale(1);
-    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
-    background: linear-gradient(to right, #3868cf, #0b3081);
   }
   100% {
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
-    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
-    background: linear-gradient(to right, #3868cf, #0b3081);
+    border: 4px double white;
   }
 }
 
@@ -784,26 +780,25 @@ nav .navWrapper .navUser .userCart {
   0% {
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
-    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
-    background: linear-gradient(to right, #3868cf, #0b3081);
   }
   25% {
     -webkit-transform: scale(1);
             transform: scale(1);
-    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
-    background: linear-gradient(to right, #3868cf, #0b3081);
+    border: 4px double #1552d6;
   }
   50% {
     -webkit-transform: scale(1);
             transform: scale(1);
-    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
-    background: linear-gradient(to right, #3868cf, #0b3081);
   }
   100% {
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
-    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
-    background: linear-gradient(to right, #3868cf, #0b3081);
+    border: 4px double white;
   }
+}
+
+.scrollToTopBtn:hover {
+  background: #1256e765;
+  border: 4px double white;
 }
 /*# sourceMappingURL=cartPage.css.map */

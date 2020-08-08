@@ -14,11 +14,21 @@ body {
   position: relative;
 }
 
+.header {
+  min-height: 50vh;
+}
+
+.navMain {
+  width: 100%;
+  min-height: 17vh;
+}
+
 nav {
-  height: 100%;
+  min-height: 17vh;
   width: 100%;
   color: wheat;
-  padding: 10px 30px;
+  position: fixed;
+  z-index: 5;
 }
 
 nav .navWrapper {
@@ -26,6 +36,7 @@ nav .navWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 10px 30px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -76,7 +87,6 @@ nav .navWrapper .navLinks li {
 nav .navWrapper .navLinks li a {
   text-decoration: none;
   color: black;
-  font-weight: 500;
   position: relative;
 }
 
@@ -155,16 +165,16 @@ nav .navWrapper .navUser .userCart {
   border-radius: 50%;
 }
 
-.header {
-  margin-bottom: 25px;
-  height: 35vh;
+.abtBread {
+  height: 30vh;
+  background: blue;
 }
 
-.header .aboutBanner {
+.abtBread .aboutBanner {
   height: 70%;
   background: #020024;
-  background: -webkit-gradient(linear, left top, right top, from(#567cc0), color-stop(41%, #3d609e), to(#224178));
-  background: linear-gradient(90deg, #567cc0 0%, #3d609e 41%, #224178 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#567dc0), color-stop(41%, #3b5d9b), to(#26457d));
+  background: linear-gradient(90deg, #567dc0 0%, #3b5d9b 41%, #26457d 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#7f63ff",GradientType=1);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -180,8 +190,7 @@ nav .navWrapper .navUser .userCart {
   font-weight: 500;
 }
 
-.header .breadCrumbs {
-  margin-bottom: 20px;
+.abtBread .breadCrumbs {
   height: 30%;
   background-color: white;
   display: -webkit-box;
@@ -193,14 +202,13 @@ nav .navWrapper .navUser .userCart {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  box-shadow: 1px 9px 20px 0px #5341db;
-  -webkit-box-shadow: 1px 0px 29px 0px #5341db;
-  -moz-box-shadow: 1px 20px 20px 0px #5341db;
+  -webkit-box-shadow: 2px 15px 42px -26px #2c15d9;
+  box-shadow: 2px 15px 42px -26px #2c15d9;
   color: #0c6096;
   font-size: 1.3rem;
 }
 
-.header .breadCrumbs .rightArrow {
+.abtBread .breadCrumbs .rightArrow {
   margin: 3px 10px 0 10px;
 }
 
@@ -368,27 +376,33 @@ nav .navWrapper .navUser .userCart {
   min-height: 130vh;
 }
 
-.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .lftCards {
+.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .lftCards,
+.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .filtr-item {
   width: 450px;
+  position: none !important;
   padding: 4% 3% 3% 3%;
   border-radius: 8px;
   border: 1px solid #fff9f9;
   -webkit-box-shadow: 2px 3px 18px -5px rgba(0, 0, 0, 0.75);
   box-shadow: 2px 3px 18px -5px rgba(180, 180, 180, 0.75);
-  margin-bottom: 30px;
+  margin-bottom: 30px !important;
+  cursor: pointer;
 }
 
-.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .lftCards p {
+.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .lftCards p,
+.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .filtr-item p {
   margin: 0;
 }
 
-.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .lftCards .cardHead {
+.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .lftCards .cardHead,
+.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .filtr-item .cardHead {
   font-size: 0.7rem;
   color: #797979;
   font-weight: 600;
 }
 
-.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .lftCards .cardBody {
+.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .lftCards .cardBody,
+.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .filtr-item .cardBody {
   margin-top: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -398,7 +412,8 @@ nav .navWrapper .navUser .userCart {
           align-items: center;
 }
 
-.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .lftCards .cardBody .themeName {
+.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .lftCards .cardBody .themeName,
+.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .filtr-item .cardBody .themeName {
   margin-top: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -415,19 +430,22 @@ nav .navWrapper .navUser .userCart {
           justify-content: space-between;
 }
 
-.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .lftCards .cardBody .themeName .thmName {
+.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .lftCards .cardBody .themeName .thmName,
+.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .filtr-item .cardBody .themeName .thmName {
   font-size: 0.98rem;
   font-weight: 600;
 }
 
-.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .lftCards .cardBody .themeName .completed {
+.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .lftCards .cardBody .themeName .completed,
+.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .filtr-item .cardBody .themeName .completed {
   margin-top: 5px;
   font-size: 0.65rem;
   color: #2dce98;
   font-weight: 500;
 }
 
-.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .lftCards .cardBody .themePrice {
+.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .lftCards .cardBody .themePrice,
+.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .filtr-item .cardBody .themePrice {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -441,18 +459,21 @@ nav .navWrapper .navUser .userCart {
   margin-left: 45px;
 }
 
-.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .lftCards .cardBody .themePrice .money {
+.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .lftCards .cardBody .themePrice .money,
+.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .filtr-item .cardBody .themePrice .money {
   font-size: 1.35rem;
   color: #2dce98;
   font-weight: 600;
 }
 
-.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .lftCards .cardBody .themePrice .money .rupeeIcon {
+.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .lftCards .cardBody .themePrice .money .rupeeIcon,
+.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .filtr-item .cardBody .themePrice .money .rupeeIcon {
   margin-left: 2px;
   font-size: 1.2rem;
 }
 
-.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .lftCards .cardBody .themePrice .dateTime {
+.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .lftCards .cardBody .themePrice .dateTime,
+.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .filtr-item .cardBody .themePrice .dateTime {
   width: 104%;
   margin-top: 2px;
   font-size: 0.5rem;
@@ -465,7 +486,8 @@ nav .navWrapper .navUser .userCart {
           justify-content: space-between;
 }
 
-.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .lftCards .cardBody .thmDownloadBtn {
+.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .lftCards .cardBody .thmDownloadBtn,
+.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .filtr-item .cardBody .thmDownloadBtn {
   margin-top: 5px;
   margin-left: 25px;
   display: -webkit-box;
@@ -480,7 +502,8 @@ nav .navWrapper .navUser .userCart {
           align-items: center;
 }
 
-.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .lftCards .cardBody .thmDownloadBtn .downloadBtn {
+.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .lftCards .cardBody .thmDownloadBtn .downloadBtn,
+.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .filtr-item .cardBody .thmDownloadBtn .downloadBtn {
   border: 0;
   outline: 0;
   background: white;
@@ -490,16 +513,43 @@ nav .navWrapper .navUser .userCart {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .lftCards .cardBody .thmDownloadBtn .downloadBtn:hover {
+.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .lftCards .cardBody .thmDownloadBtn .downloadBtn:hover,
+.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .filtr-item .cardBody .thmDownloadBtn .downloadBtn:hover {
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
   color: #1ebb87;
 }
 
-.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .lftCards .cardBody .thmDownloadBtn .download {
+.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .lftCards .cardBody .thmDownloadBtn .download,
+.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .filtr-item .cardBody .thmDownloadBtn .download {
   margin-top: 3px;
   font-size: 0.7rem;
   font-weight: 500;
+}
+
+.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .filtr-item:nth-child(2) {
+  top: 5%;
+}
+
+.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .filtr-item:nth-child(3) {
+  top: 10%;
+}
+
+.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .filtr-item:nth-child(4) {
+  top: 15%;
+}
+
+.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .filtr-item:nth-child(5) {
+  top: 20%;
+}
+
+.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .filtr-item:nth-child(6) {
+  top: 25%;
+}
+
+.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .lftCards:hover,
+.main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .filtr-item:hover {
+  padding: 2%;
 }
 
 .main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .lftMain .card2 .themeName .completed {
@@ -524,6 +574,8 @@ nav .navWrapper .navUser .userCart {
   -webkit-box-shadow: 2px 3px 18px -5px rgba(0, 0, 0, 0.75);
   box-shadow: 2px 3px 18px -5px rgba(180, 180, 180, 0.75);
   padding: 10% 8%;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .main .mainContent .mainRyt .mainRytContent .mainRytOrderInvoice .rytInvoiceMain .invoice .invoiceHead {
@@ -791,46 +843,42 @@ nav .navWrapper .navUser .userCart {
   position: fixed;
   right: 2%;
   bottom: 50px;
-  z-index: 5;
+  z-index: 999;
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  background: -webkit-gradient(linear, left top, right top, from(#0c3896), to(#2b65e4));
-  background: linear-gradient(to right, #0c3896, #2b65e4);
+  border: 4px double #2b65e4;
+  background: white;
   color: black;
   -webkit-box-shadow: 0px 10px 31px -10px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 10px 31px -10px rgba(117, 117, 117, 0.75);
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 600;
   text-align: center;
-  -webkit-animation: toTopBtn 1.5s ease-in-out infinite;
-          animation: toTopBtn 1.5s ease-in-out infinite;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-animation: toTopBtn 1.3s ease-in-out infinite;
+          animation: toTopBtn 1.3s ease-in-out infinite;
 }
 
 @-webkit-keyframes toTopBtn {
   0% {
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
-    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
-    background: linear-gradient(to right, #3868cf, #0b3081);
   }
   25% {
     -webkit-transform: scale(1);
             transform: scale(1);
-    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
-    background: linear-gradient(to right, #3868cf, #0b3081);
+    border: 4px double #1552d6;
   }
   50% {
     -webkit-transform: scale(1);
             transform: scale(1);
-    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
-    background: linear-gradient(to right, #3868cf, #0b3081);
   }
   100% {
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
-    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
-    background: linear-gradient(to right, #3868cf, #0b3081);
+    border: 4px double white;
   }
 }
 
@@ -838,26 +886,25 @@ nav .navWrapper .navUser .userCart {
   0% {
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
-    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
-    background: linear-gradient(to right, #3868cf, #0b3081);
   }
   25% {
     -webkit-transform: scale(1);
             transform: scale(1);
-    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
-    background: linear-gradient(to right, #3868cf, #0b3081);
+    border: 4px double #1552d6;
   }
   50% {
     -webkit-transform: scale(1);
             transform: scale(1);
-    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
-    background: linear-gradient(to right, #3868cf, #0b3081);
   }
   100% {
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
-    background: -webkit-gradient(linear, left top, right top, from(#3868cf), to(#0b3081));
-    background: linear-gradient(to right, #3868cf, #0b3081);
+    border: 4px double white;
   }
+}
+
+.scrollToTopBtn:hover {
+  background: #1256e765;
+  border: 4px double white;
 }
 /*# sourceMappingURL=invoicePage.css.map */

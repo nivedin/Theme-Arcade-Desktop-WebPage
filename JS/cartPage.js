@@ -62,11 +62,12 @@ const decreaseItem = (incdec, itemPrice) => {
   if (itemVal.innerHTML <= 2) {
     minusBtnIcons.children[0].classList.remove("fa-minus-circle");
     minusBtnIcons.children[0].classList.add("fa-trash");
-    itemVal.innerHTML = parseInt(itemVal.innerHTML) - 1;
+
     itemPrice.innerHTML = parseInt(itemPrice.innerHTML) - 150;
     totalAmount.innerHTML = parseInt(totalAmount.innerHTML) - 150;
     totalAmountPlusTax.innerHTML = parseInt(totalAmountPlusTax.innerHTML) - 150;
-    itemVal.innerHTML = 1;
+    itemVal.innerHTML = 2;
+    itemVal.innerHTML = parseInt(itemVal.innerHTML) - 1;
   } else {
     itemVal.innerHTML = parseInt(itemVal.innerHTML) - 1;
     itemPrice.innerHTML = parseInt(itemPrice.innerHTML) - 150;

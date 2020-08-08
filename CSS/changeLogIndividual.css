@@ -13,11 +13,21 @@ body {
   background: white;
 }
 
+.header {
+  min-height: 50vh;
+}
+
+.navMain {
+  width: 100%;
+  min-height: 17vh;
+}
+
 nav {
-  height: 100%;
+  min-height: 17vh;
   width: 100%;
   color: wheat;
-  padding: 10px 30px;
+  position: fixed;
+  z-index: 5;
 }
 
 nav .navWrapper {
@@ -25,6 +35,7 @@ nav .navWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 10px 30px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -69,16 +80,32 @@ nav .navWrapper .navLinks ul {
 }
 
 nav .navWrapper .navLinks li {
-  margin-right: 20px;
+  margin-right: 27px;
 }
 
 nav .navWrapper .navLinks li a {
   text-decoration: none;
   color: black;
+  position: relative;
 }
 
-nav .navWrapper .navLinks li a:hover {
-  border-bottom: 2px solid blue;
+nav .navWrapper .navLinks li a::after {
+  position: absolute;
+  margin: 0;
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  content: "";
+  width: 0;
+  height: 3px;
+  z-index: 1;
+  background: #2222a5;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+nav .navWrapper .navLinks li a:hover::after {
+  width: 100%;
 }
 
 nav .navWrapper .navUser {
@@ -137,16 +164,16 @@ nav .navWrapper .navUser .userCart {
   border-radius: 50%;
 }
 
-.header {
+.abtBread {
   height: 30vh;
   background: blue;
 }
 
-.header .aboutBanner {
+.abtBread .aboutBanner {
   height: 70%;
   background: #020024;
-  background: -webkit-gradient(linear, left top, right top, from(#5278bb), color-stop(41%, #3c5e9e), to(#27467e));
-  background: linear-gradient(90deg, #5278bb 0%, #3c5e9e 41%, #27467e 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#567dc0), color-stop(41%, #3b5d9b), to(#26457d));
+  background: linear-gradient(90deg, #567dc0 0%, #3b5d9b 41%, #26457d 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#7f63ff",GradientType=1);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -162,7 +189,7 @@ nav .navWrapper .navUser .userCart {
   font-weight: 500;
 }
 
-.header .breadCrumbs {
+.abtBread .breadCrumbs {
   height: 30%;
   background-color: white;
   display: -webkit-box;
@@ -180,7 +207,7 @@ nav .navWrapper .navUser .userCart {
   font-size: 1.3rem;
 }
 
-.header .breadCrumbs .rightArrow {
+.abtBread .breadCrumbs .rightArrow {
   margin: 3px 10px 0 10px;
 }
 
@@ -726,5 +753,76 @@ nav .navWrapper .navUser .userCart {
   height: 30px;
   margin-right: 10px;
   cursor: pointer;
+}
+
+.scrollToTopBtn {
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  right: 2%;
+  bottom: 50px;
+  z-index: 999;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 4px double #2b65e4;
+  background: white;
+  color: black;
+  -webkit-box-shadow: 0px 10px 31px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 31px -10px rgba(117, 117, 117, 0.75);
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-animation: toTopBtn 1.3s ease-in-out infinite;
+          animation: toTopBtn 1.3s ease-in-out infinite;
+}
+
+@-webkit-keyframes toTopBtn {
+  0% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  25% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    border: 4px double #1552d6;
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    border: 4px double white;
+  }
+}
+
+@keyframes toTopBtn {
+  0% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  25% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    border: 4px double #1552d6;
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    border: 4px double white;
+  }
+}
+
+.scrollToTopBtn:hover {
+  background: #1256e765;
+  border: 4px double white;
 }
 /*# sourceMappingURL=changeLogIndividual.css.map */

@@ -504,27 +504,6 @@ nav .navWrapper .navUser .userCart {
   }
 }
 
-@keyframes toTopBtn {
-  0% {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
-  }
-  25% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    border: 4px double #1552d6;
-  }
-  50% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  100% {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
-    border: 4px double white;
-  }
-}
-
 .scrollToTopBtn:hover {
   background: #1256e765;
   border: 4px double white;

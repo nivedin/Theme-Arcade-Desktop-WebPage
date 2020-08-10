@@ -794,6 +794,10 @@ nav .navWrapper .navUser .userCart {
   color: #567dc0;
 }
 
+.main .mainItemsAndFilter .rytMainItemList .itemViewGallery {
+  min-height: 140vh;
+}
+
 .main .mainItemsAndFilter .rytMainItemList .itemViewGallery .itemCard {
   border: 1px solid #dbdbdb;
   border-radius: 9px;

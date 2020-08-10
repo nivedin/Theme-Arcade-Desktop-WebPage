@@ -565,7 +565,7 @@ nav .navWrapper .navUser .userCart {
 }
 
 .main .mainItemsAndFilter .rytMainItemList .itemListView {
-  min-height: 140vh;
+  min-height: 150vh;
 }
 
 .main .mainItemsAndFilter .rytMainItemList .item:nth-child(2) {

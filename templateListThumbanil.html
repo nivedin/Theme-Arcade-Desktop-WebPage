@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template List | Thumbnail</title>
+    <link rel="stylesheet" href="./CSS/templateListThumbnail.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="navMain">
+        <nav data-aos="fade-down" data-aos-duration="1000">
+          <div class="navWrapper">
+            <div class="navLogo">
+              <img src="./ASSETS/IMAGES/themeArcadeLogo.svg" alt="Logo" />
+            </div>
+            <div class="navLinks">
+              <ul>
+                <li><a href="#"> Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Solutions</a></li>
+                <li><a href="#">Developers</a></li>
+                <li></li>
+              </ul>
+            </div>
+            <div class="navUser">
+              <div class="userImage">
+                <a href="./userPage.html"
+                  ><img src="./ASSETS/IMAGES/prof1.jpeg" alt="userImage"
+                /></a>
+              </div>
+              <div class="userName">
+                Hi,Nivedin <i class="fas fa-arrow-circle-down"></i>
+              </div>
+              <div class="userCart"><i class="fas fa-shopping-cart"></i></div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <section class="abtBread">
+        <div class="aboutBanner">
+          TEMPLATES
+        </div>
+        <div class="breadCrumbs">
+          Home <i class="rightArrow fas fa-angle-double-right"></i> Templates
+        </div>
+      </section>
+    </div>
+
+    <section class="main">
+      <div class="mainSearchBarSortFiter">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="lftSearchBtn">
+              <input
+                type="search"
+                name="WebPageSearch"
+                placeholder="Travel Website"
+              />
+              <button class="btnSearch">Search</button>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 p-0">
+            <div class="rytSortIcons">
+              <button class="viewList">
+                <i class="listIco activeList fas fa-list"></i>
+              </button>
+              <button class="viewGallery">
+                <i class="listIco fas fa-th"></i>
+              </button>
+              <div class="sortBtns" id="filter-list">
+                <button class="newest activeFilter filter" data-filter="all">
+                  Newest
+                </button>
+                <button class="bestsellers filter" data-filter="1">
+                  Best Sellers
+                </button>
+                <button class="topRated filter" data-filter="2">
+                  Top Rated
+                </button>
+                <button class="trending filter" data-filter="3">
+                  Trending
+                </button>
+                <button class="price filter" data-filter="4">Price</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /// -->
+      <div class="mainItemsAndFilter">
+        <div class="row">
+          <div class="col-12 col-md-3">
+            <div class="lftFilterMain">
+              <div class="categories">
+                <div class="filterHead">
+                  <a
+                    class="link"
+                    data-toggle="collapse"
+                    href="#collapseExample"
+                    aria-expanded="false"
+                    aria-controls="collapseExample"
+                  >
+                    <p>Category</p>
+                    <i class="filterDwnArr fas fa-chevron-down"></i>
+                  </a>
+                </div>
+                <div class="categoryBody collapse show" id="collapseExample">
+                  <p class="filter" data-filter="all">All</p>
+                  <p class="filterCount filter" data-filter="1">
+                    <span>E-Commerce</span><span>1,560</span>
+                  </p>
+                  <p class="filterCount filter" data-filter="2">
+                    <span>Site Templates</span><span>1,267</span>
+                  </p>
+                  <p class="filterCount filter" data-filter="3">
+                    <span>UI Templates</span><span>990</span>
+                  </p>
+                  <p class="filterCount filter" data-filter="4">
+                    <span>Marketinge</span><span>967</span>
+                  </p>
+                  <p class="filterCount filter" data-filter="2">
+                    <span>CMS Themes</span><span>768</span>
+                  </p>
+                  <p class="filterCount filter" data-filter="3">
+                    <span>Template Kit</span><span>458</span>
+                  </p>
+                  <p class="filterCount filter" data-filter="1">
+                    <span>Blogging</span><span>254</span>
+                  </p>
+                  <p class="filterCount filter" data-filter="4">
+                    <span>Courses</span><span>125</span>
+                  </p>
+                  <hr style="background: rgb(187, 187, 187); height: 1px;" />
+                </div>
+              </div>
+              <!-- //// -->
+              <div class="rating">
+                <div class="filterHead">
+                  <a
+                    class="link"
+                    data-toggle="collapse"
+                    href="#collapseExample2"
+                    aria-expanded="false"
+                    aria-controls="collapseExample"
+                  >
+                    <p>Rating</p>
+                    <i class="filterDwnArr fas fa-chevron-down"></i>
+                  </a>
+                </div>
+                <div class="ratingBody collapse show" id="collapseExample2">
+                  <p>
+                    <input
+                      type="radio"
+                      name="showall"
+                      class="filter"
+                      data-filter="all"
+                    />
+                    Show All
+                  </p>
+                  <p class="filterCount">
+                    <span
+                      ><input
+                        type="radio"
+                        name="showall"
+                        class="filter"
+                        data-filter="all"
+                      />
+                      1 Star and Higher</span
+                    ><span>1,560</span>
+                  </p>
+                  <p class="filterCount">
+                    <span
+                      ><input
+                        type="radio"
+                        name="showall"
+                        class="filter"
+                        data-filter="all"
+                      />
+                      2 Star and Higher</span
+                    ><span>1,267</span>
+                  </p>
+                  <p class="filterCount">
+                    <span
+                      ><input
+                        type="radio"
+                        name="showall"
+                        class="filter"
+                        data-filter="all"
+                      />
+                      3 Star and Higher</span
+                    ><span>990</span>
+                  </p>
+                  <p class="filterCount">
+                    <span
+                      ><input
+                        type="radio"
+                        name="showall"
+                        class="filter"
+                        data-filter="1"
+                      />
+                      4 Star and Higher</span
+                    ><span>967</span>
+                  </p>
+
+                  <hr style="background: rgb(187, 187, 187); height: 1px;" />
+                </div>
+              </div>
+              <div class="pricing">
+                <div class="filterHead">
+                  <a
+                    class="link"
+                    data-toggle="collapse"
+                    href="#collapseExample3"
+                    aria-expanded="false"
+                    aria-controls="collapseExample"
+                  >
+                    <p>Pricing</p>
+                    <i class="filterDwnArr fas fa-chevron-down"></i>
+                  </a>
+                </div>
+                <div class="pricingBody collapse show" id="collapseExample3">
+                  <div class="moneyFrmTo">
+                    <input
+                      type="number"
+                      class="from"
+                      placeholder="&#8377; 20"
+                    />
+                    <span>-</span>
+                    <input
+                      type="number"
+                      class="to"
+                      placeholder="&#8377; 2000"
+                    />
+                  </div>
+                  <hr style="background: rgb(187, 187, 187); height: 1px;" />
+                </div>
+              </div>
+              <div class="dateAdded">
+                <div class="filterHead">
+                  <a
+                    class="link"
+                    data-toggle="collapse"
+                    href="#collapseExample4"
+                    aria-expanded="false"
+                    aria-controls="collapseExample"
+                  >
+                    <p>Date Added</p>
+                    <i class="filterDwnArr fas fa-chevron-down"></i>
+                  </a>
+                </div>
+                <div class="dateBody collapse show" id="collapseExample4">
+                  <p>
+                    <input
+                      type="radio"
+                      name="showall"
+                      class="filter"
+                      data-filter="all"
+                    />
+                    Any date
+                  </p>
+                  <p class="filterCount">
+                    <span
+                      ><input
+                        type="radio"
+                        name="showall"
+                        class="filter"
+                        data-filter="3"
+                      />
+                      In the last week</span
+                    ><span>1,560</span>
+                  </p>
+                  <p class="filterCount">
+                    <span
+                      ><input
+                        type="radio"
+                        name="showall"
+                        class="filter"
+                        data-filter="2"
+                      />
+                      In the last month</span
+                    ><span>1,267</span>
+                  </p>
+                  <p class="filterCount">
+                    <span
+                      ><input
+                        type="radio"
+                        name="showall"
+                        class="filter"
+                        data-filter="1"
+                      />
+                      In the last year</span
+                    ><span>990</span>
+                  </p>
+
+                  <hr style="background: rgb(187, 187, 187); height: 1px;" />
+                </div>
+              </div>
+              <div class="compatibleWith">
+                <div class="filterHead">
+                  <a
+                    class="link"
+                    data-toggle="collapse"
+                    href="#collapseExample5"
+                    aria-expanded="false"
+                    aria-controls="collapseExample"
+                  >
+                    <p>Compatible With</p>
+                    <i class="filterDwnArr fas fa-chevron-down"></i>
+                  </a>
+                </div>
+                <div class="compatibleBody collapse show" id="collapseExample5">
+                  <p class="filterCount">
+                    <span
+                      ><input
+                        type="checkbox"
+                        name="showall"
+                        class="filter"
+                        data-filter="all"
+                      />
+                      Bootstrap</span
+                    ><span>1,560</span>
+                  </p>
+                  <p class="filterCount">
+                    <span
+                      ><input
+                        type="checkbox"
+                        name="showall"
+                        class="filter"
+                        data-filter="1"
+                      />
+                      AngularJS</span
+                    ><span>1,267</span>
+                  </p>
+                  <p class="filterCount">
+                    <span
+                      ><input
+                        type="checkbox"
+                        name="showall"
+                        class="filter"
+                        data-filter="2"
+                      />
+                      Mobile</span
+                    ><span>990</span>
+                  </p>
+                  <p class="filterCount">
+                    <span
+                      ><input type="checkbox" name="showall" /> WordPress</span
+                    ><span>77</span>
+                  </p>
+                  <p class="filterCount">
+                    <span><input type="checkbox" name="showall" /> GitHub</span
+                    ><span>20</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-9">
+            <div class="rytMainItemList">
+              <div class="itemListView">
+                <!-- ///// -->
+                <div
+                  class="item filtr-item"
+                  data-category="1"
+                  data-sort="value"
+                >
+                  <div class="row">
+                    <div class="col-5">
+                      <div class="itemImageLft">
+                        <div class="itemImg">
+                          <img src="./ASSETS/IMAGES/6.svg" alt="itemImage" />
+                        </div>
+                        <div class="imgFooterTags">
+                          <i class="tagIco fas fa-tags"></i>
+                          <p>
+                            <span>Tags:</span>
+                            <a href="#">travell</a>
+                            <a href="#">website</a>
+                            <a href="#">responsive</a>
+                            <a href="#">wordpress</a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-7 p-0">
+                      <div class="lftItemDetailsCartAdd">
+                        <div class="itemNameAddFav">
+                          <div class="itemName">
+                            <h4>Travello Website</h4>
+                            <h5>by,Themes Arcade</h5>
+                          </div>
+                          <div class="addFav">
+                            <img
+                              src="./ASSETS/IMAGES/Icon material-playlist-add.svg"
+                              alt="addIco"
+                            />
+                            <i class="heartIcon far fa-heart"></i>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-8">
+                            <div class="points">
+                              <ul>
+                                <li>Easy for beginners</li>
+                                <li>
+                                  Simply to install & customize,fast support
+                                </li>
+                                <li>
+                                  No Risk Warranty - Full refund within 30 days
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="starsAndDownload">
+                              <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                              </div>
+                              <div class="downloads">
+                                <p>100+ Downloads</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-4">
+                            <div class="cartBtns">
+                              <div class="cartIco">
+                                <img
+                                  src="./ASSETS/IMAGES/Icon material-add-shopping-cart.svg"
+                                  alt="cartIco"
+                                />
+                              </div>
+                              <div class="prevPriceBtns">
+                                <button class="preview">Preview</button>
+                                <button class="price">
+                                  <i class="fas fa-rupee-sign"></i> 150
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ///// -->
+                <!-- ///// -->
+                <div
+                  class="item item1 filtr-item"
+                  data-category="2"
+                  data-sort="value"
+                >
+                  <div class="row">
+                    <div class="col-5">
+                      <div class="itemImageLft">
+                        <div class="itemImg">
+                          <img
+                            src="./ASSETS/IMAGES/Wallpaper (20).svg"
+                            alt="itemImage"
+                          />
+                        </div>
+                        <div class="imgFooterTags">
+                          <i class="tagIco fas fa-tags"></i>
+                          <p>
+                            <span>Tags:</span>
+                            <a href="#">travell</a>
+                            <a href="#">website</a>
+                            <a href="#">responsive</a>
+                            <a href="#">wordpress</a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-7 p-0">
+                      <div class="lftItemDetailsCartAdd">
+                        <div class="itemNameAddFav">
+                          <div class="itemName">
+                            <h4>Work-a-Holic Website</h4>
+                            <h5>by,Themes Arcade</h5>
+                          </div>
+                          <div class="addFav">
+                            <img
+                              src="./ASSETS/IMAGES/Icon material-playlist-add.svg"
+                              alt="addIco"
+                            />
+                            <i class="heartIcon far fa-heart"></i>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-8">
+                            <div class="points">
+                              <ul>
+                                <li>Easy for beginners</li>
+                                <li>
+                                  Simply to install & customize,fast support
+                                </li>
+                                <li>
+                                  No Risk Warranty - Full refund within 30 days
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="starsAndDownload">
+                              <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                              </div>
+                              <div class="downloads">
+                                <p>100+ Downloads</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-4">
+                            <div class="cartBtns">
+                              <div class="cartIco">
+                                <img
+                                  src="./ASSETS/IMAGES/Icon material-add-shopping-cart.svg"
+                                  alt="cartIco"
+                                />
+                              </div>
+                              <div class="prevPriceBtns">
+                                <button class="preview">Preview</button>
+                                <button class="price">
+                                  <i class="fas fa-rupee-sign"></i> 150
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ///// -->
+                <!-- ///// -->
+                <div
+                  class="item item1 filtr-item"
+                  data-category="1, 4"
+                  data-sort="value"
+                >
+                  <div class="row">
+                    <div class="col-5">
+                      <div class="itemImageLft">
+                        <div class="itemImg">
+                          <img
+                            src="./ASSETS/IMAGES/Wallpaper (17).svg"
+                            alt="itemImage"
+                          />
+                        </div>
+                        <div class="imgFooterTags">
+                          <i class="tagIco fas fa-tags"></i>
+                          <p>
+                            <span>Tags:</span>
+                            <a href="#">travell</a>
+                            <a href="#">website</a>
+                            <a href="#">responsive</a>
+                            <a href="#">wordpress</a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-7 p-0">
+                      <div class="lftItemDetailsCartAdd">
+                        <div class="itemNameAddFav">
+                          <div class="itemName">
+                            <h4>Management Website</h4>
+                            <h5>by,Themes Arcade</h5>
+                          </div>
+                          <div class="addFav">
+                            <img
+                              src="./ASSETS/IMAGES/Icon material-playlist-add.svg"
+                              alt="addIco"
+                            />
+                            <i class="heartIcon far fa-heart"></i>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-8">
+                            <div class="points">
+                              <ul>
+                                <li>Easy for beginners</li>
+                                <li>
+                                  Simply to install & customize,fast support
+                                </li>
+                                <li>
+                                  No Risk Warranty - Full refund within 30 days
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="starsAndDownload">
+                              <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                              </div>
+                              <div class="downloads">
+                                <p>100+ Downloads</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-4">
+                            <div class="cartBtns">
+                              <div class="cartIco">
+                                <img
+                                  src="./ASSETS/IMAGES/Icon material-add-shopping-cart.svg"
+                                  alt="cartIco"
+                                />
+                              </div>
+                              <div class="prevPriceBtns">
+                                <button class="preview">Preview</button>
+                                <button class="price">
+                                  <i class="fas fa-rupee-sign"></i> 150
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ///// -->
+                <!-- ///// -->
+                <div
+                  class="item item1 filtr-item"
+                  data-category="3, 2"
+                  data-sort="value"
+                >
+                  <div class="row">
+                    <div class="col-5">
+                      <div class="itemImageLft">
+                        <div class="itemImg">
+                          <img
+                            src="./ASSETS/IMAGES/Wallpaper (1).svg"
+                            alt="itemImage"
+                          />
+                        </div>
+                        <div class="imgFooterTags">
+                          <i class="tagIco fas fa-tags"></i>
+                          <p>
+                            <span>Tags:</span>
+                            <a href="#">travell</a>
+                            <a href="#">website</a>
+                            <a href="#">responsive</a>
+                            <a href="#">wordpress</a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-7 p-0">
+                      <div class="lftItemDetailsCartAdd">
+                        <div class="itemNameAddFav">
+                          <div class="itemName">
+                            <h4>Creative Website</h4>
+                            <h5>by,Themes Arcade</h5>
+                          </div>
+                          <div class="addFav">
+                            <img
+                              src="./ASSETS/IMAGES/Icon material-playlist-add.svg"
+                              alt="addIco"
+                            />
+                            <i class="heartIcon far fa-heart"></i>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-8">
+                            <div class="points">
+                              <ul>
+                                <li>Easy for beginners</li>
+                                <li>
+                                  Simply to install & customize,fast support
+                                </li>
+                                <li>
+                                  No Risk Warranty - Full refund within 30 days
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="starsAndDownload">
+                              <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                              </div>
+                              <div class="downloads">
+                                <p>100+ Downloads</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-4">
+                            <div class="cartBtns">
+                              <div class="cartIco">
+                                <img
+                                  src="./ASSETS/IMAGES/Icon material-add-shopping-cart.svg"
+                                  alt="cartIco"
+                                />
+                              </div>
+                              <div class="prevPriceBtns">
+                                <button class="preview">Preview</button>
+                                <button class="price">
+                                  <i class="fas fa-rupee-sign"></i> 150
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- //////////////////Gallery View///////////// -->
+              <div class="itemViewGallery noDisplay">
+                <!-- /// -->
+                <div class="row" style="margin-bottom: 4%;">
+                  <div class="col-12 col-md-4">
+                    <div
+                      class="galleryView itemCard filtr-item"
+                      data-category="1"
+                      data-sort="value"
+                    >
+                      <div class="imgContainer">
+                        <img src="./ASSETS/IMAGES/6.svg" alt="itemImg" />
+                      </div>
+                      <div class="itemCardNamePrice">
+                        <div class="itemName">
+                          <p class="name">Travello Website</p>
+                          <p class="byName">by, Themes Arcade</p>
+                        </div>
+                        <div class="itemPrice">
+                          <i class="fas fa-rupee-sign"></i> 150
+                        </div>
+                      </div>
+                      <div class="itemRating">
+                        <div class="itemStar">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <div class="previewBtnCart">
+                          <button class="preview">Preview</button>
+                          <img
+                            src="./ASSETS/IMAGES/Icon material-add-shopping-cart.svg"
+                            alt="cartImg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <div class="galleryView itemCard">
+                      <div class="imgContainer">
+                        <img
+                          src="./ASSETS/IMAGES/Wallpaper (1).svg"
+                          alt="itemImg"
+                        />
+                      </div>
+                      <div class="itemCardNamePrice">
+                        <div class="itemName">
+                          <p class="name">Travello Website</p>
+                          <p class="byName">by, Themes Arcade</p>
+                        </div>
+                        <div class="itemPrice">
+                          <i class="fas fa-rupee-sign"></i> 150
+                        </div>
+                      </div>
+                      <div class="itemRating">
+                        <div class="itemStar">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <div class="previewBtnCart">
+                          <button class="preview">Preview</button>
+                          <img
+                            src="./ASSETS/IMAGES/Icon material-add-shopping-cart.svg"
+                            alt="cartImg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <div class="galleryView itemCard">
+                      <div class="imgContainer">
+                        <img
+                          src="./ASSETS/IMAGES/Wallpaper (17).svg"
+                          alt="itemImg"
+                        />
+                      </div>
+                      <div class="itemCardNamePrice">
+                        <div class="itemName">
+                          <p class="name">Travello Website</p>
+                          <p class="byName">by, Themes Arcade</p>
+                        </div>
+                        <div class="itemPrice">
+                          <i class="fas fa-rupee-sign"></i> 150
+                        </div>
+                      </div>
+                      <div class="itemRating">
+                        <div class="itemStar">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <div class="previewBtnCart">
+                          <button class="preview">Preview</button>
+                          <img
+                            src="./ASSETS/IMAGES/Icon material-add-shopping-cart.svg"
+                            alt="cartImg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /// -->
+                <!-- /// -->
+                <div class="row" style="margin-bottom: 4%;">
+                  <div class="col-12 col-md-4">
+                    <div
+                      class="galleryView itemCard filtr-item"
+                      data-category="1"
+                      data-sort="value"
+                    >
+                      <div class="imgContainer">
+                        <img
+                          src="./ASSETS/IMAGES/Wallpaper (20).svg"
+                          alt="itemImg"
+                        />
+                      </div>
+                      <div class="itemCardNamePrice">
+                        <div class="itemName">
+                          <p class="name">Explorer's Heaven Website</p>
+                          <p class="byName">by, Themes Arcade</p>
+                        </div>
+                        <div class="itemPrice">
+                          <i class="fas fa-rupee-sign"></i> 150
+                        </div>
+                      </div>
+                      <div class="itemRating">
+                        <div class="itemStar">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <div class="previewBtnCart">
+                          <button class="preview">Preview</button>
+                          <img
+                            src="./ASSETS/IMAGES/Icon material-add-shopping-cart.svg"
+                            alt="cartImg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <div
+                      class="galleryView itemCard filtr-item"
+                      data-category="2"
+                      data-sort="value"
+                    >
+                      <div class="imgContainer">
+                        <img
+                          src="./ASSETS/IMAGES/Wallpaper (25).svg"
+                          alt="itemImg"
+                        />
+                      </div>
+                      <div class="itemCardNamePrice">
+                        <div class="itemName">
+                          <p class="name">Management Website</p>
+                          <p class="byName">by, Themes Arcade</p>
+                        </div>
+                        <div class="itemPrice">
+                          <i class="fas fa-rupee-sign"></i> 140
+                        </div>
+                      </div>
+                      <div class="itemRating">
+                        <div class="itemStar">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <div class="previewBtnCart">
+                          <button class="preview">Preview</button>
+                          <img
+                            src="./ASSETS/IMAGES/Icon material-add-shopping-cart.svg"
+                            alt="cartImg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <div
+                      class="galleryView itemCard filtr-item"
+                      data-category="3"
+                      data-sort="value"
+                    >
+                      <div class="imgContainer">
+                        <img
+                          src="./ASSETS/IMAGES/Wallpaper (26).svg"
+                          alt="itemImg"
+                        />
+                      </div>
+                      <div class="itemCardNamePrice">
+                        <div class="itemName">
+                          <p class="name">Analytics Website</p>
+                          <p class="byName">by, Themes Arcade</p>
+                        </div>
+                        <div class="itemPrice">
+                          <i class="fas fa-rupee-sign"></i> 140
+                        </div>
+                      </div>
+                      <div class="itemRating">
+                        <div class="itemStar">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <div class="previewBtnCart">
+                          <button class="preview">Preview</button>
+                          <img
+                            src="./ASSETS/IMAGES/Icon material-add-shopping-cart.svg"
+                            alt="cartImg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /// -->
+                <!-- /// -->
+                <div class="row" style="margin-bottom: 4%;">
+                  <div class="col-12 col-md-4">
+                    <div
+                      class="galleryView itemCard filtr-item"
+                      data-category="1,4"
+                      data-sort="value"
+                    >
+                      <div class="imgContainer">
+                        <img
+                          src="./ASSETS/IMAGES/Wallpaper (17).svg"
+                          alt="itemImg"
+                        />
+                      </div>
+                      <div class="itemCardNamePrice">
+                        <div class="itemName">
+                          <p class="name">FreshCart Website</p>
+                          <p class="byName">by, Themes Arcade</p>
+                        </div>
+                        <div class="itemPrice">
+                          <i class="fas fa-rupee-sign"></i> 150
+                        </div>
+                      </div>
+                      <div class="itemRating">
+                        <div class="itemStar">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <div class="previewBtnCart">
+                          <button class="preview">Preview</button>
+                          <img
+                            src="./ASSETS/IMAGES/Icon material-add-shopping-cart.svg"
+                            alt="cartImg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <div
+                      class="galleryView itemCard filtr-item"
+                      data-category="3,4"
+                      data-sort="value"
+                    >
+                      <div class="imgContainer">
+                        <img
+                          src="./ASSETS/IMAGES/Wallpaper (45).svg"
+                          alt="itemImg"
+                        />
+                      </div>
+                      <div class="itemCardNamePrice">
+                        <div class="itemName">
+                          <p class="name">LaptopGuide Website</p>
+                          <p class="byName">by, Themes Arcade</p>
+                        </div>
+                        <div class="itemPrice">
+                          <i class="fas fa-rupee-sign"></i> 140
+                        </div>
+                      </div>
+                      <div class="itemRating">
+                        <div class="itemStar">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <div class="previewBtnCart">
+                          <button class="preview">Preview</button>
+                          <img
+                            src="./ASSETS/IMAGES/Icon material-add-shopping-cart.svg"
+                            alt="cartImg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <div
+                      class="galleryView itemCard filtr-item"
+                      data-category="1,3"
+                      data-sort="value"
+                    >
+                      <div class="imgContainer">
+                        <img
+                          src="./ASSETS/IMAGES/Wallpaper (20).svg"
+                          alt="itemImg"
+                        />
+                      </div>
+                      <div class="itemCardNamePrice">
+                        <div class="itemName">
+                          <p class="name">TeamSlack Website</p>
+                          <p class="byName">by, Themes Arcade</p>
+                        </div>
+                        <div class="itemPrice">
+                          <i class="fas fa-rupee-sign"></i> 150
+                        </div>
+                      </div>
+                      <div class="itemRating">
+                        <div class="itemStar">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <div class="previewBtnCart">
+                          <button class="preview">Preview</button>
+                          <img
+                            src="./ASSETS/IMAGES/Icon material-add-shopping-cart.svg"
+                            alt="cartImg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /// -->
+                <!-- /// -->
+                <div class="row" style="margin-bottom: 4%;">
+                  <div class="col-12 col-md-4">
+                    <div class="galleryView itemCard">
+                      <div class="imgContainer">
+                        <img
+                          src="./ASSETS/IMAGES/Wallpaper (1).svg"
+                          alt="itemImg"
+                        />
+                      </div>
+                      <div class="itemCardNamePrice">
+                        <div class="itemName">
+                          <p class="name">Travello Website</p>
+                          <p class="byName">by, Themes Arcade</p>
+                        </div>
+                        <div class="itemPrice">
+                          <i class="fas fa-rupee-sign"></i> 150
+                        </div>
+                      </div>
+                      <div class="itemRating">
+                        <div class="itemStar">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <div class="previewBtnCart">
+                          <button class="preview">Preview</button>
+                          <img
+                            src="./ASSETS/IMAGES/Icon material-add-shopping-cart.svg"
+                            alt="cartImg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <div class="galleryView itemCard">
+                      <div class="imgContainer">
+                        <img
+                          src="./ASSETS/IMAGES/Wallpaper (26).svg"
+                          alt="itemImg"
+                        />
+                      </div>
+                      <div class="itemCardNamePrice">
+                        <div class="itemName">
+                          <p class="name">Travello Website</p>
+                          <p class="byName">by, Themes Arcade</p>
+                        </div>
+                        <div class="itemPrice">
+                          <i class="fas fa-rupee-sign"></i> 150
+                        </div>
+                      </div>
+                      <div class="itemRating">
+                        <div class="itemStar">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <div class="previewBtnCart">
+                          <button class="preview">Preview</button>
+                          <img
+                            src="./ASSETS/IMAGES/Icon material-add-shopping-cart.svg"
+                            alt="cartImg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <div class="galleryView itemCard">
+                      <div class="imgContainer">
+                        <img src="./ASSETS/IMAGES/6.svg" alt="itemImg" />
+                      </div>
+                      <div class="itemCardNamePrice">
+                        <div class="itemName">
+                          <p class="name">Travello Website</p>
+                          <p class="byName">by, Themes Arcade</p>
+                        </div>
+                        <div class="itemPrice">
+                          <i class="fas fa-rupee-sign"></i> 150
+                        </div>
+                      </div>
+                      <div class="itemRating">
+                        <div class="itemStar">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <div class="previewBtnCart">
+                          <button class="preview">Preview</button>
+                          <img
+                            src="./ASSETS/IMAGES/Icon material-add-shopping-cart.svg"
+                            alt="cartImg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /// -->
+              </div>
+              <!-- ///// -->
+              <div class="viewMore">
+                <p>View More <i class="DwnArr fas fa-chevron-down"></i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="footerContent">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div class="footerLogo">
+              <img src="./ASSETS/IMAGES/themeArcadeLogo.svg" alt="footerLogo" />
+            </div>
+            <div class="footerPara">
+              We have got you covered if you need a specific software based on
+              your organization's needs or guidelines. We've got you covered if
+              you need a specific software based on your organization's needs or
+              guidelines. We have got you covered if you need a specific
+              software based on your organization's needs or guidelines. you
+              need a specific software based on your organization's needs or
+              guidelines. you need a specific software based on .
+            </div>
+          </div>
+          <div class="middleFooter col-12 col-md-6">
+            <div class="row">
+              <div class="col-4">
+                <div class="footerConHeading"><h5>Legals</h5></div>
+                <ul>
+                  <li>Privacy Policy</li>
+                  <li>Terms of Service</li>
+                  <li>Disclaimer</li>
+                </ul>
+              </div>
+              <div class="col-4">
+                <div class="footerConHeading"><h5>Resources</h5></div>
+                <ul>
+                  <li>Events</li>
+                  <li>Blogs</li>
+                  <li>Chargrback Guides</li>
+                  <li>Customer Stories</li>
+                  <li>Settlement Guides</li>
+                </ul>
+              </div>
+              <div class="col-4">
+                <div class="footerConHeading"><h5>Help and Support</h5></div>
+                <ul>
+                  <li>Support</li>
+                  <li>Raise a Request</li>
+                  <li>Chargrback Guides</li>
+                  <li>File a Grevience</li>
+                  <li>Knowledge Base</li>
+                </ul>
+              </div>
+            </div>
+            <div class="contactdetails">
+              <div class="footerConHeading"><h4>Contact Details</h4></div>
+              <div class="footDetails">
+                <div class="lftDetail">
+                  <i class="fas fa-map-marker-alt"></i>
+                  20, A Wing, Manmohan Apartment Kamatwada, Pavan Nagar, Nashik
+                  - 422006
+                </div>
+                <div class="rytDetail">
+                  <span><i class="fas fa-phone"></i> +91-9664528792</span>
+                  <span
+                    ><i class="fas fa-envelope"></i> info@digitalvault.in</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rytFooter col-12 col-md-2">
+            <div class="footerConHeading2"><h4>Social</h4></div>
+            <div class="footerSocial">
+              <img src="./ASSETS/IMAGES/facebook (1).svg" alt="Brandlogo" />
+              <img
+                src="./ASSETS/IMAGES/brands-and-logotypes (1).svg"
+                alt="Brandlogo"
+              />
+              <img src="./ASSETS/IMAGES/logo.svg" alt="Brandlogo" />
+              <img src="./ASSETS/IMAGES/linkedin (1).svg" alt="Brandlogo" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="scrollToTopBtn">
+      <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.12.1/js/all.js"
+    ></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.12.1/js/v4-shims.js"
+    ></script>
+    <script src="./JS/jquery.filterizr.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="./JS/templateListThumbnail.js"></script>
+  </body>
+</html>

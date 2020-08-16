@@ -535,8 +535,74 @@ nav .navWrapper .navUser .userCart {
   width: 170px;
 }
 
-.main .mainContainer .mainContent .rytCont .orderContent .totalAmount .termsAndCondi .placeOrder svg {
+.main .mainContainer .mainContent .rytCont .orderContent .totalAmount .termsAndCondi .placeOrder .btnDefault {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+
+.main .mainContainer .mainContent .rytCont .orderContent .totalAmount .termsAndCondi .placeOrder .btnDefault svg {
   margin-left: 10px;
+}
+
+.main .mainContainer .mainContent .rytCont .orderContent .totalAmount .termsAndCondi .placeOrder .btnSVG {
+  position: relative;
+}
+
+.main .mainContainer .mainContent .rytCont .orderContent .totalAmount .termsAndCondi .placeOrder .btnSVG svg {
+  position: absolute;
+  -webkit-transform: translate(-150px, -50%);
+          transform: translate(-150px, -50%);
+  stroke: black;
+  fill: transparent;
+  stroke-width: 10;
+  width: 70px;
+  height: 70px;
+  stroke-dasharray: 4000;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+  stroke-dashoffset: -4000;
+}
+
+.main .mainContainer .mainContent .rytCont .orderContent .totalAmount .termsAndCondi .placeOrder:hover .btnSVG svg {
+  -webkit-transform: translate(45px, -50%);
+          transform: translate(45px, -50%);
+  stroke-dashoffset: 0;
+  stroke: #2b65e4;
+}
+
+.main .mainContainer .mainContent .rytCont .orderContent .totalAmount .termsAndCondi .placeOrder::before {
+  border-radius: 10px 5px 5px 10px;
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 0;
+  background: white;
+  top: 0;
+  left: 0;
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.main .mainContainer .mainContent .rytCont .orderContent .totalAmount .termsAndCondi .placeOrder:hover::before {
+  width: 100%;
+  border-top: 2px solid #295094;
+  border-left: 2px solid #295094;
+  border-bottom: 2px solid #295094;
+}
+
+.main .mainContainer .mainContent .rytCont .orderContent .totalAmount .termsAndCondi .placeOrder:hover .btnDefault {
+  font-weight: 500;
+  color: #295094;
+}
+
+.main .mainContainer .mainContent .rytCont .orderContent .totalAmount .termsAndCondi .placeOrder:hover .btnDefault svg {
+  display: none;
 }
 
 .footer {

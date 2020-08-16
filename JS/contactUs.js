@@ -1,5 +1,3 @@
-AOS.init();
-
 let scrollToTop = document.querySelector(".scrollToTopBtn");
 
 window.onscroll = function () {

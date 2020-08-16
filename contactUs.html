@@ -59,17 +59,30 @@
           <div class="row">
             <div class="lftCont col-12 col-md-5">
               <form action="post">
+                <div class="name form-group">
+                  <input type="text" name="name" required />
+                  <label for="name">Name</label>
+                </div>
                 <div class="email form-group">
-                  <input type="email" name="email" />
+                  <input type="text" name="email" required />
                   <label for="email">Email</label>
                 </div>
+
                 <div class="subject form-group">
                   <select class="form-control">
                     <option>Type of Query</option>
+                    <option>Type of Query2</option>
+                    <option>Type of Query3</option>
                   </select>
                 </div>
                 <div class="message form-group">
-                  <textarea name="message" cols="46" rows="6" no></textarea>
+                  <textarea
+                    name="message"
+                    cols="46"
+                    rows="6"
+                    no
+                    required
+                  ></textarea>
                   <label for="email">Write Your Message Here...</label>
                 </div>
                 <button>SUBMIT</button>

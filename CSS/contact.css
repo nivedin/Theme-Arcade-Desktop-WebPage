@@ -223,7 +223,7 @@ nav .navWrapper .navUser .userCart {
   margin-bottom: 35px;
 }
 
-.main .mainContainer .mainContent .lftCont .email input {
+.main .mainContainer .mainContent .lftCont .name input {
   position: relative;
   width: 410px;
   height: 45px;
@@ -233,15 +233,60 @@ nav .navWrapper .navUser .userCart {
   border-radius: 5px;
 }
 
+.main .mainContainer .mainContent .lftCont .name input:focus + label,
+.main .mainContainer .mainContent .lftCont .name input.not-empty + label,
+.main .mainContainer .mainContent .lftCont .name input:valid + label {
+  -webkit-transform: translate(-15px, -36px);
+          transform: translate(-15px, -36px);
+  color: #3257a7;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.main .mainContainer .mainContent .lftCont .name label {
+  position: absolute;
+  left: 35px;
+  top: 13px;
+  color: #73a1c2;
+  font-size: 0.95rem;
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+
+.main .mainContainer .mainContent .lftCont input:focus,
+.main .mainContainer .mainContent .lftCont select:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.main .mainContainer .mainContent .lftCont .email {
+  position: relative;
+}
+
+.main .mainContainer .mainContent .lftCont .email input {
+  width: 410px;
+  height: 45px;
+  outline: none;
+  border: 2px solid #8078ff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
 .main .mainContainer .mainContent .lftCont .email input:focus + label,
-.main .mainContainer .mainContent .lftCont .email input.not-empty + label {
-  -webkit-transform: translate(-10px, -36px);
-          transform: translate(-10px, -36px);
+.main .mainContainer .mainContent .lftCont .email input:valid + label {
+  -webkit-transform: translate(-15px, -36px);
+          transform: translate(-15px, -36px);
+  color: #3257a7;
+  font-size: 0.85rem;
+  font-weight: 500;
 }
 
 .main .mainContainer .mainContent .lftCont .email label {
   position: absolute;
-  left: 35px;
+  z-index: 0;
+  left: 20px;
   top: 13px;
   color: #73a1c2;
   font-size: 0.95rem;
@@ -276,9 +321,13 @@ nav .navWrapper .navUser .userCart {
 }
 
 .main .mainContainer .mainContent .lftCont .message textarea:focus + label,
-.main .mainContainer .mainContent .lftCont .message textarea.not-empty + label {
-  -webkit-transform: translate(-10px, -36px);
-          transform: translate(-10px, -36px);
+.main .mainContainer .mainContent .lftCont .message textarea.not-empty + label,
+.main .mainContainer .mainContent .lftCont .message textarea:valid + label {
+  -webkit-transform: translate(-15px, -36px);
+          transform: translate(-15px, -36px);
+  color: #3257a7;
+  font-size: 0.85rem;
+  font-weight: 500;
 }
 
 .main .mainContainer .mainContent .lftCont .message label {
@@ -295,10 +344,11 @@ nav .navWrapper .navUser .userCart {
 
 .main .mainContainer .mainContent .lftCont button {
   position: relative;
-  margin: 20px 25px 0 0;
+  margin: 0 25px 0 0;
   height: 50px;
   width: 180px;
   border: none;
+  outline: none;
   background: -webkit-gradient(linear, left top, right top, from(#1f3e77), to(#295093));
   background: linear-gradient(to right, #1f3e77, #295093);
   font-weight: 500;
@@ -484,6 +534,27 @@ nav .navWrapper .navUser .userCart {
 }
 
 @-webkit-keyframes toTopBtn {
+  0% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  25% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    border: 4px double #1552d6;
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    border: 4px double white;
+  }
+}
+
+@keyframes toTopBtn {
   0% {
     -webkit-transform: scale(1.05);
             transform: scale(1.05);

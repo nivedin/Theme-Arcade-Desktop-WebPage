@@ -245,6 +245,7 @@ nav .navWrapper .navUser .userCart {
 
 .main .mainContainer .mainContent .lftCont .name label {
   position: absolute;
+  pointer-events: none;
   left: 35px;
   top: 13px;
   color: #73a1c2;
@@ -285,6 +286,7 @@ nav .navWrapper .navUser .userCart {
 
 .main .mainContainer .mainContent .lftCont .email label {
   position: absolute;
+  pointer-events: none;
   z-index: 0;
   left: 20px;
   top: 13px;
@@ -332,6 +334,7 @@ nav .navWrapper .navUser .userCart {
 
 .main .mainContainer .mainContent .lftCont .message label {
   position: absolute;
+  pointer-events: none;
   left: 20px;
   top: 14px;
   color: #73a1c2;

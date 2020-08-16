@@ -353,6 +353,8 @@ nav .navWrapper .navUser .userCart {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   border-bottom: 2px solid #dfdfdf;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .main .mainContent .mainRyt .mainRytContent .product hr {
@@ -535,6 +537,30 @@ nav .navWrapper .navUser .userCart {
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
   color: #26457d;
+}
+
+@-webkit-keyframes itemAnim {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateY(30%);
+            transform: translateY(30%);
+    opacity: 0;
+  }
+}
+
+@keyframes itemAnim {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateY(30%);
+            transform: translateY(30%);
+    opacity: 0;
+  }
 }
 
 .footer {

@@ -11,8 +11,14 @@ for (var i = 0; i < removeItemButtons.length; i++) {
   removeButton.addEventListener("click", function (event) {
     var removeBtnClicked = event.target;
     removeBtnClicked.parentElement.parentElement.style.animation =
-      "itemAnim 5s ease-in-out forwards";
-    removeBtnClicked.parentElement.parentElement.remove();
+      "itemAnim .5s ease";
+
+    removeBtnClicked.parentElement.parentElement.addEventListener(
+      "animationend",
+      function () {
+        removeBtnClicked.parentElement.parentElement.remove();
+      }
+    );
     cartItems.length--;
   });
 }

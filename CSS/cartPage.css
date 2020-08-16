@@ -273,14 +273,8 @@ nav .navWrapper .navUser .userCart {
   border-radius: 5px;
 }
 
-.main .cartContent .contentItem .side1 .removeCloseBtn::after {
-  position: absolute;
-  height: 100%;
-  width: 104%;
-  background: rgba(255, 0, 0, 0.24);
-  content: "";
-  top: 30%;
-  left: 2%;
+.main .cartContent .contentItem .side1 .removeCloseBtn svg {
+  pointer-events: none;
 }
 
 .main .cartContent .contentItem .side1 .prdImage {
@@ -562,6 +556,30 @@ nav .navWrapper .navUser .userCart {
   height: 40px;
   border: none;
   outline: none;
+}
+
+@-webkit-keyframes itemAnim {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-30%);
+            transform: translateY(-30%);
+    opacity: 0;
+  }
+}
+
+@keyframes itemAnim {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-30%);
+            transform: translateY(-30%);
+    opacity: 0;
+  }
 }
 
 .othersAlsoLiked {

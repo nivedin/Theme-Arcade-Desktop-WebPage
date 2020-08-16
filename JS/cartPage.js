@@ -30,44 +30,42 @@ let totalAmountPlusTax = document.getElementById("totalAmountPlusTax");
 let discountCode = document.getElementById("discountCode");
 
 //Close Clicked
-for (var i = 0; i < removeItemButtons.length; i++) {
-  var removeButton = removeItemButtons[i];
-  removeButton.addEventListener("click", function (event) {
-    var removeBtnClicked = event.target;
-    removeBtnClicked.parentElement.parentElement.parentElement.style.animation =
-      "itemAnim 5s ease-in-out forwards";
-    removeBtnClicked.parentElement.parentElement.parentElement.remove();
-  });
-}
+// for (var i = 0; i < removeItemButtons.length; i++) {
+//   var removeButton = removeItemButtons[i];
+//   removeButton.addEventListener("click", function (event) {
+//     var removeBtnClicked = event.target;
+//     var cartItem = removeBtnClicked.parentElement.parentElement.parentElement;
+//     var currentTotalPrice = cartItem.querySelector
+//     cartItem.style.animation = "itemAnim .5s ease-in-out";
+//     cartItem.addEventListener("animationend", () => {
+//       cartItem.remove();
+//     });
+//   });
+// }
 
 const decreaseItem = (incdec, itemPrice) => {
   var itemVal = document.getElementById(incdec);
   var itemPrice = document.getElementById(itemPrice);
   var minusBtnIcons = itemVal.parentElement.querySelector(".minus");
-  // if (itemVal.innerHTML <= 0) {
-  //   itemVal.innerHTML = 0;
-  //   itemPrice.innerHTML = parseInt(itemPrice.innerHTML) - 150;
-  //   minusBtnIcons.parentElement.parentElement.parentElement.parentElement.remove();
-  // }
-  if (itemVal.innerHTML <= 1) {
+  if (itemVal.innerHTML < 2) {
     minusBtnIcons.children[0].classList.remove("fa-minus-circle");
     minusBtnIcons.children[0].classList.add("fa-trash");
-    itemVal.innerHTML = parseInt(itemVal.innerHTML) - 1;
     itemPrice.innerHTML = parseInt(itemPrice.innerHTML) - 150;
-    totalAmount.innerHTML = parseInt(totalAmount.innerHTML) - 150;
-    totalAmountPlusTax.innerHTML = parseInt(totalAmountPlusTax.innerHTML) - 150;
-    minusBtnIcons.parentElement.parentElement.parentElement.parentElement.remove();
-    itemVal.innerHTML = 0;
+    itemVal.innerHTML = parseInt(itemVal.innerHTML) - 1;
+    itemVal.innerHTML = 1;
+    let currentCartItem =
+      minusBtnIcons.parentElement.parentElement.parentElement.parentElement;
+    currentCartItem.style.animation = "itemAnim .5s ease-in-out";
+    currentCartItem.addEventListener("animationend", () => {
+      currentCartItem.remove();
+    });
   }
-  if (itemVal.innerHTML <= 2) {
-    minusBtnIcons.children[0].classList.remove("fa-minus-circle");
-    minusBtnIcons.children[0].classList.add("fa-trash");
-
+  if (itemVal.innerHTML == 3) {
     itemPrice.innerHTML = parseInt(itemPrice.innerHTML) - 150;
     totalAmount.innerHTML = parseInt(totalAmount.innerHTML) - 150;
     totalAmountPlusTax.innerHTML = parseInt(totalAmountPlusTax.innerHTML) - 150;
-    itemVal.innerHTML = 2;
     itemVal.innerHTML = parseInt(itemVal.innerHTML) - 1;
+    itemVal.innerHTML = 2;
   } else {
     itemVal.innerHTML = parseInt(itemVal.innerHTML) - 1;
     itemPrice.innerHTML = parseInt(itemPrice.innerHTML) - 150;
@@ -91,6 +89,21 @@ const increaseItem = (incdec, itemPrice) => {
   } else {
     itemVal.innerHTML = parseInt(itemVal.innerHTML) + 1;
   }
+};
+
+const deleteItem = (incdec, itemPrice) => {
+  var itemVal = document.getElementById(incdec);
+  var itemPrice = document.getElementById(itemPrice);
+  var minusBtnIcons = itemVal.parentElement.querySelector(".minus");
+
+  totalAmount.innerHTML = parseInt(totalAmount.innerHTML) - 150;
+  totalAmountPlusTax.innerHTML = parseInt(totalAmountPlusTax.innerHTML) - 150;
+  let clickedCartItem =
+    minusBtnIcons.parentElement.parentElement.parentElement.parentElement;
+  clickedCartItem.style.animation = "itemAnim .5s ease-in-out";
+  clickedCartItem.addEventListener("animationend", () => {
+    clickedCartItem.remove();
+  });
 };
 
 const applyCoupon = () => {

@@ -580,6 +580,7 @@ nav .navWrapper .navUser .userCart {
 }
 
 .main .blogContent .blogPara .blogSocials .socialIcons .socialIcons:hover {
+  cursor: pointer;
   color: #707070;
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);

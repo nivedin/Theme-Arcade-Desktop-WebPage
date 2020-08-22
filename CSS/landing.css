@@ -553,7 +553,7 @@ header nav .navContainer .logSigButtons .signUp {
 }
 
 .aboutUs .aboutUsContainer .abtContent .lftPara {
-  padding: 150px 0 0 0;
+  padding: 75px 0 0 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -562,6 +562,7 @@ header nav .navContainer .logSigButtons .signUp {
 .aboutUs .aboutUsContainer .abtContent .lftPara p {
   font-size: 1.2rem;
   color: white;
+  line-height: 165%;
 }
 
 .aboutUs .aboutUsContainer .abtContent .lftPara .visit {
@@ -591,8 +592,8 @@ header nav .navContainer .logSigButtons .signUp {
           align-items: center;
   font-size: 1.3rem;
   color: black;
-  -webkit-animation: bgBlur 1.5s infinite ease-in-out;
-          animation: bgBlur 1.5s infinite ease-in-out;
+  -webkit-animation: bgBlur 1.5s infinite ease-in-out alternate;
+          animation: bgBlur 1.5s infinite ease-in-out alternate;
 }
 
 .aboutUs .aboutUsContainer .abtContent .lftPara .visit .arowCircle a {
@@ -638,8 +639,8 @@ header nav .navContainer .logSigButtons .signUp {
 .aboutUs .aboutUsContainer .abtContent .rytImage .rytImageContainer img {
   -webkit-transform: translateY(-42px);
           transform: translateY(-42px);
-  height: 150%;
-  width: 150%;
+  height: 130%;
+  width: 130%;
 }
 
 .aboutUs .aboutUsContainer .skewedBg {
@@ -1075,7 +1076,7 @@ header nav .navContainer .logSigButtons .signUp {
   width: 170px;
   border-radius: 10px;
   border: none;
-  background: #5252df;
+  background: #6c63ff;
   color: white;
   font-size: 1.1rem;
   -webkit-box-shadow: 0px 12px 70px -24px black;
@@ -1114,7 +1115,7 @@ header nav .navContainer .logSigButtons .signUp {
   width: 170px;
   border-radius: 10px;
   border: none;
-  background: #5252df;
+  background: #6c63ff;
   color: white;
   font-size: 1.1rem;
   -webkit-box-shadow: 0px 12px 70px -24px black;
@@ -1218,7 +1219,7 @@ header nav .navContainer .logSigButtons .signUp {
   left: 90%;
   width: 40px;
   position: absolute;
-  background: #1e0ab0;
+  background: #0b5e94;
   -webkit-box-shadow: 2px 13px 55px -38px #1e0ab0;
   box-shadow: 2px 13px 55px -38px #1e0ab0;
 }
@@ -1376,7 +1377,7 @@ header nav .navContainer .logSigButtons .signUp {
   top: 20%;
   right: -6%;
   height: 8px;
-  background: #5851cf;
+  background: #0b5e94;
 }
 
 .testimonals .tstContainer .tstContent .lftCont .carousel-control-icon {
@@ -1413,22 +1414,22 @@ header nav .navContainer .logSigButtons .signUp {
 }
 
 .mailLetter .mailLetContainer .mailLetContent .lftCont .lftImageContainer img {
-  height: 160%;
-  width: 160%;
-  -webkit-transform: translate(100px, -110px);
-          transform: translate(100px, -110px);
+  height: 135%;
+  width: 135%;
+  -webkit-transform: translate(120px, -74px);
+          transform: translate(120px, -74px);
 }
 
 .mailLetter .mailLetContainer .mailLetContent .rytCont {
-  padding-top: 40px;
+  padding-top: 30px;
   position: relative;
   z-index: 1;
 }
 
 .mailLetter .mailLetContainer .mailLetContent .rytCont p {
-  color: #47479e;
+  color: #074a75;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
 }
 
 .mailLetter .mailLetContainer .mailLetContent .rytCont .inpBut {
@@ -1439,16 +1440,16 @@ header nav .navContainer .logSigButtons .signUp {
   padding: 10px;
   border: none;
   border-radius: 20px;
-  background: rgba(61, 61, 218, 0.349);
+  background: #dfdcff;
   width: 62%;
-  height: 38px;
+  height: 40px;
   outline: none;
 }
 
 .mailLetter .mailLetContainer .mailLetContent .rytCont .inpBut button {
   margin-left: 10px;
-  height: 35px;
-  width: 35px;
+  height: 42px;
+  width: 42px;
   border: none;
   border-radius: 50%;
   background: white;
@@ -1640,6 +1641,8 @@ header nav .navContainer .logSigButtons .signUp {
 .footer .footerContent .rytFooter .footerSocial a {
   text-decoration: none;
   color: white;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .footer .footerContent .rytFooter .footerSocial .footerIcons {
@@ -1686,8 +1689,8 @@ header nav .navContainer .logSigButtons .signUp {
   text-align: center;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  -webkit-animation: toTopBtn 1.3s ease-in-out infinite;
-          animation: toTopBtn 1.3s ease-in-out infinite;
+  -webkit-animation: toTopBtn 1.3s ease-in-out infinite alternate;
+          animation: toTopBtn 1.3s ease-in-out infinite alternate;
 }
 
 @-webkit-keyframes toTopBtn {
